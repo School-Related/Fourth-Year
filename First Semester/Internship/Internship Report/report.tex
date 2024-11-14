@@ -1,0 +1,331 @@
+% This is a Basic Assignment Paper but with like Code and stuff allowed in it, there is also url, hyperlinks from contents included. 
+
+\documentclass[openany, 11pt]{report} % Increase font size to 12pt
+
+% Preamble
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsfonts, amsmath, amssymb}
+\usepackage{fancyhdr, float, graphicx}
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{fouriernc} % Use the New Century Schoolbook font
+\usepackage[nottoc, notlot, notlof]{tocbibind}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdfpagemode=FullScreen,
+    }
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\textit{\Large{Internship Report - IDeaS - Fourth Year B. Tech}}}
+\fancyhead[R]{\textit{Krishnaraj T}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{1pt}
+
+% Other Doc Editing
+% \parindent 0ex
+%\renewcommand{\baselinestretch}{1.5}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+
+    %---------------------------NAMES-------------------------------
+
+    \vspace{1\baselineskip} % Whitespace after the university name
+    \includegraphics[width=1\textwidth]{logo.jpg} % Adjust the width as needed
+
+
+    \LARGE{
+        An Internship Report Submitted to\\
+        \textbf{DR. VISHWANATH KARAD\\
+        MIT WORLD PEACE UNIVERSITY}\\
+    }
+
+    \vfill % space after Sub Name
+
+    %--------------------------TITLE-------------------------------
+
+    \rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+    \rule{\textwidth}{0.6pt}
+    \vspace{0.3\baselineskip} % Whitespace above the title
+
+
+    \huge{\textsc{
+            Internship Report\\
+            \textbf{IDeaS Cruise RMS}
+        }} \\
+
+
+    \vspace{0.3\baselineskip} % Whitespace below the title
+    \rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
+    \rule{\textwidth}{1.6pt}
+
+    \vspace{1\baselineskip} % Whitespace after the title block
+
+    %--------------------------SUBTITLE --------------------------	
+
+    \LARGE\textsc{
+        Submitted By
+    } % Subtitle or further description
+
+    %--------------------------AUTHOR-------------------------------
+
+    \vspace{0.5\baselineskip} % Whitespace below the editor list
+    Under the Supervision of\\
+    \Large{
+        \textbf{Mr. Harekishan Shivnani}\\
+        and \\
+        \textbf{Dr. Shilpa Sonawani}
+    }
+    \vfill
+    \vspace{0.5\baselineskip} % Whitespace before the editors
+    \LARGE{
+        Department of School of Computer Engineering and Technology
+    }
+    \vspace{0.5\baselineskip} % Whitespace before the editors
+    \Large {MIT World Peace University\\
+        Kothrud, Pune -411038\\
+        Maharashtra, India.\\
+    }
+    % \vspace{0.5\baselineskip} % Whitespace below the editor list
+    \Large{\textbf{Period from: 1st July 2024 to 31st December 2024}}
+
+\end{titlepage}
+
+
+\tableofcontents
+\thispagestyle{empty}
+% \frontmatter
+\clearpage
+
+\chapter*{Acknowledgment}
+\thispagestyle{empty}
+I am grateful to the Head of IDeaS - A SAS Company for providing me the opportunity to complete my internship in such a prestigious organization. Their leadership and support have been instrumental in my learning experience.\\
+
+I would like to extend my heartfelt gratitude to my supervisors, \textbf{Mr. Harekishan Shivnani} and \textbf{Dr. Shilpa Sonawani}, for their invaluable guidance, mentorship, and encouragement throughout my internship period. Their expertise and insights have greatly contributed to my professional growth.\\
+
+I also appreciate the assistance and cooperation of other executives and officers at IDeaS - A SAS Company who supported me in various aspects of my work. Their insights and experiences helped me gain a deeper understanding of the industry.\\
+
+I am thankful to MIT World Peace University and its esteemed faculty members for their continuous support and encouragement. Their teaching and resources provided a solid foundation for my internship.\\
+
+Finally, I would like to acknowledge all others who contributed in one way or another to the success of this internship. Their help and motivation were vital in completing this work.\\
+
+\begin{abstract}
+    This report summarizes my internship experience at IDeaS - A sas Company from July 1, 2024, to December 31, 2024. During this period, I worked on various projects involving Java, Spring Boot, Angular, and PostgreSQL. My tasks included developing and integrating backend and frontend applications, writing and testing code, processing and normalizing data files, and implementing APIs. I also participated in HR inductions, attended training sessions, and collaborated with team members on code reviews and debugging. This internship provided me with practical experience in full-stack development, enhanced my problem-solving skills, and gave me insights into professional software development practices.
+\end{abstract}
+
+\setcounter{page}{1}
+
+\chapter{Introduction}
+The internship at IDeaS - A SAS Company provided me with an opportunity to work on a variety of projects and tasks that enhanced my technical skills and professional development. This chapter outlines the key aspects of my internship experience, including the projects I worked on, the technologies I used, and the skills I developed.
+
+\section{Overview of the Internship}
+The internship spanned six months, from July 1, 2024, to December 31, 2024. During this period, I was involved in multiple projects, primarily focusing on the development of the Cruise RMS application. My role included both backend and frontend development, as well as database design and data processing.
+
+\section{Projects and Tasks}
+\subsection{Cruise RMS Development}
+The Cruise RMS project was the main focus of my internship. It is a comprehensive revenue management system designed for the cruise industry. My contributions to this project included:
+\begin{itemize}
+    \item \textbf{Backend Development:} Using Spring Boot, I developed RESTful APIs to handle various functionalities such as data retrieval, manipulation, and business logic implementation.
+    \item \textbf{Frontend Development:} I used Angular to create dynamic and interactive user interfaces, ensuring seamless communication with the backend services.
+    \item \textbf{Database Design:} I designed and implemented the database schema using PostgreSQL, ensuring data normalization, integrity, and performance.
+    \item \textbf{Data Processing:} I processed and normalized data files, including the All-Cabins file and the raw out-of-order cabin file, to ensure accurate and efficient data handling.
+    \item \textbf{Integration with OpenAPI and Swagger:} I integrated the APIs with OpenAPI and Swagger for documentation and testing purposes.
+    \item \textbf{Demand Forecasting APIs:} I implemented APIs for demand forecasting, which involved complex calculations and data processing.
+    \item \textbf{Bug Fixes and Performance Improvements:} I worked on fixing bugs and improving the performance of the application. This involved profiling the application, identifying bottlenecks, and optimizing the code.
+\end{itemize}
+
+\subsection{Additional Tasks and Responsibilities}
+\begin{itemize}
+    \item \textbf{Onboarding New Team Members:} I assisted in onboarding new team members, explaining the project structure, and helping them set up their development environments.
+    \item \textbf{Code Reviews and Pull Requests:} Participated in code reviews and submitted pull requests for my work, ensuring code quality and facilitating knowledge sharing within the team.
+    \item \textbf{Continuous Integration and Deployment (CI/CD):}Worked with CI/CD pipelines to automate the build and deployment process, ensuring that the application was always in a deployable state.
+\end{itemize}
+
+\section{Technologies Used}
+Throughout the internship, I worked with several modern technologies and frameworks, including:
+\begin{itemize}
+    \item \textbf{Java and Spring Boot:} For backend development, creating RESTful APIs, and managing application configuration.
+    \item \textbf{Angular:} For frontend development, creating interactive user interfaces, and ensuring smooth communication with the backend.
+    \item \textbf{PostgreSQL:} For database design and implementation, writing complex queries, and ensuring data integrity.
+    \item \textbf{OpenAPI and Swagger:} For API documentation and testing, making it easier for developers to understand and use the APIs.
+    \item \textbf{Docker:} For containerization and managing development environments.
+    \item \textbf{JUnit} For writing unit and integration tests to ensure code reliability and correctness.
+\end{itemize}
+
+\section{Skills Developed}
+The internship provided me with valuable hands-on experience and helped me develop several key skills:
+\begin{itemize}
+    \item \textbf{Full-Stack Development:} Gained proficiency in both backend and frontend development using Spring Boot and Angular.
+    \item \textbf{Agile Methodologies:} Learned to work in an agile environment, participating in planning meetings, code reviews, and iterative development.
+    \item \textbf{Problem-Solving:} Enhanced my problem-solving skills by tackling real-world challenges related to data processing, API development, and performance optimization.
+    \item \textbf{Team Collaboration:} Experienced the benefits of team collaboration and knowledge sharing through code reviews, pair programming, and knowledge transfer sessions.
+    \item \textbf{Debugging and Troubleshooting:} Developed strong debugging and troubleshooting skills, resolving complex issues in both backend and frontend code.
+    \item \textbf{CI/CD Pipelines:} Gained experience in managing CI/CD pipelines to automate the build and deployment process.
+\end{itemize}
+
+Overall, the internship at IDeaS was a highly enriching experience that provided me with practical knowledge and skills in full-stack development, professional software development practices, and team collaboration.
+
+The subsequent chapters will detail the methodology used in this analysis, the results obtained, and the implications of these findings for the field of cybersecurity.
+
+\chapter{Review of Literature}
+During my internship at IDeaS, I worked extensively with several modern technologies and frameworks that are widely used in enterprise software development:
+\section{Java and Spring Boot}
+Spring Boot is an open-source Java-based framework used to create microservices. It provides a comprehensive programming and configuration model for modern Java-based enterprise applications. During my internship, I utilized Spring Boot to develop backend services for the Cruise RMS project. This involved:
+\begin{itemize}
+    \item \textbf{Creating RESTful APIs:} Developed endpoints for data retrieval, manipulation, and business logic implementation.
+    \item \textbf{Dependency Management:} Used Spring Boot's dependency management to simplify the inclusion of necessary libraries and frameworks.
+    \item \textbf{Configuration:} Configured the application for different environments (development, testing, production) using Spring Boot's configuration properties.
+    \item \textbf{Security:} Implemented security features such as authentication and authorization using Spring Security.
+    \item \textbf{Integration with Databases:} Connected to PostgreSQL and other databases using Spring Data JPA.
+\end{itemize}
+
+\section{Angular}
+Angular is a TypeScript-based web application framework led by Google. It provides a robust structure for creating dynamic single-page applications with features like two-way data binding and dependency injection. I used Angular to develop the frontend of the Cruise RMS project, which included:
+\begin{itemize}
+    \item \textbf{Component-Based Architecture:} Developed reusable components to build the user interface.
+    \item \textbf{Data Binding:} Utilized two-way data binding to synchronize data between the model and the view.
+    \item \textbf{Services and Dependency Injection:} Created services to handle business logic and data retrieval, and used dependency injection to manage service instances.
+    \item \textbf{Routing:} Implemented client-side routing to navigate between different views of the application.
+    \item \textbf{HTTP Client:} Used Angular's HTTP client to communicate with backend APIs.
+\end{itemize}
+
+\section{PostgreSQL}
+PostgreSQL is an advanced, enterprise-class open-source relational database that supports both SQL and JSON querying. I used PostgreSQL to design and implement the database schema for the Cruise RMS project. This involved:
+\begin{itemize}
+    \item \textbf{Schema Design:} Designed tables, relationships, and constraints to ensure data integrity.
+    \item \textbf{Data Normalization:} Normalized data to reduce redundancy and improve database efficiency.
+    \item \textbf{Complex Queries:} Wrote complex SQL queries to retrieve and manipulate data.
+    \item \textbf{Indexing:} Created indexes to improve query performance.
+    \item \textbf{Backup and Recovery:} Implemented backup and recovery strategies to protect data.
+\end{itemize}
+
+\section{Docker}
+Docker is a platform for developing, shipping, and running applications in containers. I used Docker to manage development environments and ensure consistency across different stages of the development process. This included:
+\begin{itemize}
+    \item \textbf{Containerization:} Containerized the application and its dependencies to ensure consistency across different environments.
+    \item \textbf{Docker Compose:} Used Docker Compose to define and run multi-container Docker applications.
+    \item \textbf{Environment Management:} Managed different environments (development, testing, production) using Docker.
+    \item \textbf{CI/CD Integration:} Integrated Docker with CI/CD pipelines to automate the build and deployment process.
+\end{itemize}
+
+\section{OpenAPI and Swagger}
+OpenAPI and Swagger are tools for API documentation and testing. I used these tools to document the APIs developed during the internship, making it easier for developers to understand and use the APIs. This involved:
+\begin{itemize}
+    \item \textbf{API Documentation:} Generated comprehensive API documentation using OpenAPI specifications.
+    \item \textbf{Interactive API Console:} Provided an interactive console for testing APIs using Swagger UI.
+    \item \textbf{Code Generation:} Used Swagger Codegen to generate client libraries and server stubs.
+    \item \textbf{API Testing:} Tested APIs using Swagger's built-in tools to ensure they met the required specifications.
+\end{itemize}
+
+\chapter{Methodology}
+\section{Initial Phase (Weeks 1-4)}
+\begin{itemize}
+    \item \textbf{Onboarding and HR Induction:} The first week involved onboarding activities, including HR induction and setting up necessary accounts and access.
+    \item \textbf{Learning the Technology Stack:} I spent time understanding the technology stack used in the Cruise RMS project, including Spring Boot, Angular, and PostgreSQL.
+    \item \textbf{Building a Demo Project:} I built a demo project to familiarize myself with the technologies. This involved creating a simple Spring Boot application with an Angular frontend.
+    \item \textbf{Understanding the Cruise RMS Codebase:} I explored the existing codebase of the Cruise RMS project to understand its architecture and design patterns.
+\end{itemize}
+
+\section{Core Development Phase (Weeks 5-12)}
+\begin{itemize}
+    \item \textbf{Data Processing and Normalization:} I worked on processing and normalizing data files, including the All-Cabins file and the raw out-of-order cabin file. This involved writing scripts to clean and transform the data.
+    \item \textbf{Database Schema Design and Implementation:} I designed and implemented the database schema for the Cruise RMS project. This included creating tables, defining relationships, and writing SQL queries.
+    \item \textbf{Development of APIs and Services:} I developed various APIs and services using Spring Boot. This included creating endpoints for data retrieval and manipulation, as well as implementing business logic.
+    \item \textbf{Writing Test Cases and Fixing Build Issues:} I wrote comprehensive test cases to ensure the correctness of the code. I also fixed build issues and ensured that the application was always in a deployable state.
+\end{itemize}
+
+\section{Advanced Phase (Weeks 13-16)}
+\begin{itemize}
+    \item \textbf{Implementation of Demand Forecasting APIs:} I implemented APIs for demand forecasting, which involved complex calculations and data processing.
+    \item \textbf{Integration with OpenAPI and Swagger:} I integrated the APIs with OpenAPI and Swagger for documentation and testing purposes.
+    \item \textbf{Knowledge Transfer and Team Collaboration:} I conducted knowledge transfer sessions and collaborated with team members on various tasks. This included code reviews, pair programming, and debugging sessions.
+    \item \textbf{Bug Fixes and Performance Improvements:} I worked on fixing bugs and improving the performance of the application. This involved profiling the application, identifying bottlenecks, and optimizing the code.
+\end{itemize}
+
+\chapter{Interpretation}
+The internship provided valuable insights into:
+\begin{itemize}
+    \item \textbf{Enterprise Software Development Practices:} I gained hands-on experience with industry-standard practices, including agile methodologies, CI/CD pipelines, and code reviews.
+    \item \textbf{Agile Methodologies and Team Collaboration:} I learned the importance of agile methodologies in managing and delivering software projects. I also experienced the benefits of team collaboration and knowledge sharing.
+    \item \textbf{Code Quality and Testing Importance:} I understood the significance of writing clean, maintainable code and the role of testing in ensuring code quality. Writing comprehensive test cases helped me identify and fix issues early in the development process.
+    \item \textbf{Database Design and Optimization:} I learned how to design and optimize database schemas for performance and scalability. This included normalizing data, writing efficient queries, and indexing.
+    \item \textbf{API Development and Documentation:} I gained experience in developing and documenting APIs using Spring Boot and OpenAPI/Swagger. This included designing endpoints, implementing business logic, and generating API documentation.
+\end{itemize}
+
+\chapter{Conclusions and Recommendations}
+The internship at IDeaS was highly beneficial in gaining practical experience in:
+\begin{itemize}
+    \item \textbf{Full-Stack Development Using Modern Technologies:} I developed skills in both backend and frontend development using Spring Boot and Angular. This included creating RESTful APIs, developing user interfaces, and integrating the two.
+    \item \textbf{Professional Software Development Practices:} I learned industry-standard practices, including agile methodologies, CI/CD pipelines, and code reviews. These practices helped me deliver high-quality software efficiently.
+    \item \textbf{Team Collaboration and Knowledge Sharing:} I experienced the benefits of team collaboration and knowledge sharing. This included participating in code reviews, pair programming, and knowledge transfer sessions.
+    \item \textbf{Problem-Solving in a Real-World Environment:} I developed problem-solving skills by working on real-world projects and facing challenges related to data processing, API development, and performance optimization.
+\end{itemize}
+
+\chapter{Suggestions for Future Work}
+Future work could focus on:
+\begin{itemize}
+    \item \textbf{Further Optimization of Data Processing Algorithms:} Optimizing data processing algorithms to improve performance and scalability. This could involve parallel processing, caching, and other optimization techniques.
+    \item \textbf{Enhanced Test Coverage and Automation:} Increasing test coverage and automating tests to ensure the reliability and correctness of the code. This could involve writing more unit and integration tests.
+    \item \textbf{Implementation of Additional Features in Demand Forecasting:} Adding more features to the demand forecasting module, such as advanced analytics, machine learning models, and real-time data processing.
+    \item \textbf{Improved Documentation and API Specifications:} Enhancing the documentation and API specifications to make it easier for developers to understand and use the APIs. This could involve generating detailed API documentation, providing examples, and improving the overall readability of the documentation.
+\end{itemize}
+
+\chapter{Appendix}
+
+\begin{thebibliography}{9}
+
+\bibitem{java}
+Java. \textit{Oracle}. Retrieved from \url{https://www.oracle.com/java/}
+
+\bibitem{springboot}
+Spring Boot. \textit{Spring.io}. Retrieved from \url{https://spring.io/projects/spring-boot}
+
+\bibitem{angular}
+Angular. \textit{Angular.io}. Retrieved from \url{https://angular.io/}
+
+\bibitem{postgresql}
+PostgreSQL. \textit{PostgreSQL.org}. Retrieved from \url{https://www.postgresql.org/}
+
+\end{thebibliography}
+
+
+\end{document}
