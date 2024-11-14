@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.15)  15 NOV 2024 02:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.15)  15 NOV 2024 02:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -653,16 +653,16 @@ LaTeX Font Info:    Font shape `T1/fnc/b/sc' will be
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 16.07027pt on input line 107.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 13.39188pt on input line 113.
+(Font)              scaled to size 13.39188pt on input line 109.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 13.39188pt on input line 114.
+(Font)              scaled to size 13.39188pt on input line 110.
  [1
 
 {C:/Users/Krishnaraj/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Krishnaraj/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./logo.jpg>]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 23.13821pt on input line 134.
+(Font)              scaled to size 23.13821pt on input line 138.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 23.13821pt on input line 134.
+(Font)              scaled to size 23.13821pt on input line 138.
  (report.toc
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 10.18341pt on input line 1.
@@ -702,20 +702,10 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.137 \clearpage
+l.141 \clearpage
                  [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
@@ -730,6 +720,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+
+ []
+
 [2
 
 
@@ -737,33 +737,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 149--150
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.153 \end{abstract}
+l.157 \end{abstract}
                      [1]
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 19.28804pt on input line 157.
+(Font)              scaled to size 19.28804pt on input line 161.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 11.15991pt on input line 164.
+(Font)              scaled to size 11.15991pt on input line 168.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 11.15991pt on input line 164.
-LaTeX Font Info:    Trying to load font information for TS1+fnc on input line 167.
+(Font)              scaled to size 11.15991pt on input line 168.
+LaTeX Font Info:    Trying to load font information for TS1+fnc on input line 171.
 (C:\Users\Krishnaraj\AppData\Local\Programs\MiKTeX\tex/latex/fouriernc\ts1fnc.fd
 File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
 )
 LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 167.
+(Font)              scaled to size 10.18341pt on input line 171.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.174 \end{itemize}
+l.178 \end{itemize}
                     [1
 
 ]
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 202.
+(Font)              scaled to size 10.18341pt on input line 206.
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 13.39188pt on input line 202.
+(Font)              scaled to size 13.39188pt on input line 206.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -776,7 +776,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.202     \item \textbf
+l.206     \item \textbf
                        {CI/CD Pipelines:} Gained experience in managing CI/C... [2]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -820,7 +820,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [8]
 Chapter 4.
 
-Overfull \hbox (1.80573pt too wide) in paragraph at lines 290--291
+Overfull \hbox (1.80573pt too wide) in paragraph at lines 294--295
 []\T1/fnc/b/n/10.95 Database De-sign and Op-ti-miza-tion: \T1/fnc/m/n/10.95 I learned how to de-sign and op-ti-mize database schemas
  []
 
@@ -839,7 +839,7 @@ Chapter 7.
 [12
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 317.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 321.
  (C:\Users\Krishnaraj\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ) [13
@@ -855,13 +855,13 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 Here is how much of TeX's memory you used:
  13247 strings out of 474424
  203247 string characters out of 5739379
- 1936496 words of memory out of 5000000
+ 1935496 words of memory out of 5000000
  35335 multiletter control sequences out of 15000+600000
  611997 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,79p,820b,536s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,820b,532s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Krishnaraj\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk><C:/Users/Krishnaraj/AppData/Local/Programs/MiKTeX/fonts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Users/Krishnaraj/AppData/Local/Programs/MiKTeX/fonts/type1/urw/ncntrsbk/uncr8a.pfb><C:/Users/Krishnaraj/AppData/Local/Programs/MiKTeX/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on report.pdf (17 pages, 138972 bytes).
+Output written on report.pdf (17 pages, 139295 bytes).
 PDF statistics:
  249 PDF objects out of 1000 (max. 8388607)
  42 named destinations out of 1000 (max. 500000)
