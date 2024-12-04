@@ -10,3 +10,4 @@ file 'file:C:/Users/Krishnaraj/Downloads/pathfinders ppt/anim/media/videos/anim/
 file 'file:C:/Users/Krishnaraj/Downloads/pathfinders ppt/anim/media/videos/anim/1080p60/partial_movie_files/Curiosity/uncached_00008.mp4'
 file 'file:C:/Users/Krishnaraj/Downloads/pathfinders ppt/anim/media/videos/anim/1080p60/partial_movie_files/Curiosity/uncached_00009.mp4'
 file 'file:C:/Users/Krishnaraj/Downloads/pathfinders ppt/anim/media/videos/anim/1080p60/partial_movie_files/Curiosity/uncached_00010.mp4'
+file 'file:C:/Users/Krishnaraj/Downloads/pathfinders ppt/anim/media/videos/anim/1080p60/partial_movie_files/Curiosity/uncached_00011.mp4'
