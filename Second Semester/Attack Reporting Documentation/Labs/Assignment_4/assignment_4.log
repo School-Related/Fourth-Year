@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.24)  24 FEB 2025 17:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.24)  24 FEB 2025 17:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex"
-(p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex
+**"p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_4/assignment_4.tex"
+(p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_4/assignment_4.tex
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-12-09>
 (C:\Users\Krishnaraj\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -539,9 +539,8 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count324
 \l__pdf_internal_box=\box58
-)
-No file assignment_3.aux.
-\openout1 = `assignment_3.aux'.
+) (assignment_4.aux)
+\openout1 = `assignment_4.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
 LaTeX Font Info:    ... okay on input line 57.
@@ -559,7 +558,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
 LaTeX Font Info:    ... okay on input line 57.
 LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 57.
 LaTeX Font Info:    Trying to load font information for FML+fncmi on input line 57.
-(C:\Users\Krishnaraj\AppData\Local\Programs\MiKTeX\tex/latex/fouriernc\fmlfncmi.fd
+ (C:\Users\Krishnaraj\AppData\Local\Programs\MiKTeX\tex/latex/fouriernc\fmlfncmi.fd
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
 LaTeX Font Info:    ... okay on input line 57.
@@ -637,8 +636,9 @@ LaTeX Font Info:    Redeclaring math accent \widehat on input line 57.
 LaTeX Font Info:    Redeclaring math accent \widetilde on input line 57.
 \c@lstlisting=\count331
 Package hyperref Info: Link coloring ON on input line 57.
+ (assignment_4.out) (assignment_4.out)
 \@outlinefile=\write3
-\openout3 = `assignment_3.out'.
+\openout3 = `assignment_4.out'.
 
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 19.28804pt on input line 64.
@@ -657,10 +657,40 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 {C:/Users/Krishnaraj/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Krishnaraj/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 13.39188pt on input line 116.
-
-No file assignment_3.toc.
+ (assignment_4.toc
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 10.18341pt on input line 1.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 7.71893pt on input line 2.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 5.57996pt on input line 2.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 2.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 2.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+ (C:\Users\Krishnaraj\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+ (C:\Users\Krishnaraj\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for FML+fncm on input line 2.
+ (C:\Users\Krishnaraj\AppData\Local\Programs\MiKTeX\tex/latex/fouriernc\fmlfncm.fd
+File: fmlfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncm.
+)
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 2.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 2.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 2.
+)
 \tf@toc=\write4
-\openout4 = `assignment_3.toc'.
+\openout4 = `assignment_4.toc'.
 
 
 
@@ -670,72 +700,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
                    \relax 
 l.118 \clearpage
                  [1]
-
-LaTeX Warning: File `img/wireshark/wireshark_0.jpg' not found on input line 129.
-
-
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex:129: Package pdftex.def Error: File `img/wireshark/wireshark_0.jpg' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.129 ...textwidth]{img/wireshark/wireshark_0.jpg}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 11.15991pt on input line 133.
+(Font)              scaled to size 11.15991pt on input line 125.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 11.15991pt on input line 133.
-LaTeX Font Info:    Trying to load font information for TS1+fnc on input line 135.
-(C:\Users\Krishnaraj\AppData\Local\Programs\MiKTeX\tex/latex/fouriernc\ts1fnc.fd
-File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
-)
-LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 135.
-LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 10.18341pt on input line 135.
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.71893pt on input line 135.
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 5.57996pt on input line 135.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 135.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 135.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 135.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 135.
- (C:\Users\Krishnaraj\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 135.
- (C:\Users\Krishnaraj\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for FML+fncm on input line 135.
- (C:\Users\Krishnaraj\AppData\Local\Programs\MiKTeX\tex/latex/fouriernc\fmlfncm.fd
-File: fmlfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncm.
-)
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 135.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 135.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 135.
-
-Overfull \hbox (5.33112pt too wide) in paragraph at lines 136--137
-[]\T1/fnc/b/n/10.95 Dependencies: \T1/fnc/m/n/10.95 Wire-shark may re-quire the in-stal-la-tion of Win-Pcap (Win-dows), libp-cap (Linux),
- []
-
+(Font)              scaled to size 11.15991pt on input line 125.
 
 
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 137.
+(Font)              scaled to size 10.18341pt on input line 127.
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 13.39188pt on input line 137.
+(Font)              scaled to size 13.39188pt on input line 127.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -747,42 +721,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.137 \end{itemize}
-                    [1
+l.127 \clearpage
+                 [1
 
 ]
 
-LaTeX Warning: File `assignment 8 (1).png' not found on input line 165.
-
-
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex:165: Package pdftex.def Error: File `assignment 8 (1).png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.165 ...dth=0.99\textwidth]{assignment 8 (1).png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `assignment 8 (3).png' not found on input line 170.
-
-
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex:170: Package pdftex.def Error: File `assignment 8 (3).png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.170 ...dth=0.99\textwidth]{assignment 8 (3).png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.93642pt, for example:
@@ -790,762 +733,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[2]
+[2
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[3]
-
-LaTeX Warning: File `assignment 8 (2).png' not found on input line 176.
-
-
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex:176: Package pdftex.def Error: File `assignment 8 (2).png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.176 ...dth=0.99\textwidth]{assignment 8 (2).png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[4]
-
-LaTeX Warning: File `img/wireshark/wireshark_8.jpg' not found on input line 183.
-
-
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex:183: Package pdftex.def Error: File `img/wireshark/wireshark_8.jpg' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.183 ...textwidth]{img/wireshark/wireshark_8.jpg}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[5]
-
-LaTeX Warning: File `img/wireshark/wireshark_9.jpg' not found on input line 189.
-
-
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex:189: Package pdftex.def Error: File `img/wireshark/wireshark_9.jpg' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.189 ...textwidth]{img/wireshark/wireshark_9.jpg}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[6]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[7]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[8]
-
-LaTeX Warning: File `ifconfig.png' not found on input line 249.
-
-
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex:249: Package pdftex.def Error: File `ifconfig.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.249 ...aphics[width=0.8\textwidth]{ifconfig.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[9]
-
-LaTeX Warning: File `nmap ip.png' not found on input line 272.
-
-
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex:272: Package pdftex.def Error: File `nmap ip.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.272 ...raphics[width=0.8\textwidth]{nmap ip.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `nmap google.png' not found on input line 295.
-
-
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex:295: Package pdftex.def Error: File `nmap google.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.295 ...ics[width=0.8\textwidth]{nmap google.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[10]
-
-LaTeX Warning: File `scan ip range 1.png' not found on input line 318.
-
-
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex:318: Package pdftex.def Error: File `scan ip range 1.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.318 ...width=0.8\textwidth]{scan ip range 1.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `scan ip range 2.png' not found on input line 324.
-
-
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex:324: Package pdftex.def Error: File `scan ip range 2.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.324 ...width=0.8\textwidth]{scan ip range 2.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[11]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[12]
-
-LaTeX Warning: File `nmap single port.png' not found on input line 347.
-
-
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex:347: Package pdftex.def Error: File `nmap single port.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.347 ...idth=0.8\textwidth]{nmap single port.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[13]
-
-LaTeX Warning: File `nmap range of ports.png' not found on input line 370.
-
-
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex:370: Package pdftex.def Error: File `nmap range of ports.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.370 ...h=0.8\textwidth]{nmap range of ports.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[14]
-
-LaTeX Warning: File `nmap fragmented scan of 100 common ports.png' not found on input line 393.
-
-
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex:393: Package pdftex.def Error: File `nmap fragmented scan of 100 common ports.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.393 ... fragmented scan of 100 common ports.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[15]
-
-LaTeX Warning: File `nmap tcp syn.png' not found on input line 416.
-
-
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex:416: Package pdftex.def Error: File `nmap tcp syn.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.416 ...cs[width=0.8\textwidth]{nmap tcp syn.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[16]
-
-LaTeX Warning: File `nmap example os.png' not found on input line 439.
-
-
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex:439: Package pdftex.def Error: File `nmap example os.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.439 ...width=0.8\textwidth]{nmap example os.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[17]
-
-LaTeX Warning: File `nmap os host.png' not found on input line 446.
-
-
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex:446: Package pdftex.def Error: File `nmap os host.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.446 ...cs[width=0.8\textwidth]{nmap os host.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[18]
-
-LaTeX Warning: File `with ping scan.png' not found on input line 468.
-
-
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex:468: Package pdftex.def Error: File `with ping scan.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.468 ...[width=0.8\textwidth]{with ping scan.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[19]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[20]
-
-LaTeX Warning: File `without ping scan.png' not found on input line 507.
-
-
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex:507: Package pdftex.def Error: File `without ping scan.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.507 ...dth=0.8\textwidth]{without ping scan.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `timing templates.png' not found on input line 517.
-
-
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex:517: Package pdftex.def Error: File `timing templates.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.517 ...idth=.95\textwidth]{timing templates.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[21]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[22]
-
-LaTeX Warning: File `t5.png' not found on input line 545.
-
-
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex:545: Package pdftex.def Error: File `t5.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.545 ...ludegraphics[width=0.9\textwidth]{t5.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `t4.png' not found on input line 551.
-
-
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex:551: Package pdftex.def Error: File `t4.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.551 ...ludegraphics[width=0.9\textwidth]{t4.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[23]
-
-LaTeX Warning: File `t3.png' not found on input line 557.
-
-
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex:557: Package pdftex.def Error: File `t3.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.557 ...ludegraphics[width=0.9\textwidth]{t3.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[24]
-
-LaTeX Warning: File `t2.png' not found on input line 563.
-
-
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex:563: Package pdftex.def Error: File `t2.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.563 ...ludegraphics[width=0.9\textwidth]{t2.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[25]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[26]
-
-LaTeX Warning: File `vuln.png' not found on input line 588.
-
-
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex:588: Package pdftex.def Error: File `vuln.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.588 ...degraphics[width=0.9\textwidth]{vuln.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `vuln 2.png' not found on input line 594.
-
-
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex:594: Package pdftex.def Error: File `vuln 2.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.594 ...graphics[width=0.9\textwidth]{vuln 2.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[27]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[28]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[29]
-
-LaTeX Warning: File `arp scan.png' not found on input line 657.
-
-
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex:657: Package pdftex.def Error: File `arp scan.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.657 ...aphics[width=0.8\textwidth]{arp scan.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[30]
-
-LaTeX Warning: File `icmp scan.png' not found on input line 681.
-
-
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex:681: Package pdftex.def Error: File `icmp scan.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.681 ...phics[width=0.8\textwidth]{icmp scan.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[31]
-
-LaTeX Warning: File `tcp scan.png' not found on input line 704.
-
-
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex:704: Package pdftex.def Error: File `tcp scan.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.704 ...aphics[width=0.8\textwidth]{tcp scan.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[32]
-
-LaTeX Warning: File `udp scan.png' not found on input line 728.
-
-
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_3/assignment_3.tex:728: Package pdftex.def Error: File `udp scan.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.728 ...aphics[width=0.8\textwidth]{udp scan.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[33]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[34]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.93642pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.93642pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
-
-[35
-
-] (assignment_3.aux)
+] (assignment_4.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-12-09>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `assignment_3.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `assignment_3.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  99FD86B502A4716243422F9A12AD9095;6703.
+Package rerunfilecheck Info: File `assignment_4.out' has not changed.
+(rerunfilecheck)             Checksum: 973E450829649821542532E50206C0F0;276.
  ) 
 Here is how much of TeX's memory you used:
- 14528 strings out of 473574
- 234001 string characters out of 5713718
- 613529 words of memory out of 5000000
- 37320 multiletter control sequences out of 15000+600000
- 601672 words of font info for 87 fonts, out of 8000000 for 9000
+ 13419 strings out of 473574
+ 207400 string characters out of 5713718
+ 607670 words of memory out of 5000000
+ 36388 multiletter control sequences out of 15000+600000
+ 601362 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,79p,1049b,611s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,367b,530s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Krishnaraj\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk><C:/Users/Krishnaraj/AppData/Local/Programs/MiKTeX/fonts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Users/Krishnaraj/AppData/Local/Programs/MiKTeX/fonts/type1/urw/ncntrsbk/uncr8a.pfb><C:/Users/Krishnaraj/AppData/Local/Programs/MiKTeX/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on assignment_3.pdf (37 pages, 131297 bytes).
+Output written on assignment_4.pdf (4 pages, 52302 bytes).
 PDF statistics:
- 431 PDF objects out of 1000 (max. 8388607)
- 189 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 77 PDF objects out of 1000 (max. 8388607)
+ 8 named destinations out of 1000 (max. 500000)
+ 25 words of extra memory for PDF output out of 10000 (max. 10000000)
 
