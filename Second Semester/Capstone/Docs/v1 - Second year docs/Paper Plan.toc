@@ -1,0 +1,9 @@
+\contentsline {section}{\numberline {1}Title of the Project}{1}{}%
+\contentsline {section}{\numberline {2}Faculty Mentor}{1}{}%
+\contentsline {section}{\numberline {3}Details of Group}{1}{}%
+\contentsline {section}{\numberline {4}Reference Journals / Conference Papers Related to Work}{1}{}%
+\contentsline {section}{\numberline {5}Project Details and Objectives}{1}{}%
+\contentsline {section}{\numberline {6}Resources Required}{1}{}%
+\contentsline {section}{\numberline {7}Detailed Project Description}{1}{}%
+\contentsline {section}{\numberline {8}Market Survey}{2}{}%
+\contentsline {section}{References}{3}{}%

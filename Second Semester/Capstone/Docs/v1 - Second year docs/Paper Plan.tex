@@ -1,0 +1,197 @@
+% This is a basic Math Paper
+
+\documentclass[11pt]{article}
+
+% Preamble
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsfonts, amsmath, amssymb}
+\usepackage{fancyhdr, float, graphicx}
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{fouriernc} % Use the New Century Schoolbook font
+\usepackage[nottoc, notlot, notlof]{tocbibind}
+\usepackage{graphics, lscape}
+\usepackage{float}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\textit{\Large{Project Paper Plan}}}
+%\fancyhead[R]{\textit{something}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{1pt}
+\usepackage{lipsum}
+\newcommand\signature[2]{% Name; Department
+\noindent\begin{minipage}{3cm}
+    \noindent\vspace{3cm}\par
+    \noindent\rule{3cm}{1pt}\par
+    \noindent\textbf{#1}\par
+    \noindent#2%
+\end{minipage}}
+\newcommand\insertdate[1][\today]{\vfill\begin{flushright}#1\end{flushright}}
+
+
+
+
+% Other Doc Editing
+% \parindent 0ex
+%\renewcommand{\baselinestretch}{1.5}
+
+\begin{document}
+
+\begin{titlepage}
+	\centering
+
+	%---------------------------NAMES-------------------------------
+
+	\huge\textsc{
+		MIT World Peace University
+	}\\
+
+	\vspace{0.75\baselineskip} % space after Uni Name
+
+	\LARGE{
+		Cyber Security and Forensics\\
+		Second Year B. Tech, Semester 3
+	}
+
+	\vfill % space after Sub Name
+
+	%--------------------------TITLE-------------------------------
+
+	\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+	\rule{\textwidth}{0.6pt}
+	\vspace{0.75\baselineskip} % Whitespace above the title
+
+
+
+	\huge{\textsc{
+			Attendance Automation Assistant
+		}} \\
+
+
+
+	\vspace{0.5\baselineskip} % Whitespace below the title
+	\rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
+	\rule{\textwidth}{1.6pt}
+
+	\vspace{1\baselineskip} % Whitespace after the title block
+
+	%--------------------------SUBTITLE --------------------------	
+
+	\LARGE\textsc{
+		Paper Plan
+	} % Subtitle or further description
+	\vfill
+
+	%--------------------------AUTHOR-------------------------------
+
+	Prepared By
+	\vspace{0.5\baselineskip} % Whitespace before the editors
+
+	\Large{
+		Krishnaraj Thadesar \\
+		CSF, PA34 \\
+		Saubhagya Singh\\
+		CSF, PA40
+	}
+
+
+	\vspace{0.5\baselineskip} % Whitespace below the editor list
+	\today
+
+\end{titlepage}
+
+
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+
+
+\setcounter{page}{1}
+
+\section{Title of the Project}
+\textit{\Large{"Attendance Automation Assistant"}}
+
+\section{Faculty Mentor}
+\textit{\Large{Prof. Jyoti Navghare}}
+
+\section{Details of Group}
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[H]
+	\centering
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|l|l|l|l|l|}
+			\hline
+			\textbf{Sr No} & \textbf{Name of Student} & \textbf{Year - School} & \textbf{Email Address}     & \textbf{Mobile Number} \\ \hline
+			1              & Krishnaraj Thadesar      & SY - School of CSE     & kpt.krishnaraj@gmail.com   & 9834312135             \\ \hline
+			2              & Saubhagya Singh          & SY - School of CSE     & Saubhagyasingh65@gmail.com & 7007084088             \\ \hline
+		\end{tabular}%
+	}
+	\label{tab:my-table}
+\end{table}
+
+\section{Reference Journals / Conference Papers Related to Work}
+\begin{enumerate}
+    \item Fast Facial Recognition System
+    Hlaing Htake Khaung Tin, Myint Myint Sein \cite{1}
+    \item Setta, S., Sinha, S., Mishra, M., Choudhury, P. (2022). Real-Time Facial Recognition Using SURF-FAST \cite{2}
+\end{enumerate}
+
+
+\section{Project Details and Objectives}
+\begin{enumerate}
+    \item To Make taking Attendance Easier for Teachers across the University
+    \item To Avoid proxies given by students. 
+    \item To Reduce Time and Effort expended by teachers during classes. 
+\end{enumerate}
+
+
+\section{Resources Required}
+Further Research Pending to determine resources required. But as of now, No special resources are required. Upon integration with ERP, we may need to acquire certain licenses for web interface and communication. 
+
+\section{Detailed Project Description}
+\begin{enumerate}
+    \item Cameras in our Smartphones are getting better and better each day. This technology has tremendous potential, that is being explored to its limits by AR and VR integration in smartphones. We aim to use this advancement in Camera technology, and the fact that everyone has a smartphone with a good camera now a days, to make the process of taking attendance in classes easier for teachers. 
+    \item The Idea would be for the teacher to open the app, point to camera at the entire class for around 5 to 10 seconds, or just take 2 or 3 clear photos of sections of the class on the spot, and a backend algorithm would then process those images using Facial Recognition, and Identify the presenties. 
+    \item Images would be cross referenced against the latest images of the students. 
+    \item Within a minute of processing, the App would show the teacher every person that is present, and give the option to add or modify the table to account for errors. 
+    \item They would then be able to save the records as a csv file, or in our case, if possible, directly upload the results to our ERP. 
+    \item The videos or images taken on the spot would have an option to be saved or deleted for further verification depending on the Teachers wishes. 
+    \item Records for Each student in each class would be stored locally, as cloud access would put a limitation on net requirements. Most classrooms do not have active and fast 4G connection, so ideally we would try to localise data and algorthms. 
+\end{enumerate}
+
+\section{Market Survey}
+\begin{enumerate}
+    \item The Market for this Project in its first phase would only be for The teachers in our University
+    \item Upon further Extention, we may provide solutions and integrations with various School ERPs from other universities, and schools. 
+    \item At present there are so solutions of a similar kind. The only other alternative to taking attendance the conventional way, would be to use biometric scanners. 
+    \item Cost offered would be extremely minimal to none, and would therefore be affordable to virtually any school, and perhaps even tuition centers for keeping their records. 
+    \item For any teacher or Faculty wanting to keep attendance of their students, this app could easily export an Excel Sheet for easy to access and use attendance. 
+\end{enumerate}
+
+\vfill
+
+\signature{Submitted By}{Faculty Member}\hfill\signature{Reviewed by}{Expert 1}\hfill\signature{Reviewed by}{Expert 2}\hfill\signature{Reviewed by}{HOS}
+
+
+\pagebreak
+\begin{thebibliography}{}
+
+
+	\bibitem{1}
+        Fast Facial Recognition System
+Hlaing Htake Khaung Tin, Myint Myint Sein 
+\bibitem{2}
+Setta, S., Sinha, S., Mishra, M., Choudhury, P. 2022. Real-Time Facial Recognition Using SURF-FAST. In: Sharma, N., Chakrabarti, A., Balas, V.E., Bruckstein, A.M. eds Data Management, Analytics and Innovation. Lecture Notes on Data Engineering and Communications Technologies, vol 71. Springer, Singapore
+
+
+\end{thebibliography}
+
+
+\end{document}

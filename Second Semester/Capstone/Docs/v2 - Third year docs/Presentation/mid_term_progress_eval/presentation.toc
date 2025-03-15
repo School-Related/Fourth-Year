@@ -1,0 +1,11 @@
+\beamer@sectionintoc {1}{Status Overview}{3}{0}{1}
+\beamer@sectionintoc {2}{Frontend Technologies}{4}{0}{2}
+\beamer@sectionintoc {3}{Frontend Drafts}{7}{0}{3}
+\beamer@sectionintoc {4}{Frontend Work Remaining}{10}{0}{4}
+\beamer@sectionintoc {5}{Backend Technologies}{11}{0}{5}
+\beamer@sectionintoc {6}{Backend Drafts}{17}{0}{6}
+\beamer@sectionintoc {7}{Backend Work Done}{18}{0}{7}
+\beamer@sectionintoc {8}{Face Recognition Libraries Used}{34}{0}{8}
+\beamer@sectionintoc {9}{Training Data}{36}{0}{9}
+\beamer@sectionintoc {10}{Preliminary Results}{41}{0}{10}
+\beamer@sectionintoc {11}{Backend Work Remaining}{42}{0}{11}

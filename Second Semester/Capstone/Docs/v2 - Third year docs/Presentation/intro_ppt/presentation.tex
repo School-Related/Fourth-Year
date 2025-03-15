@@ -1,0 +1,182 @@
+\documentclass[aspectratio=169]{beamer}
+% \usepackage{amsfonts, amsmath, amssymb, amsthm}
+% \usepackage{fancyhdr, float, graphicx}
+% \usepackage[utf8]{inputenc} % Required for inputting international characters
+% \usepackage[T1]{fontenc} % Output font encoding for international characters
+% \usepackage{fouriernc} % Use the New Century Schoolbook font
+% \usepackage[nottoc, notlot, notlof]{tocbibind}
+% \usepackage{listings}
+% \usepackage{xcolor}
+% \usepackage{blindtext}
+\usepackage{multicol}
+% \usepackage{hyperref}
+% Theme
+% good themes are Singapore, CambridgeUS, Boadilla 
+\usetheme{Boadilla}
+% good color themes are seahorse, crane, beaver, dolphin, lily
+\usecolortheme{beaver}
+
+\renewcommand{\familydefault}{\rmdefault}
+
+% Title page
+\title{Presentation Title}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\begin{frame}
+	\frametitle{Content}
+	\tableofcontents
+\end{frame}
+
+\section{Introduction}
+\begin{frame}
+	\centering
+	\frametitle{Introduction}
+	\begin{minipage}{0.95\textwidth}
+
+		The "Attendance Assistant" presents a forward-thinking solution for revolutionizing conventional attendance tracking in educational settings. Integrating cloud services such as Amazon S3, Amazon EC2, and Amazon DynamoDB with the official Raspberry Pi High-Quality Camera, the project offers a sophisticated hybrid architecture for efficient and scalable face recognition capabilities.\\
+		\vspace{0.5cm}
+		The "Attendance Assistant" represents a significant leap towards modernizing attendance tracking processes. By adopting a hybrid architecture that blends the strengths of cloud services with edge computing, the project offers flexibility and scalability, catering to the evolving demands of attendance management in educational institutions.
+	\end{minipage}
+\end{frame}
+
+\section{Aim}
+\begin{frame}
+	\centering
+	\frametitle{Aim}
+	\begin{minipage}{0.95\textwidth}
+		Implement an Automated Attendance Tracking System at our Campus using computer vision, cloud infrastructure, and advanced data science techniques. The goal is to streamline attendance management, reduce manual tracking time, and enhance overall efficiency while ensuring security and tamper resistance.
+	\end{minipage}
+\end{frame}
+
+\section{Objectives}
+\begin{frame}
+	\frametitle{Objectives}
+	\centering
+	\begin{minipage}{0.95\textwidth}
+		\begin{enumerate}
+			\item Develop an automated attendance tracking system using computer vision for any organization
+			\item Utilize cloud infrastructure for efficient storage and processing of attendance data.
+			\item Create a user-friendly application for both teachers and students to simplify attendance management.
+			\item Implement advanced data science techniques for processing large attendance datasets and performing analytics.
+			\item Significantly reduce per-class time spent on attendance tracking through automated processes, enhancing overall efficiency.
+			\item Mitigate the risk of malpractices in attendance tracking by implementing secure and tamper-resistant mechanisms.
+		\end{enumerate}
+	\end{minipage}
+\end{frame}
+
+
+\section{Motivation}
+\begin{frame}
+	\frametitle{Motivation}
+	\begin{minipage}{0.95\textwidth}
+		\begin{enumerate}
+			\item Time taken to take attendance is about 5 minutes in each class. That amounts to around 5 times 6 which is 30 minutes wasted each day per class. For 2 CSF, 2 AI, and 1 CSBS, and 8 CSE Panels, 13 panels for CSE alone waste more than 13 x 30 = 390 Minutes, which is more than 6 hours daily, just marking attendance.
+			\item This amounts to 6 Hours * 5 * 4 * 10 = 1200 Hours per year just for CSE (50 Days) or 2 months
+			\item Even after all that time, several more hours are spent on arguments, discussions and manual entry and marking by teachers and students, just for attendance. We do not find this an ideal use of time, and would like to combat this.
+			\item Malpractices still happen despite of all efforts and time spent. Attendance is mismarked by human error as well. We aim to reduce this error.
+		\end{enumerate}
+	\end{minipage}
+
+\end{frame}
+
+
+\section{Problem Statement}
+\begin{frame}
+	\frametitle{Problem Statement}
+  \begin{minipage}{0.95\textwidth}
+
+  Manual attendance tracking at MITWPU Campus is a time-consuming process prone to inefficiencies and potential malpractices. The current system lacks automation, leading to increased per-class time spent on attendance management.
+	\vspace*{0.5cm}
+	To address these challenges, there is a need for the development of an Automated Attendance Tracking System. The solution should leverage computer vision for accurate data capture, utilize cloud infrastructure for efficient storage and processing, and incorporate advanced data science techniques for analytics.
+
+	\vspace*{0.5cm}
+	The system should be user-friendly, providing both teachers and students with a seamless experience while ensuring security and tamper resistance to mitigate the risk of malpractices in attendance tracking. The goal is to enhance overall efficiency and significantly reduce the manual effort involved in attendance monitoring.
+  \end{minipage}
+    
+\end{frame}
+
+\section{Literature Review}
+\begin{frame}
+	\frametitle{Literature Review}
+	\begin{minipage}{0.95\textwidth}
+  \begin{enumerate}
+		\item Several Research Papers like the ones mentioned below were referred.
+		\item The gaps between their implementations and our implementations were noted.
+		\item The gaps in Pricing were also noted.
+		      These observations are shown in successive slides.
+        \end{enumerate}
+      \end{minipage}
+\end{frame}
+
+
+\section{Market Review}
+\begin{frame}
+	\frametitle{Existing Market Competitors}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Cost Comparison}
+	This is the conclusion slide.
+\end{frame}
+
+\section{Research Gaps Identified}
+\begin{frame}
+	\frametitle{Research Gaps Identified}
+  \begin{minipage}{0.95\textwidth}
+	\begin{enumerate}
+		\item \textbf{Lack of Specific Facial Recognition Libraries and Models Documentation}
+		      Existing literature fails to provide a comprehensive overview of specific facial recognition libraries and models. The omission of detailed discussions on these crucial components hinders a holistic understanding of the technological landscape.
+		\item \textbf{Absence of Hardware Elements Documentation}
+		      A significant gap is identified in the absence of detailed documentation regarding the hardware elements employed. The current body of work overlooks crucial insights into the hardware aspects, limiting the understanding of the complete facial recognition system.
+		\item \textbf{Insufficient Information on Interlinking Hardware and Software}
+		      The interplay between hardware and software components is a critical aspect of facial recognition systems. However, the existing literature lacks substantial information on how these elements are intricately interlinked, hindering a comprehensive grasp of the system's architecture.
+	\end{enumerate}
+\end{minipage}
+  
+\end{frame}
+
+\begin{frame}
+	\frametitle{Research Gaps Identified Contd.}
+  \begin{minipage}{0.95\textwidth}
+	\begin{enumerate}
+		\item \textbf{Inadequate Details on Storage and Integration of Information}
+		      The literature review reveals a gap in information pertaining to the storage and seamless integration of facial recognition data. Understanding the mechanisms for data storage and integration is essential for evaluating the system's overall efficiency, and this aspect requires further exploration.
+		\item \textbf{Lack of Seamless Integration}
+		      The current research landscape highlights a significant gap concerning the seamless integration of services. Notably, existing systems rely on manual user initiation, requiring individuals to independently open dedicated services on their personal devices. This operational hurdle indicates a crucial area for improvement in achieving a more streamlined and user-friendly experience. Addressing this gap is paramount for enhancing the overall efficiency and user adoption of the services, warranting further exploration and innovation in the integration protocols employed.
+	\end{enumerate}
+\end{minipage}
+\end{frame}
+
+\section{Hardware Requirements}
+\begin{frame}
+	\frametitle{Hardware Requirements}
+	This is the conclusion slide.
+\end{frame}
+
+\section{Software Requirements}
+\begin{frame}
+	\frametitle{Software Requirements}
+	This is the conclusion slide.
+\end{frame}
+
+\section{Activity and Block Diagrams}
+\begin{frame}
+	\frametitle{Activity and Block Diagrams}
+	This is the conclusion slide.
+\end{frame}
+
+\section{References}
+\begin{frame}
+	\frametitle{Conclusion}
+	This is the conclusion slide.
+\end{frame}
+
+\end{document}
