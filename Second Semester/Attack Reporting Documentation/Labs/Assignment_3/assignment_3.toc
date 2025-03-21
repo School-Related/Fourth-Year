@@ -1,46 +1,53 @@
 \contentsline {section}{\numberline {1}Aim}{1}{section.1}%
-\contentsline {section}{\numberline {2}Wireshark}{1}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Installation}{1}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Working}{2}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Pros}{2}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Cons}{2}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Using Wireshark to Capture Packet and get password details. }{3}{subsection.2.5}%
-\contentsline {section}{\numberline {3}Nmap}{7}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Need/Purpose of Nmap}{7}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Advantages of Nmap}{8}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Disadvantages of Nmap}{8}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Implementation}{8}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Get ip Address}{8}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}Scan 1 port, current IP}{9}{subsection.3.6}%
-\contentsline {subsubsection}{\numberline {3.6.1}Syntax}{9}{subsubsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.7}Scan any IP}{10}{subsection.3.7}%
-\contentsline {subsubsection}{\numberline {3.7.1}Syntax}{10}{subsubsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.8}Scan a range of IPs}{11}{subsection.3.8}%
-\contentsline {subsubsection}{\numberline {3.8.1}Syntax}{11}{subsubsection.3.8.1}%
-\contentsline {subsection}{\numberline {3.9}Scan 1 Port}{13}{subsection.3.9}%
-\contentsline {subsubsection}{\numberline {3.9.1}Syntax}{13}{subsubsection.3.9.1}%
-\contentsline {subsection}{\numberline {3.10}Scan a range of ports}{14}{subsection.3.10}%
-\contentsline {subsubsection}{\numberline {3.10.1}Syntax}{14}{subsubsection.3.10.1}%
-\contentsline {subsection}{\numberline {3.11}Fragmented Scan}{15}{subsection.3.11}%
-\contentsline {subsubsection}{\numberline {3.11.1}Syntax}{15}{subsubsection.3.11.1}%
-\contentsline {subsection}{\numberline {3.12}TCP SYN Scan}{16}{subsection.3.12}%
-\contentsline {subsubsection}{\numberline {3.12.1}Syntax}{16}{subsubsection.3.12.1}%
-\contentsline {subsection}{\numberline {3.13}OS Detection}{17}{subsection.3.13}%
-\contentsline {subsubsection}{\numberline {3.13.1}Syntax}{17}{subsubsection.3.13.1}%
-\contentsline {subsection}{\numberline {3.14}Syn Scan for specific ports with ping}{19}{subsection.3.14}%
-\contentsline {subsubsection}{\numberline {3.14.1}Syntax}{19}{subsubsection.3.14.1}%
-\contentsline {subsection}{\numberline {3.15}Syn Scan for specific ports without ping}{20}{subsection.3.15}%
-\contentsline {subsubsection}{\numberline {3.15.1}Syntax}{20}{subsubsection.3.15.1}%
-\contentsline {subsection}{\numberline {3.16}Nmap Timing Templates}{22}{subsection.3.16}%
-\contentsline {subsubsection}{\numberline {3.16.1}Syntax}{23}{subsubsection.3.16.1}%
-\contentsline {subsection}{\numberline {3.17}Scannig Vulnerabilities}{27}{subsection.3.17}%
-\contentsline {subsubsection}{\numberline {3.17.1}Syntax}{27}{subsubsection.3.17.1}%
-\contentsline {subsection}{\numberline {3.18}Sweeping IP Ranges for Live host using ARP Scan}{30}{subsection.3.18}%
-\contentsline {subsubsection}{\numberline {3.18.1}Syntax}{30}{subsubsection.3.18.1}%
-\contentsline {subsection}{\numberline {3.19}Sweeping IP Ranges for Live host using ICMP Scan}{31}{subsection.3.19}%
-\contentsline {subsubsection}{\numberline {3.19.1}Syntax}{31}{subsubsection.3.19.1}%
-\contentsline {subsection}{\numberline {3.20}Sweeping IP Ranges for Live host using TCP Scan}{32}{subsection.3.20}%
-\contentsline {subsubsection}{\numberline {3.20.1}Syntax}{32}{subsubsection.3.20.1}%
-\contentsline {subsection}{\numberline {3.21}Sweeping IP Ranges for Live host using UDP Scan}{33}{subsection.3.21}%
-\contentsline {subsubsection}{\numberline {3.21.1}Syntax}{33}{subsubsection.3.21.1}%
-\contentsline {section}{References}{35}{section*.63}%
+\contentsline {section}{\numberline {2}Objective}{1}{section.2}%
+\contentsline {section}{\numberline {3}Theory}{1}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Malware}{1}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Types of Malware}{1}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Malware Analysis}{2}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Static Analysis}{2}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Dynamic Analysis}{2}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Implementation}{2}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Test Case 1: T1078.001 - Valid Accounts: Default Accounts}{2}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Description}{2}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Output}{4}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}Result}{4}{subsubsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.4}Mitigation}{4}{subsubsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.2}Test Case 2: T1036.003 - Masquerading: Rename System Utilities}{5}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Description}{5}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Output}{5}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}Result}{5}{subsubsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.4}Reason}{5}{subsubsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.3}Test Case 3: T1036.007 - Masquerading: Double File Extensions}{5}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Description}{5}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Output}{6}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Result}{6}{subsubsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.4}Mitigation}{6}{subsubsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.4}Test Case 4: T1222.001 File and Directory Permissions Modification: Windows File and Directory Permissions Modification}{6}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Description}{6}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Output}{7}{subsubsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.3}Result}{7}{subsubsection.4.4.3}%
+\contentsline {subsubsection}{\numberline {4.4.4}Mitigation}{7}{subsubsection.4.4.4}%
+\contentsline {subsection}{\numberline {4.5}Test Case 5: T1548.002 Abuse Elevation Control Mechanism: Bypass User Account Control}{7}{subsection.4.5}%
+\contentsline {subsubsection}{\numberline {4.5.1}Description}{7}{subsubsection.4.5.1}%
+\contentsline {subsubsection}{\numberline {4.5.2}Output}{8}{subsubsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.3}Result}{8}{subsubsection.4.5.3}%
+\contentsline {subsubsection}{\numberline {4.5.4}Mitigation}{8}{subsubsection.4.5.4}%
+\contentsline {subsection}{\numberline {4.6}Test Case 6: T1564 -- Hide Artifacts: To Create a Hidden User Called ``\$''}{8}{subsection.4.6}%
+\contentsline {subsubsection}{\numberline {4.6.1}Description}{8}{subsubsection.4.6.1}%
+\contentsline {subsubsection}{\numberline {4.6.2}Output}{8}{subsubsection.4.6.2}%
+\contentsline {subsubsection}{\numberline {4.6.3}Result}{8}{subsubsection.4.6.3}%
+\contentsline {subsubsection}{\numberline {4.6.4}Mitigation}{8}{subsubsection.4.6.4}%
+\contentsline {subsection}{\numberline {4.7}Test Case 7: T1070.003 - Indicator Removal on Host: Clear Command History}{9}{subsection.4.7}%
+\contentsline {subsubsection}{\numberline {4.7.1}Description}{9}{subsubsection.4.7.1}%
+\contentsline {subsubsection}{\numberline {4.7.2}Result}{9}{subsubsection.4.7.2}%
+\contentsline {subsubsection}{\numberline {4.7.3}Mitigation}{9}{subsubsection.4.7.3}%
+\contentsline {subsection}{\numberline {4.8}Test Case 7-2 : T1070.003 - Indicator Removal on Host: Clear Command History}{9}{subsection.4.8}%
+\contentsline {subsubsection}{\numberline {4.8.1}Description}{9}{subsubsection.4.8.1}%
+\contentsline {subsubsection}{\numberline {4.8.2}Result}{9}{subsubsection.4.8.2}%
+\contentsline {subsubsection}{\numberline {4.8.3}Mitigation}{9}{subsubsection.4.8.3}%
+\contentsline {subsection}{\numberline {4.9}Test Case 8: T1562.002 - Impair Defenses: Disable Windows Event Logging}{9}{subsection.4.9}%
+\contentsline {subsubsection}{\numberline {4.9.1}Description}{9}{subsubsection.4.9.1}%
+\contentsline {subsubsection}{\numberline {4.9.2}Result}{10}{subsubsection.4.9.2}%
+\contentsline {subsubsection}{\numberline {4.9.3}Mitigation}{10}{subsubsection.4.9.3}%
+\contentsline {section}{\numberline {5}Conclusion}{10}{section.5}%
+\contentsline {section}{References}{11}{section*.2}%

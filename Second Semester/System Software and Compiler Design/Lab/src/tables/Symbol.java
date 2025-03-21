@@ -3,13 +3,13 @@ package tables;
 public class Symbol {
     String symbolName;
     int address;
-    String type;
-    String value;
+    int length;
+    int index;
 
-    public Symbol(String symbolName, int address, String type, String value) {
+    public Symbol(String symbolName, int address, int length, int index) {
         this.symbolName = symbolName;
         this.address = address;
-        this.type = type;
-        this.value = value;
+        this.length = length;
+        this.index = index;
     }
 }

