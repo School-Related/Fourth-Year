@@ -23,9 +23,19 @@ public enum OpCode {
     BREG("RG", 2),
     CREG("RG", 3);
 
-    private int statementClass;
-    private int machineCode;
+    private final String statementClass;
+    private final int machineCode;
 
     OpCode(String statementClass, int machineCode) {
+        this.statementClass = statementClass;
+        this.machineCode = machineCode;
+    }
+
+    public String getStatementClass() {
+        return statementClass;
+    }
+
+    public int getMachineCode() {
+        return machineCode;
     }
 }
