@@ -1,14 +1,17 @@
-package Assignment1;
+package Assignment_1_2;
 
 import tables.*;
 
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.List;
 
-public class Assignment1 {
+
+public class Assignment_1_2 {
     public List<List<String>> parsedCode = new ArrayList<>();
     private int symbolTableIndex = 1;
     private int locationCounter = 0;
@@ -16,25 +19,55 @@ public class Assignment1 {
     List<ICRow> intermediateCode = new ArrayList<>();
 
     public void displaySymbolTable(Map<String, Symbol> symbolTable) {
-        System.out.println(symbolTable.values());
         System.out.println("Symbol Table:");
+        System.out.println("-------------------------------------------------------");
         System.out.printf("%-10s %-10s %-10s %-10s%n", "Index", "Symbol", "Address", "Length");
-        System.out.println("--------------------------------------");
+        System.out.println("-------------------------------------------------------");
         for (Symbol s : symbolTable.values().stream().sorted(
                 Comparator.comparing(Symbol::getIndex)).toList()) {
             System.out.printf("%-10d %-10s %-10d %-10s%n", s.getIndex(), s.getSymbolName(), s.getAddress(), s.getLength());
         }
+        System.out.println("-------------------------------------------------------\n\n");
     }
 
     public void displayICTable(List<ICRow> intermediateCode) {
         System.out.println("Intermediate Code Table:");
+        System.out.println("-------------------------------------------------------");
         System.out.printf("%-10s %-10s %-10s %-10s%n", "Location", "OpCode", "Operand1", "Operand2");
-        System.out.println("--------------------------------------");
+        System.out.println("-------------------------------------------------------");
         for (ICRow ic : intermediateCode) {
-            System.out.printf("%-10d %-10s %-10s %-10s%n", ic.getLocationCounter(), ic.getOpCode().getStatementClass() + " " + ic.getOpCode().getMachineCode(), ic.getOperand1() == null ? "null" : ic.getOperand1().getMachineCode(),
-                    ic.getSymbolOrConstant().isPresent() ? ic.getSymbolOrConstant().get().getType() + " " + ic.getSymbolOrConstant().get().getValue() : "null");
+            System.out.printf("%-10s %-10s %-10s %-10s%n", ic.getLocationCounter().isPresent() ?
+                            ic.getLocationCounter().get() : "", ic.getOpCode().getStatementClass() + " " + ic.getOpCode().getMachineCode(), ic.getOperand1() == null ? "" : ic.getOperand1().getMachineCode(),
+                    ic.getSymbolOrConstant().isPresent() ? ic.getSymbolOrConstant().get().getType() + " " + ic.getSymbolOrConstant().get().getValue() : "");
+        }
+        System.out.println("-------------------------------------------------------\n\n");
+    }
+
+    public void displayMachineCode(List<ICRow> intermediateCode, String filePath) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
+            writer.write("Machine Code:\n");
+            writer.write("-------------------------------------------------------\n");
+            writer.write(String.format("%-10s %-10s %-10s %-10s%n", "Location", "OpCode", "Operand1", "Operand2"));
+            writer.write("-------------------------------------------------------\n");
+
+            for (ICRow ic : intermediateCode) {
+                writer.write(String.format("%-10s %-10s %-10s %-10s%n",
+                        ic.getLocationCounter().isPresent() ? ic.getLocationCounter().get() : "",
+                        ic.getOpCode().getMachineCode(),
+                        ic.getOperand1() == null ? "" : ic.getOperand1().getMachineCode(),
+                        ic.getSymbolOrConstant().isPresent() &&
+                                ic.getSymbolOrConstant().get().getType() == SymbolType.SYMBOL ?
+                                ((ic.getSymbolOrConstant().get() instanceof Symbol symbol) ?
+                                        (symbol.getAddress()) : "") : ""));
+            }
+
+            writer.write("-------------------------------------------------------\n\n");
+            System.out.println("Machine code successfully written to " + filePath);
+        } catch (IOException e) {
+            System.err.println("Error writing to file: " + e.getMessage());
         }
     }
+
 
     public OpCode getOpCode(String opcode) {
         for (OpCode o : OpCode.values()) {
@@ -145,5 +178,6 @@ public class Assignment1 {
         // Display the symbolName table
         displaySymbolTable(symbolTable);
         displayICTable(intermediateCode);
+        displayMachineCode(intermediateCode, "src/Assignment_1_2/output.txt");
     }
 }

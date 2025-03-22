@@ -22,8 +22,8 @@ public class ICRow {
         System.out.println("Symbol/Constant: " + symbolOrConstant.getType() + " " + symbolOrConstant.getValue());
     }
 
-    public Integer getLocationCounter() {
-        return locationCounter;
+    public Optional<Integer> getLocationCounter() {
+        return Optional.ofNullable(locationCounter);
     }
 
     public OpCode getOpCode() {
