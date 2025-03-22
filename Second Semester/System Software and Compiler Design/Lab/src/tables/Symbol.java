@@ -1,11 +1,11 @@
 package tables;
 
 public class Symbol implements ICFourthColumn {
-    private final String symbolName;
-    private final Integer address;
-    private final Integer length;
+    private String symbolName;
+    private Integer address;
+    private Integer length;
     private final Integer index;
-    private final SymbolType type = SymbolType.SYMBOL;
+    private SymbolType type = SymbolType.SYMBOL;
 
     public Symbol(String symbolName, Integer address, Integer length, Integer index) {
         this.symbolName = symbolName;
@@ -36,5 +36,13 @@ public class Symbol implements ICFourthColumn {
 
     public Integer getValue() {
         return index;
+    }
+
+    public void setLength(Integer length) {
+        this.length = length;
+    }
+
+    public void setAddress(Integer address) {
+        this.address = address;
     }
 }

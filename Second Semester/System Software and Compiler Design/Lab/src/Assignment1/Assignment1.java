@@ -20,7 +20,8 @@ public class Assignment1 {
         System.out.println("Symbol Table:");
         System.out.printf("%-10s %-10s %-10s %-10s%n", "Index", "Symbol", "Address", "Length");
         System.out.println("--------------------------------------");
-        for (Symbol s : symbolTable.values()) {
+        for (Symbol s : symbolTable.values().stream().sorted(
+                Comparator.comparing(Symbol::getIndex)).toList()) {
             System.out.printf("%-10d %-10s %-10d %-10s%n", s.getIndex(), s.getSymbolName(), s.getAddress(), s.getLength());
         }
     }
@@ -96,7 +97,7 @@ public class Assignment1 {
                 if (symbolTable.containsKey(currentLine.get(2))) {
                     currentSymbol = symbolTable.get(currentLine.get(2));
                 } else {
-                    currentSymbol = new Symbol(currentLine.get(2), null, null, symbolTableIndex++);
+                    currentSymbol = new Symbol(currentLine.get(2), null, 1, symbolTableIndex++);
                     symbolTable.put(currentLine.get(2), currentSymbol);
                 }
                 intermediateCode.add(new ICRow(locationCounter, currentOpCode,
@@ -109,6 +110,9 @@ public class Assignment1 {
                 if (!symbolTable.containsKey(currentLine.getFirst())) {
                     currentSymbol = new Symbol(currentLine.getFirst(), locationCounter, 1, symbolTableIndex++);
                     symbolTable.put(currentLine.getFirst(), currentSymbol);
+                } else {
+                    currentSymbol = symbolTable.get(currentLine.getFirst());
+                    currentSymbol.setAddress(locationCounter);
                 }
 
                 OpCode currentOpCode = getOpCode(currentLine.get(1));
@@ -118,6 +122,7 @@ public class Assignment1 {
                     intermediateCode.add(new ICRow(locationCounter, currentOpCode, null,
                             new Constants(Integer.parseInt(currentLine.get(2)))));
                     locationCounter += Integer.parseInt(currentLine.get(2));
+                    symbolTable.get(currentSymbol.getSymbolName()).setLength(Integer.parseInt(currentLine.get(2)));
                     continue;
                 }
                 // check for dc
