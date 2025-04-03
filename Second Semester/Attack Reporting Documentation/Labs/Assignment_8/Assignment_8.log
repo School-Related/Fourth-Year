@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.24)  3 APR 2025 23:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.24)  4 APR 2025 01:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_7/Assignment_7.tex"
-(p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_7/Assignment_7.tex
+**"p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_7/Assignment_8.tex"
+(p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_7/Assignment_8.tex
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-12-09>
 (C:\Users\Krishnaraj\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -539,8 +539,9 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count324
 \l__pdf_internal_box=\box58
-) (Assignment_7.aux)
-\openout1 = `Assignment_7.aux'.
+)
+No file Assignment_8.aux.
+\openout1 = `Assignment_8.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
 LaTeX Font Info:    ... okay on input line 57.
@@ -558,7 +559,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
 LaTeX Font Info:    ... okay on input line 57.
 LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 57.
 LaTeX Font Info:    Trying to load font information for FML+fncmi on input line 57.
- (C:\Users\Krishnaraj\AppData\Local\Programs\MiKTeX\tex/latex/fouriernc\fmlfncmi.fd
+(C:\Users\Krishnaraj\AppData\Local\Programs\MiKTeX\tex/latex/fouriernc\fmlfncmi.fd
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
 LaTeX Font Info:    ... okay on input line 57.
@@ -637,7 +638,7 @@ LaTeX Font Info:    Redeclaring math accent \widetilde on input line 57.
 \c@lstlisting=\count331
 Package hyperref Info: Link coloring ON on input line 57.
 \@outlinefile=\write3
-\openout3 = `Assignment_7.out'.
+\openout3 = `Assignment_8.out'.
 
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 19.28804pt on input line 64.
@@ -657,9 +658,9 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 13.39188pt on input line 115.
 
-No file Assignment_7.toc.
+No file Assignment_8.toc.
 \tf@toc=\write4
-\openout4 = `Assignment_7.toc'.
+\openout4 = `Assignment_8.toc'.
 
 
 
@@ -670,7 +671,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 l.117 \clearpage
                  [1]
 
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_7/Assignment_7.tex:126: LaTeX Error: Something's wrong--perhaps a missing \item.
+p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_7/Assignment_8.tex:126: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -691,7 +692,7 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 10.18341pt on input line 126.
 
 
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_7/Assignment_7.tex:135: LaTeX Error: Something's wrong--perhaps a missing \item.
+p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_7/Assignment_8.tex:135: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -703,7 +704,7 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_7/Assignment_7.tex:155: LaTeX Error: Something's wrong--perhaps a missing \item.
+p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_7/Assignment_8.tex:155: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -736,7 +737,7 @@ l.156     \item P
 
 ]
 
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_7/Assignment_7.tex:163: LaTeX Error: Something's wrong--perhaps a missing \item.
+p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_7/Assignment_8.tex:163: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -748,7 +749,7 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_7/Assignment_7.tex:174: LaTeX Error: Something's wrong--perhaps a missing \item.
+p:/Classes/University/Fourth Year/Second Semester/Attack Reporting Documentation/Labs/Assignment_7/Assignment_8.tex:174: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -808,7 +809,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [3
 
-] (Assignment_7.aux)
+] (Assignment_8.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-12-09>
@@ -818,24 +819,24 @@ L3 programming layer <2024-12-09>
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
-Package rerunfilecheck Warning: File `Assignment_7.out' has changed.
+Package rerunfilecheck Warning: File `Assignment_8.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
-Package rerunfilecheck Info: Checksums for `Assignment_7.out':
+Package rerunfilecheck Info: Checksums for `Assignment_8.out':
 (rerunfilecheck)             Before: <no file>
 (rerunfilecheck)             After:  0200188E8C004A0A2B6C952A3B099356;95.
  ) 
 Here is how much of TeX's memory you used:
- 13454 strings out of 473574
- 207652 string characters out of 5713718
- 612520 words of memory out of 5000000
- 36409 multiletter control sequences out of 15000+600000
+ 13451 strings out of 473574
+ 207492 string characters out of 5713718
+ 612529 words of memory out of 5000000
+ 36408 multiletter control sequences out of 15000+600000
  598380 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,79p,672b,530s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Krishnaraj\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk><C:/Users/Krishnaraj/AppData/Local/Programs/MiKTeX/fonts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Users/Krishnaraj/AppData/Local/Programs/MiKTeX/fonts/type1/urw/ncntrsbk/uncr8a.pfb><C:/Users/Krishnaraj/AppData/Local/Programs/MiKTeX/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on Assignment_7.pdf (5 pages, 70277 bytes).
+Output written on Assignment_8.pdf (5 pages, 70277 bytes).
 PDF statistics:
  100 PDF objects out of 1000 (max. 8388607)
  25 named destinations out of 1000 (max. 500000)
