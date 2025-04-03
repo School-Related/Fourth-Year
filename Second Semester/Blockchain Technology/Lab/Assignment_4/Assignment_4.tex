@@ -1,0 +1,221 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsfonts, amsmath, amssymb}
+\usepackage{fancyhdr, float, graphicx}
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{fouriernc} % Use the New Century Schoolbook font
+\usepackage[nottoc, notlot, notlof]{tocbibind}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{blindtext}
+\usepackage{longtable}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	filecolor=magenta,
+	urlcolor=blue,
+	pdfpagemode=FullScreen,
+}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,
+	breaklines=true,
+	captionpos=b,
+	keepspaces=true,
+	numbers=left,
+	numbersep=5pt,
+	showspaces=false,
+	showstringspaces=false,
+	showtabs=false,
+	tabsize=2
+}
+
+\lstset{style=mystyle}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\textit{\Large{Blockchain Technologia - Fourth Year B. Tech}}}
+\fancyhead[R]{\textit{Krishnaraj T}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{1pt}
+
+\begin{document}
+
+\begin{titlepage}
+	\centering
+
+	%---------------------------NAMES-------------------------------
+
+	\huge\textsc{
+		MIT World Peace University
+	}\\
+
+	\vspace{0.75\baselineskip} % space after Uni Name
+
+	\LARGE{
+        Blockchain Technology\\
+		Fourth Year B. Tech, Semester 8
+	}
+
+	\vfill % space after Sub Name
+
+	%--------------------------TITLE-------------------------------
+
+	\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+	\rule{\textwidth}{0.6pt}
+	\vspace{0.75\baselineskip} % Whitespace above the title
+
+	\huge{\textsc{
+        Exploring MyEtherWallet
+        }} \\
+
+	\vspace{0.5\baselineskip} % Whitespace below the title
+	\rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
+	\rule{\textwidth}{1.6pt}
+
+	\vspace{1\baselineskip} % Whitespace after the title block
+
+	%--------------------------SUBTITLE --------------------------	
+
+	\LARGE\textsc{
+		Lab Assignment 5
+	} % Subtitle or further description
+	\vfill
+
+	%--------------------------AUTHOR-------------------------------
+
+	Prepared By \vspace{0.5\baselineskip} % Whitespace before the editors
+
+	\Large{
+		Krishnaraj Thadesar \\
+		Cyber Security and Forensics\\
+        Batch A1, PA 15
+	}
+
+	\vspace{0.5\baselineskip} % Whitespace below the editor list
+	\today
+
+\end{titlepage}
+
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+
+
+\section{Objective}
+This document aims to guide users through the process of setting up MyEtherWallet (MEW) and connecting it to the Ganache network. It includes step-by-step instructions on wallet setup, network configuration, importing accounts, sending transactions, and acquiring test Ether.
+
+\section{Theory}
+
+\subsection{What is MyEtherWallet (MEW)?}
+MyEtherWallet (MEW) is a free, open-source, client-side interface that allows users to interact with the Ethereum blockchain. It enables users to create wallets, send and receive Ether, and manage ERC-20 tokens. Unlike centralized exchanges, MEW gives users full control over their private keys.
+
+\subsection{What is Ganache?}
+Ganache is a personal Ethereum blockchain used for testing and development. It provides an isolated environment where developers can deploy and test smart contracts, simulate transactions, and debug applications without interacting with the main Ethereum network.
+
+\section{FAQs}
+
+\begin{enumerate}
+    \item \textbf{What is MyEtherWallet and how to set it up?}
+    
+    MyEtherWallet (MEW) is a non-custodial wallet that allows users to manage Ethereum-based assets. To set it up:
+    
+    \begin{enumerate}
+        \item Visit \href{https://www.myetherwallet.com}{MyEtherWallet's official website}.
+        \item Click on “Create a New Wallet.”
+        \item Choose a method to create a wallet (MEW wallet app, Keystore file, etc.).
+        \item Securely store your private key or recovery phrase.
+        \item Access your wallet using the chosen method.
+    \end{enumerate}
+
+    \item \textbf{How to connect MyEtherWallet to the Ganache network?}
+    
+    To connect MEW to Ganache:
+    
+    \begin{enumerate}
+        \item Open Ganache and note the RPC server URL (default: \texttt{http://127.0.0.1:7545}).
+        \item Open MEW and go to "Networks."
+        \item Click "Add Custom Network."
+        \item Enter the following details:
+            \begin{itemize}
+                \item \textbf{Network Name:} Ganache
+                \item \textbf{New RPC URL:} \texttt{http://127.0.0.1:7545}
+                \item \textbf{Chain ID:} 1337 (default for Ganache)
+                \item \textbf{Currency Symbol:} ETH
+            \end{itemize}
+        \item Save and select the Ganache network.
+    \end{enumerate}
+
+    \item \textbf{How to import a Ganache Ethereum account into MyEtherWallet?}
+    
+    \begin{enumerate}
+        \item Open Ganache and copy the private key of any pre-funded account.
+        \item Open MEW and go to “Access My Wallet.”
+        \item Choose the “Private Key” method and paste the copied key.
+        \item Click "Access Wallet" to import the account.
+    \end{enumerate}
+
+    \item \textbf{How to send a transaction to the Ganache network using MyEtherWallet?}
+    
+    \begin{enumerate}
+        \item Ensure you are connected to the Ganache network in MEW.
+        \item Go to the "Send Transaction" section.
+        \item Enter the recipient’s address (another Ganache account).
+        \item Specify the amount of ETH to send.
+        \item Set the gas limit (default: \texttt{21000} for simple transfers).
+        \item Click "Send" and confirm the transaction.
+        \item The transaction should appear in Ganache’s transaction log.
+    \end{enumerate}
+
+    \item \textbf{How to get more Ether on the Ganache network for testing purposes?}
+    
+    Ganache provides pre-funded accounts with test Ether. To get more:
+    
+    \begin{enumerate}
+        \item Restart Ganache to reset accounts and replenish Ether.
+        \item If developing a smart contract, modify the Ganache configuration to allocate more initial Ether.
+        \item Use the built-in Ganache console to manually assign Ether to an address.
+    \end{enumerate}
+
+\end{enumerate}
+
+\subsection{Glossary}
+\begin{itemize}
+    \item \textbf{Ethereum:} A decentralized, open-source blockchain that supports smart contracts and decentralized applications (DApps).
+    \item \textbf{Gas:} A unit of measurement for computational work required to execute transactions or smart contracts on Ethereum.
+    \item \textbf{Ganache:} A personal Ethereum blockchain used for testing and development, simulating a real Ethereum network.
+    \item \textbf{MEW (MyEtherWallet):} A free, open-source, client-side interface for managing Ethereum wallets and transactions.
+    \item \textbf{Private Key:} A secret key used to sign transactions and prove ownership of an Ethereum account.
+    \item \textbf{RPC (Remote Procedure Call):} A protocol that allows interaction with a blockchain network by sending requests to a node.
+\end{itemize}
+
+\clearpage
+\begin{thebibliography}{9}
+    
+    \bibitem{mew} MyEtherWallet Documentation. Available at: \url{https://www.myetherwallet.com/}
+    
+    \bibitem{ganache} Truffle Suite - Ganache. Available at: \url{https://trufflesuite.com/ganache/}
+    
+    \bibitem{ethereum} Ethereum Developer Documentation. Available at: \url{https://ethereum.org/en/developers/}
+    
+    \bibitem{etherscan} Etherscan - Ethereum Block Explorer. Available at: \url{https://etherscan.io/}
+\end{thebibliography}
+
+
+\end{document}
