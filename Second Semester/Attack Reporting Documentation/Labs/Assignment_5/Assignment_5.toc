@@ -1,0 +1,18 @@
+\contentsline {chapter}{\numberline {1}Yahoo Data Breach (2013-2014)}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Executive Summary}{5}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Incident Details}{5}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Detection \& Analysis}{5}{subsection.1.2.1}%
+\contentsline {section}{\numberline {1.3}Containment, Eradication \& Recovery}{5}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Impact Assessment}{6}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Reporting \& Notification}{6}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Lessons Learned \& Recommendations}{6}{section.1.6}%
+\contentsline {chapter}{\numberline {2}Facebook Data Leak (2019)}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Executive Summary}{7}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Incident Details}{7}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Detection \& Analysis}{7}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Containment, Eradication \& Recovery}{7}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Impact Assessment}{8}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Reporting \& Notification}{8}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Lessons Learned \& Recommendations}{8}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Glossary}{9}{subsection.2.6.1}%
+\contentsline {chapter}{Bibliography}{11}{chapter*.2}%

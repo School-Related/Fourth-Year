@@ -1,0 +1,325 @@
+\documentclass[11pt]{book}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsfonts, amsmath, amssymb}
+\usepackage{fancyhdr, float, graphicx}
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{fouriernc} % Use the New Century Schoolbook font
+\usepackage[nottoc, notlot, notlof]{tocbibind}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	filecolor=magenta,
+	urlcolor=blue,
+	pdfpagemode=FullScreen,
+}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,
+	breaklines=true,
+	captionpos=b,
+	keepspaces=true,
+	numbers=left,
+	numbersep=5pt,
+	showspaces=false,
+	showstringspaces=false,Z
+	showtabs=false,
+	tabsize=2
+}
+
+% \lstset{style=mystyle}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\textit{\Large{Attack Reserach and Documentation - Fourth Year B. Tech}}}
+\fancyhead[R]{\textit{Krishnaraj T}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{1pt}
+
+\begin{document}
+
+\begin{titlepage}
+	\centering
+
+	%---------------------------NAMES-------------------------------
+
+	\huge\textsc{
+		MIT World Peace University
+	}\\
+
+	\vspace{0.75\baselineskip} % space after Uni Name
+
+	\LARGE{
+		Attack Research and Documentation\\
+		Fourth Year B. Tech, Semester 8
+	}
+
+	\vfill % space after Sub Name
+
+	%--------------------------TITLE-------------------------------
+
+	\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+	\rule{\textwidth}{0.6pt}
+	\vspace{0.75\baselineskip} % Whitespace above the title
+
+	\huge{\textsc{
+        Incidence Report for an Incident
+        }} \\
+
+	\vspace{0.5\baselineskip} % Whitespace below the title
+	\rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
+	\rule{\textwidth}{1.6pt}
+
+	\vspace{1\baselineskip} % Whitespace after the title block
+
+	%--------------------------SUBTITLE --------------------------	
+
+	\LARGE\textsc{
+		Lab Assignment 5 \\
+        Incidence Report
+	} % Subtitle or further description
+	\vfill
+
+	%--------------------------AUTHOR-------------------------------
+
+	Prepared By \vspace{0.5\baselineskip} % Whitespace before the editors
+
+	\Large{
+		Krishnaraj Thadesar \\
+		Cyber Security and Forensics\\
+        Batch A1, PA 15
+	}
+
+	\vspace{0.5\baselineskip} % Whitespace below the editor list
+	\today
+
+\end{titlepage}
+
+\clearpage
+\tableofcontents
+\clearpage
+
+\chapter{Yahoo Data Breach (2013-2014)}
+\section{Executive Summary}
+\begin{itemize}
+    \item \textbf{Date of Incident:} August 2013 (first breach); November/December 2014 (second breach)
+    \item \textbf{Reported By:} Yahoo, disclosed publicly in September 2016
+    \item \textbf{Affected Systems:} Yahoo user account database and servers
+    \item \textbf{Impact:} 3 billion accounts affected in 2013, 500 million in 2014; exposure of sensitive user data
+    \item \textbf{Status:} Resolved, with legal settlements and enhanced security measures post-Verizon acquisition
+\end{itemize}
+
+\section{Incident Details}
+\subsection{Detection \& Analysis}
+\begin{itemize}
+    \item \textbf{Date \& Time of Detection:} Likely in 2016, exact time unspecified
+    \item \textbf{Detection Method:} Unclear; possibly identified during security audits
+    \item \textbf{Attack Vector:} 
+    \begin{itemize}
+        \item 2013: Unknown
+        \item 2014: Exploitation of vulnerabilities in cookie creation for unauthorized access
+    \end{itemize}
+    \item \textbf{Indicators of Compromise (IoCs):} Circulation of stolen data on underground forums
+    \item \textbf{Root Cause:} Inadequate security practices and funding; possible state-sponsored involvement (suspected Russian hackers)
+\end{itemize}
+
+\section{Containment, Eradication \& Recovery}
+\begin{itemize}
+    \item \textbf{Containment Measures:} Required all users (affected and unaffected) to change passwords
+    \item \textbf{Eradication Steps:} Likely included patching system vulnerabilities; details not widely documented
+    \item \textbf{Recovery Actions:} 
+    \begin{itemize}
+        \item Increased cybersecurity spending post-Verizon acquisition
+        \item Verizon committed \$306 million (2019-2022) to security enhancements
+        \item IT staff expanded fourfold to address ongoing risks
+    \end{itemize}
+\end{itemize}
+
+\section{Impact Assessment}
+\begin{itemize}
+    \item \textbf{Number of Affected Customers:} 3 billion in 2013; 500 million in 2014
+    \item \textbf{Data Exposed:} 
+    \begin{itemize}
+        \item Names, email addresses, phone numbers, birth dates
+        \item Encrypted passwords
+        \item Security questions in some cases
+    \end{itemize}
+    \item \textbf{Regulatory Compliance Impact:} 
+    \begin{itemize}
+        \item SEC fines for delayed disclosure
+        \item Shared legal liabilities with Verizon post-acquisition
+    \end{itemize}
+    \item \textbf{Financial Impact:} 
+    \begin{itemize}
+        \item \$350 million reduction in Yahoo’s sale price to Verizon
+        \item \$117.5 million settlement for affected users
+    \end{itemize}
+\end{itemize}
+
+\section{Reporting \& Notification}
+\begin{itemize}
+    \item \textbf{Internal Report:} Breach disclosed by Yahoo in September 2016
+    \item \textbf{Regulatory Authorities:} Reported to SEC, resulting in fines
+    \item \textbf{Customers:} Notified post-disclosure; advised to change passwords
+    \item \textbf{Third-Party Vendors:} Verizon shared liabilities and took over security enhancements
+\end{itemize}
+
+\section{Lessons Learned \& Recommendations}
+\begin{itemize}
+    \item Importance of \textbf{timely disclosure} to regulators and the public
+    \item Need for \textbf{robust cybersecurity funding} and proactive security measures
+    \item Implementation of \textbf{regular security audits} to detect vulnerabilities early
+    \item Strengthening \textbf{password security policies} and multi-factor authentication
+    \item Organizations should \textbf{invest in advanced detection systems} and security awareness programs
+\end{itemize}
+
+\chapter{Facebook Data Leak (2019)}
+
+\section{Executive Summary}
+\begin{itemize}
+    \item \textbf{Date of Incident:} Before August 2019
+    \item \textbf{Reported By:} Facebook, initially disclosed in 2019, with further details emerging in April 2021
+    \item \textbf{Affected Systems:} Contact importer feature
+    \item \textbf{Impact:} 533 million users affected globally, exposing personal data
+    \item \textbf{Status:} Resolved, vulnerability patched by September 2019
+\end{itemize}
+
+\section{Incident Details}
+\subsection{Detection \& Analysis}
+\begin{itemize}
+    \item \textbf{Date \& Time of Detection:} Likely in 2019, exact time unspecified
+    \item \textbf{Detection Method:} Security audits, identification of abnormal scraping activity
+    \item \textbf{Attack Vector:} Exploitation of the contact importer tool for automated data scraping
+    \item \textbf{Indicators of Compromise (IoCs):} Stolen dataset appeared on dark web in April 2021
+    \item \textbf{Root Cause:} Inadequate security measures in the contact importer feature, allowing large-scale automated data collection
+\end{itemize}
+
+\section{Containment, Eradication \& Recovery}
+\begin{itemize}
+    \item \textbf{Containment Measures:} 
+    \begin{itemize}
+        \item Patched the vulnerability by September 2019
+        \item Modified the contact importer feature to block automated software uploads
+    \end{itemize}
+    \item \textbf{Eradication Steps:} Confirmed issue was resolved; ensured scraping method could no longer be exploited
+    \item \textbf{Recovery Actions:} 
+    \begin{itemize}
+        \item Ongoing monitoring for scraping behaviors
+        \item Efforts to remove leaked data from online sources
+        \item Recommendations for users to update privacy settings on Facebook
+    \end{itemize}
+\end{itemize}
+
+\section{Impact Assessment}
+\begin{itemize}
+    \item \textbf{Number of Affected Customers:} 533 million users across 106 countries
+    \item \textbf{Data Exposed:} 
+    \begin{itemize}
+        \item Phone numbers, full names, locations, birthdates, Facebook IDs
+        \item In some cases, email addresses
+    \end{itemize}
+    \item \textbf{Regulatory Compliance Impact:} 277 million Dollar fine by Irish Data Protection Commission (DPC) in 2022
+    \item \textbf{Financial Impact:} At least 277 million Dollars in regulatory fines, with additional costs in legal and security measures
+\end{itemize}
+
+\section{Reporting \& Notification}
+\begin{itemize}
+    \item \textbf{Internal Report:} Disclosed internally in 2019
+    \item \textbf{Regulatory Authorities:} Notified later, resulting in a 277 million Dollar fine under GDPR
+    \item \textbf{Customers:} No individual notifications issued, raising transparency concerns
+    \item \textbf{Third-Party Vendors:} Regulatory oversight shared with the FTC and Irish DPC
+\end{itemize}
+
+\section{Lessons Learned \& Recommendations}
+\begin{itemize}
+    \item Strengthening security for platform features that handle user data
+    \item Enhancing automated detection systems to prevent large-scale data scraping
+    \item Ensuring compliance with GDPR and other global data protection regulations
+    \item Implementing proactive disclosure and notification practices to maintain user trust
+    \item Conducting regular security audits to identify and mitigate potential vulnerabilities
+\end{itemize}
+
+\clearpage
+
+\subsection{Glossary}
+The following terms are defined to provide clarity on technical concepts referenced in the reports for the Yahoo Data Breach (2013-2014) and the Facebook Data Leak (2019).
+
+\begin{itemize}
+    \item \textbf{Attack Vector}: The method or pathway used by an attacker to gain unauthorized access to systems or data (e.g., cookie exploitation in Yahoo 2014, contact importer in Facebook 2019).
+    \item \textbf{Containment Measures}: Immediate actions taken to limit the spread or impact of a breach (e.g., password resets for Yahoo, patching for Facebook).
+    \item \textbf{Data Scraping}: The automated extraction of data from a website or application, often maliciously (e.g., Facebook’s contact importer exploit).
+    \item \textbf{Indicators of Compromise (IoCs)}: Evidence or clues that a security breach has occurred (e.g., stolen data on the dark web for both breaches).
+    \item \textbf{Regulatory Compliance}: Adherence to laws and regulations governing data protection (e.g., GDPR for Facebook, SEC requirements for Yahoo).
+    \item \textbf{Root Cause}: The underlying reason or vulnerability that allowed the breach to occur (e.g., inadequate security practices in Yahoo, feature misuse in Facebook).
+\end{itemize}
+
+\clearpage
+\begin{thebibliography}{99}
+
+\bibitem{wiki_yahoo}
+Wikipedia, ``Yahoo! Data Breaches,''
+\url{https://en.wikipedia.org/wiki/Yahoo_data_breaches},
+Accessed April 03, 2025.
+
+\bibitem{nyt_yahoo}
+The New York Times, ``All 3 Billion Yahoo Accounts Affected by 2013 Attack,''
+\url{https://www.nytimes.com/2017/10/03/technology/yahoo-hack-3-billion-users.html},
+Published October 03, 2017, Accessed April 03, 2025.
+
+\bibitem{reuters_yahoo}
+Reuters, ``Yahoo says all three billion accounts hacked in 2013 data theft,''
+\url{https://www.reuters.com/article/technology/yahoo-says-all-three-billion-accounts-hacked-in-2013-data-theft-idUSKCN1C82NV/},
+Published October 03, 2017, Accessed April 03, 2025.
+
+\bibitem{medium_yahoo}
+Medium, ``Yahoo Data Breach: An In-Depth Analysis,'' \\
+\url{https://shellmates.medium.com/yahoo-data-breach-an-in-depth-analysis-of-one-of-the-most-significant-data-breaches-in-history-ba5b46be560b},
+Accessed April 03, 2025.
+
+\bibitem{npr_facebook}
+NPR, ``After Data Breach Exposes 530 Million, Facebook Says It Will Not Notify Users,''
+\url{https://www.npr.org/2021/04/09/986005820/after-data-breach-exposes-530-million-facebook-says-it-will-not-notify-users},
+Published April 09, 2021, Accessed April 03, 2025.
+
+\bibitem{fb_blog}
+Facebook Blog, ``Facts on News Reports About Facebook Data,''
+\url{https://about.fb.com/news/2021/04/facts-on-news-reports-about-facebook-data/},
+Published April 2021, Accessed April 03, 2025.
+
+\bibitem{npr_ftc}
+NPR, ``Facebook to Pay \$5 Billion to Settle FTC Privacy Case,''
+\url{https://www.npr.org/2019/07/24/741282397/facebook-to-pay-5-billion-to-settle-ftc-privacy-case},
+Published July 24, 2019, Accessed April 03, 2025.
+
+\bibitem{nordvpn_facebook}
+NordVPN, ``Facebook Data Breaches: Investigating Top Data Leaks,''
+\url{https://nordvpn.com/blog/facebook-data-breach/},
+Accessed April 03, 2025.
+
+\bibitem{haveibeenpwned_x}
+Have I Been Pwned, X Post, ``65\% of the Facebook data was already in previous leaks,''
+\url{https://x.com/haveibeenpwned/status/1378554902100635659?s=20},
+Published April 03, 2021, Accessed April 03, 2025.
+
+
+
+\end{thebibliography}
+\end{document}
