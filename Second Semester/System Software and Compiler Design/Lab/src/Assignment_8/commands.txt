@@ -1,0 +1,7 @@
+// run on linux
+// sudo apt install flex bison gcc
+
+bison -d calc.y           # generates calc.tab.c and calc.tab.h
+flex calc.l               # generates lex.yy.c
+gcc lex.yy.c calc.tab.c -o calc -lfl
+./calc                    # run the calculator

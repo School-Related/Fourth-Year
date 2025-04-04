@@ -1,0 +1,7 @@
+// write input.c file first.
+
+// on linux
+sudo apt-get install flex bison gcc
+lex Assignment_5.l
+gcc lex.yy.c -o lexer -ll
+./lexer < input.c

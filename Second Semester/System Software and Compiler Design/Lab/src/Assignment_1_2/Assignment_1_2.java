@@ -68,7 +68,6 @@ public class Assignment_1_2 {
         }
     }
 
-
     public OpCode getOpCode(String opcode) {
         for (OpCode o : OpCode.values()) {
             if (o.name().equalsIgnoreCase(opcode)) {
@@ -179,5 +178,13 @@ public class Assignment_1_2 {
         displaySymbolTable(symbolTable);
         displayICTable(intermediateCode);
         displayMachineCode(intermediateCode, "src/Assignment_1_2/output.txt");
+    }
+
+    public static void main(String[] args) {
+        System.out.println("\n\nHello, welcome to SSCD Practicals!");
+        Assignment_1_2 assignment12 = new Assignment_1_2();
+        System.out.println("Finished Parsing the input file and generated Machine Code\n\n");
+        assignment12.readInputFile("Assignment_1_2/input.asc");
+        assignment12.run();
     }
 }
