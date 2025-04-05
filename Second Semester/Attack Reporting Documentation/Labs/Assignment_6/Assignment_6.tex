@@ -120,15 +120,15 @@
 
 \section{Introduction}
 \begin{itemize}
-    \item This report documents the use of two digital forensics tools --- \textbf{FTK Imager Lite} and \textbf{Autopsy}.
+    \item This report documents the use of two digital forensics tools --- \textbf{FTK Imager} and \textbf{Autopsy}.
     \item The aim is to simulate data deletion scenarios and analyze the ability to recover data.
     \item Screenshots are attached as visual evidence for each step.
 \end{itemize}
 
 \section{Tools Used}
 
-\subsection{FTK Imager Lite}
-FTK Imager Lite is a lightweight, freeware imaging tool developed by Exterro. It is widely used in digital forensics for creating forensic images of storage devices. The tool is designed to ensure data integrity and is capable of generating MD5 and SHA1 hash values for verification. Key features of FTK Imager Lite include:
+\subsection{FTK Imager}
+FTK Imager is a lightweight, freeware imaging tool developed by Exterro. It is widely used in digital forensics for creating forensic images of storage devices. The tool is designed to ensure data integrity and is capable of generating MD5 and SHA1 hash values for verification. Key features of FTK Imager include:
 \begin{itemize}
     \item \textbf{Forensic Imaging:} Allows users to create bit-by-bit copies of storage devices, ensuring no data is altered during the process.
     \item \textbf{Hash Verification:} Generates hash values (MD5 and SHA1) to confirm the integrity of the forensic image.
@@ -136,7 +136,7 @@ FTK Imager Lite is a lightweight, freeware imaging tool developed by Exterro. It
     \item \textbf{Support for Multiple Formats:} Supports imaging in various formats, including E01, DD, and raw image formats.
     \item \textbf{Logical and Physical Imaging:} Provides options to create logical images (specific files or folders) or physical images (entire storage devices).
 \end{itemize}
-FTK Imager Lite is an essential tool for forensic investigators, ensuring that evidence is preserved in a reliable and verifiable manner.
+FTK Imager is an essential tool for forensic investigators, ensuring that evidence is preserved in a reliable and verifiable manner.
 
 \subsection{Autopsy}
 Autopsy is an open-source, graphical digital forensics platform designed for analyzing disk images and recovering data. It is built on top of The Sleuth Kit (TSK) and provides an intuitive interface for investigators. Key functionalities of Autopsy include:
@@ -153,9 +153,9 @@ Autopsy is a powerful tool for forensic analysis, enabling investigators to unco
 
 \section{Environment Setup}
 
-\subsection{Installation of FTK Imager Lite}
+\subsection{Installation of FTK Imager}
 \begin{itemize}
-    \item FTK Imager Lite was downloaded from the official Exterro website.
+    \item FTK Imager was downloaded from the official Exterro website.
     \item Terms and conditions were reviewed before installation.
 \end{itemize}
 \begin{figure}[H]
@@ -205,7 +205,7 @@ Autopsy is a powerful tool for forensic analysis, enabling investigators to unco
 \end{figure}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.99\textwidth]{everest.jpg}
+    \includegraphics[width=0.6\textwidth]{everest.jpg}
     \caption{JPEG Downloaded from Internet}
     \label{fig:1}
 \end{figure}
@@ -213,7 +213,7 @@ Autopsy is a powerful tool for forensic analysis, enabling investigators to unco
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.99\textwidth]{things_made.jpg}
+    \includegraphics[width=0.6\textwidth]{things_made.jpg}
     \caption{Contents}
     \label{fig:1}
 
@@ -228,6 +228,31 @@ test
 test test
 \end{verbatim}
 This was done to check if the file was recoverable after deletion. The file was created using Notepad and saved in the logical partition.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{deleting_using_eraser.png}
+    \caption{Deletion using Eraser}
+    \label{fig:1}
+
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Deletion_1.png}
+    \caption{Deletion using Eraser}
+    \label{fig:1}
+
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Deletion_2.png}
+    \caption{Deletion using Eraser}
+    \label{fig:1}
+
+\end{figure}
+
 \section{Imaging and Hash Verification}
 \subsection{SHA256 Hash for something.txt}
 \begin{verbatim}
@@ -256,45 +281,53 @@ This was done to check if the file was recoverable after deletion. The file was 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.99\textwidth]{checksums.jpg}
-    \caption{}
+    \caption{MD5 and SHA1 Checksums}
     \label{fig:1}
 \end{figure}
 
 \section{Image Creation with FTK Imager}
 \begin{itemize}
-    \item The logical partition was imaged using FTK Imager Lite.
+    \item The logical partition was imaged using FTK Imager.
 \end{itemize}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.99\textwidth]{everest.jpg}
-    \caption{}
+    \includegraphics[width=0.6\textwidth]{imaging_4.png}
+    \caption{Selecting partition in FTK}
+    \label{fig:1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{imaging_6.png}
+    \caption{Selecting Format for image}
+    \label{fig:1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{imaging_10.png}
+    \caption{Creating Image}
     \label{fig:1}
 \end{figure}
 
 
 \section{Analysis in Autopsy}
 
-\subsection{Loading Image}
-\begin{itemize}
-    \item The forensic image was loaded into Autopsy for analysis.
-\end{itemize}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.99\textwidth]{everest.jpg}
-    \caption{}
-    \label{fig:1}
-\end{figure}
-
-
-\subsection{File Recovery Attempt}
 \begin{itemize}
     \item Autopsy was used to attempt recovery of deleted files.
     \item The results varied based on the deletion scenario.
 \end{itemize}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.99\textwidth]{everest.jpg}
-    \caption{}
+    \includegraphics[width=0.99\textwidth]{autopsy_08.png}
+    \caption{Importing Image as a new case}
+    \label{fig:1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.99\textwidth]{autopsy_09.png}
+    \caption{Looking at Recovered files}
     \label{fig:1}
 \end{figure}
 
@@ -362,7 +395,7 @@ Image Information:
 
 \section{Conclusion}
 \begin{itemize}
-    \item FTK Imager Lite successfully captured forensic images and verified their integrity.
+    \item FTK Imager successfully captured forensic images and verified their integrity.
     \item Autopsy enabled effective analysis and partial recovery depending on the deletion method.
     \item Overwriting or secure deletion significantly reduced recovery success.
 \end{itemize}
@@ -370,8 +403,8 @@ Image Information:
 \clearpage
 \begin{thebibliography}{99}
     \bibitem{ftk_imager}
-    FTK Imager Lite. \\
-    Website: \url{https://accessdata.com/products-services/ftk-imager-lite}
+    FTK Imager. \\
+    Website: \url{https://accessdata.com/products-services/ftk-imager}
 
     \bibitem{autopsy}
     Autopsy. \\

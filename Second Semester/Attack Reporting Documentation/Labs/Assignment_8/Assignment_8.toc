@@ -1,0 +1,9 @@
+\contentsline {section}{\numberline {1}Overview}{1}{section.1}%
+\contentsline {section}{\numberline {2}Incident Timeline}{1}{section.2}%
+\contentsline {section}{\numberline {3}Attack Chain Analysis (MITRE ATT\&CK Mapping)}{1}{section.3}%
+\contentsline {section}{\numberline {4}Root Cause Analysis}{2}{section.4}%
+\contentsline {section}{\numberline {5}Security Gaps and Failures}{2}{section.5}%
+\contentsline {section}{\numberline {6}Incident Response and Mitigation}{2}{section.6}%
+\contentsline {section}{\numberline {7}Impact and Consequences}{2}{section.7}%
+\contentsline {section}{\numberline {8}Lessons Learned and Recommendations}{3}{section.8}%
+\contentsline {section}{References}{4}{section*.4}%

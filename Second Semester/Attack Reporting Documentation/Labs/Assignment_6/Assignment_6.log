@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.24)  5 APR 2025 22:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.24)  5 APR 2025 23:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -567,6 +567,21 @@ LaTeX Warning: Label `fig:1' multiply defined.
 
 LaTeX Warning: Label `fig:1' multiply defined.
 
+
+LaTeX Warning: Label `fig:1' multiply defined.
+
+
+LaTeX Warning: Label `fig:1' multiply defined.
+
+
+LaTeX Warning: Label `fig:1' multiply defined.
+
+
+LaTeX Warning: Label `fig:1' multiply defined.
+
+
+LaTeX Warning: Label `fig:1' multiply defined.
+
 )
 \openout1 = `Assignment_6.aux'.
 
@@ -759,12 +774,12 @@ l.151 \end{itemize}
                     [1
 
 ]
-<ftk.jpg, id=163, 1034.86626pt x 635.37375pt>
+<ftk.jpg, id=153, 1034.86626pt x 635.37375pt>
 File: ftk.jpg Graphic file (type jpg)
 <use ftk.jpg>
 Package pdftex.def Info: ftk.jpg  used on input line 163.
 (pdftex.def)             Requested size: 465.06004pt x 285.52774pt.
-<autopsy.jpg, id=165, 853.1875pt x 444.66125pt>
+<autopsy.jpg, id=155, 853.1875pt x 444.66125pt>
 File: autopsy.jpg Graphic file (type jpg)
 <use autopsy.jpg>
 Package pdftex.def Info: autopsy.jpg  used on input line 175.
@@ -779,7 +794,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [2 <./ftk.jpg>]
-<shrink.jpg, id=171, 453.695pt x 309.155pt>
+<shrink.jpg, id=161, 453.695pt x 309.155pt>
 File: shrink.jpg Graphic file (type jpg)
 <use shrink.jpg>
 Package pdftex.def Info: shrink.jpg  used on input line 188.
@@ -794,16 +809,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [3 <./autopsy.jpg> <./shrink.jpg>]
-<folder.jpg, id=178, 959.585pt x 776.9025pt>
+<folder.jpg, id=168, 959.585pt x 776.9025pt>
 File: folder.jpg Graphic file (type jpg)
 <use folder.jpg>
 Package pdftex.def Info: folder.jpg  used on input line 202.
 (pdftex.def)             Requested size: 465.06004pt x 376.5246pt.
-<everest.jpg, id=179, 602.25pt x 401.39963pt>
+<everest.jpg, id=169, 602.25pt x 401.39963pt>
 File: everest.jpg Graphic file (type jpg)
 <use everest.jpg>
 Package pdftex.def Info: everest.jpg  used on input line 208.
-(pdftex.def)             Requested size: 465.06004pt x 309.9729pt.
+(pdftex.def)             Requested size: 281.85587pt x 187.86162pt.
 
 
 
@@ -814,11 +829,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [4 <./folder.jpg>]
-<things_made.jpg, id=185, 486.81876pt x 405.515pt>
+<things_made.jpg, id=175, 486.81876pt x 405.515pt>
 File: things_made.jpg Graphic file (type jpg)
 <use things_made.jpg>
 Package pdftex.def Info: things_made.jpg  used on input line 216.
-(pdftex.def)             Requested size: 465.06004pt x 387.39035pt.
+(pdftex.def)             Requested size: 281.85587pt x 234.78427pt.
+<deleting_using_eraser.png, id=176, 578.16pt x 386.19281pt>
+File: deleting_using_eraser.png Graphic file (type png)
+<use deleting_using_eraser.png>
+Package pdftex.def Info: deleting_using_eraser.png  used on input line 234.
+(pdftex.def)             Requested size: 281.85587pt x 188.2697pt.
 
 
 
@@ -828,7 +848,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[5 <./everest.jpg>]
+[5 <./everest.jpg> <./things_made.jpg>]
+<Deletion_1.png, id=186, 578.16pt x 386.19281pt>
+File: Deletion_1.png Graphic file (type png)
+<use Deletion_1.png>
+Package pdftex.def Info: Deletion_1.png  used on input line 242.
+(pdftex.def)             Requested size: 281.85587pt x 188.2697pt.
+<Deletion_2.png, id=187, 283.0575pt x 377.91188pt>
+File: Deletion_2.png Graphic file (type png)
+<use Deletion_2.png>
+Package pdftex.def Info: Deletion_2.png  used on input line 250.
+(pdftex.def)             Requested size: 234.8775pt x 313.59181pt.
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -837,16 +868,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[6 <./things_made.jpg>]
-<checksums.jpg, id=198, 1293.83376pt x 436.63126pt>
+[6 <./deleting_using_eraser.png> <./Deletion_1.png>]
+<checksums.jpg, id=196, 1293.83376pt x 436.63126pt>
 File: checksums.jpg Graphic file (type jpg)
 <use checksums.jpg>
-Package pdftex.def Info: checksums.jpg  used on input line 258.
+Package pdftex.def Info: checksums.jpg  used on input line 283.
 (pdftex.def)             Requested size: 465.06004pt x 156.94061pt.
-File: everest.jpg Graphic file (type jpg)
-<use everest.jpg>
-Package pdftex.def Info: everest.jpg  used on input line 269.
-(pdftex.def)             Requested size: 465.06004pt x 309.9729pt.
 
 
 
@@ -856,11 +883,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[7 <./checksums.jpg>]
-File: everest.jpg Graphic file (type jpg)
-<use everest.jpg>
-Package pdftex.def Info: everest.jpg  used on input line 283.
-(pdftex.def)             Requested size: 465.06004pt x 309.9729pt.
+[7 <./Deletion_2.png>]
+<imaging_4.png, id=203, 328.97906pt x 264.23718pt>
+File: imaging_4.png Graphic file (type png)
+<use imaging_4.png>
+Package pdftex.def Info: imaging_4.png  used on input line 294.
+(pdftex.def)             Requested size: 281.85587pt x 226.39282pt.
+<imaging_6.png, id=204, 327.47343pt x 222.8325pt>
+File: imaging_6.png Graphic file (type png)
+<use imaging_6.png>
+Package pdftex.def Info: imaging_6.png  used on input line 301.
+(pdftex.def)             Requested size: 281.85587pt x 191.79202pt.
 
 
 
@@ -870,11 +903,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[8]
-File: everest.jpg Graphic file (type jpg)
-<use everest.jpg>
-Package pdftex.def Info: everest.jpg  used on input line 296.
-(pdftex.def)             Requested size: 465.06004pt x 309.9729pt.
+[8 <./checksums.jpg> <./imaging_4.png>]
+<imaging_10.png, id=212, 303.38344pt x 222.07968pt>
+File: imaging_10.png Graphic file (type png)
+<use imaging_10.png>
+Package pdftex.def Info: imaging_10.png  used on input line 308.
+(pdftex.def)             Requested size: 281.85587pt x 206.32526pt.
+<autopsy_08.png, id=213, 1290.32062pt x 693.34032pt>
+File: autopsy_08.png Graphic file (type png)
+<use autopsy_08.png>
+Package pdftex.def Info: autopsy_08.png  used on input line 322.
+(pdftex.def)             Requested size: 465.06004pt x 249.88797pt.
 
 
 
@@ -884,7 +923,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[9]
+[9 <./imaging_6.png> <./imaging_10.png>]
+<autopsy_09.png, id=222, 1290.32062pt x 693.34032pt>
+File: autopsy_09.png Graphic file (type png)
+<use autopsy_09.png>
+Package pdftex.def Info: autopsy_09.png  used on input line 329.
+(pdftex.def)             Requested size: 465.06004pt x 249.88797pt.
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -893,7 +938,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[10]
+[10 <./autopsy_08.png> <./autopsy_09.png>]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -903,7 +948,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
 [11]
-Overfull \hbox (133.31842pt too wide) in paragraph at lines 389--391
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.93642pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.93642pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
+
+[12]
+Overfull \hbox (133.31842pt too wide) in paragraph at lines 422--424
 \T1/fnc/m/n/10.95 Website: [][]$\T1/cmtt/m/n/10.95 https : / / support . microsoft . com / en-[]us / windows / create-[]and-[]format-[]a-[]hard-[]disk-[]partition-[]in-[]windows$[][] 
  []
 
@@ -916,7 +970,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.93642pt}.
 
-[12
+[13
 
 ] (Assignment_6.aux)
  ***********
@@ -928,20 +982,20 @@ L3 programming layer <2024-12-09>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Assignment_6.out' has not changed.
-(rerunfilecheck)             Checksum: E90D6210F59E5C622876A6D975A571E5;5164.
+(rerunfilecheck)             Checksum: A73C6B0F5EA2D6B36A83F46C1E8B69AA;4813.
  ) 
 Here is how much of TeX's memory you used:
- 13588 strings out of 473574
- 210006 string characters out of 5713718
- 614885 words of memory out of 5000000
- 36501 multiletter control sequences out of 15000+600000
+ 13646 strings out of 473574
+ 211229 string characters out of 5713718
+ 613911 words of memory out of 5000000
+ 36555 multiletter control sequences out of 15000+600000
  601970 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,79p,521b,611s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,521b,610s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Krishnaraj\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tctt1095.pk> <C:\Users\Krishnaraj\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk><C:/Users/Krishnaraj/AppData/Local/Programs/MiKTeX/fonts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Users/Krishnaraj/AppData/Local/Programs/MiKTeX/fonts/type1/urw/ncntrsbk/uncr8a.pfb><C:/Users/Krishnaraj/AppData/Local/Programs/MiKTeX/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on Assignment_6.pdf (14 pages, 1524468 bytes).
+Output written on Assignment_6.pdf (15 pages, 1782384 bytes).
 PDF statistics:
- 342 PDF objects out of 1000 (max. 8388607)
- 59 named destinations out of 1000 (max. 500000)
- 268 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 359 PDF objects out of 1000 (max. 8388607)
+ 63 named destinations out of 1000 (max. 500000)
+ 292 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,33 @@
+﻿Created By Exterro® FTK® Imager 4.7.3.81 
+
+Case Information: 
+Acquired using: ADI4.7.3.81
+Case Number: 1
+Evidence Number: 11
+Unique description: 1
+Examiner: 1
+Notes: 1
+
+--------------------------------------------------------------
+
+Information for C:\Users\Computer\Downloads\ard:
+
+Physical Evidentiary Item (Source) Information:
+[Device Info]
+ Source Type: Logical
+[Drive Geometry]
+ Bytes per Sector: 512
+ Sector Count: 38,912
+[Physical Drive Information]
+ Removable drive: False
+ Source data size: 19 MB
+ Sector count:    38912
+[Computed Hashes]
+ MD5 checksum:    9ea725c870a83043ea15b591d16abdd8
+ SHA1 checksum:   2495b0f0da571ec75453f9000690528af61aefd6
+
+Image Information:
+ Acquisition started:   Tue Mar 25 09:49:46 2025
+ Acquisition finished:  Tue Mar 25 09:49:47 2025
+ Segment list:
+  C:\Users\Computer\Downloads\ard.E01
