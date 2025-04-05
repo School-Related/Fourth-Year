@@ -1,0 +1,9 @@
+\contentsline {section}{\numberline {1}Aim}{1}{section.1}%
+\contentsline {section}{\numberline {2}Demo}{1}{section.2}%
+\contentsline {section}{\numberline {3}Frequently Asked Questions}{1}{section.3}%
+\contentsline {subsection}{\numberline {3.1}What is the Concept of Gas in Solidity? How can a Developer Optimize Gas Usage in Smart Contracts?}{1}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}What are the Key Features of Remix IDE and How Does it Simplify the Development of Ethereum Smart Contracts?}{1}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}How Does the "Solidity Compiler" Plugin in Remix Work, and What Options Does it Provide for Developers?}{2}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}4. What is the Difference Between Public, Internal, and Private Visibility in Solidity?}{2}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Conclusion}{2}{section.4}%
+\contentsline {section}{References}{3}{section*.2}%
