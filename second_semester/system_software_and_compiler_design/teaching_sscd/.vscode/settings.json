@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.rmd": "markdown",
+        "myheader.h": "c",
+        "chrono": "cpp"
+    }
+}

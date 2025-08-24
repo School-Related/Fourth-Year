@@ -1,0 +1,17 @@
+// on linux 
+// sudo apt install bison flex gcc
+
+bison -d parser.y       
+flex Assignment_7.l             
+gcc lex.yy.c parser.tab.c -o parser-lfl
+./parser
+
+
+Valid inputs: 
+1. if(x) { y; }
+2. while (x) { a; b; }
+3. do { a; } while(x);
+
+Invalid inputs
+1. if x { y; }
+2. while (x { a; } 

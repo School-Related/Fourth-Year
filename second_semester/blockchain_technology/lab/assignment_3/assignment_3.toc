@@ -1,0 +1,9 @@
+\contentsline {section}{\numberline {1}Aim}{1}{section.1}%
+\contentsline {section}{\numberline {2}Demo}{1}{section.2}%
+\contentsline {section}{\numberline {3}Frequently Asked Questions}{1}{section.3}%
+\contentsline {subsection}{\numberline {3.1}What is Ganache and how is it used in blockchain development?}{1}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}What are the key differences between Ganache test network and the real Ethereum network structure?}{2}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}How can you deploy a Solidity smart contract to a Ganache network using Truffle?}{2}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}What steps do you take to interact with a deployed smart contract on the Ganache network using Web3.js?}{3}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Conclusion}{4}{section.4}%
+\contentsline {section}{References}{5}{section*.2}%

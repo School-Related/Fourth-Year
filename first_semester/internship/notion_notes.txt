@@ -1,0 +1,930 @@
+# All work done till now tuesda (ppo discussion)
+
+Date: November 5, 2024 10:30 AM
+
+day i got asked for the ppo offer, onboarding sahil, retro and planning for next iteration. choosing ui, talks with harry about mit and stuff.
+# Diwali Thursday
+
+Date: October 31, 2024 11:35 AM
+
+literally woke up at like 1130 today. so today is diwali. iw as up till 5 wiring stuff for my desk yesterday, no wonder i didnt even blink till 1130, i thought i would tho,
+
+but missed scrum due to that. no issues. 
+
+so as now i have like 4 monitors, im happy to keep one of them for the vm. even these notes im actively taking on the 4th new monitor. i really like this position for viewing. 
+
+i was mostly on leave today tired from yesterday. and i had to write test cases which i didnt really feel like doing. 
+
+now that i slept and woke up, its like 630, but i still have some work to do. ill mostly put this as a holiday. if i can write the test cases today then itll be a half day or else not. 
+
+yeah prolly a holiday. its fine.
+﻿Name,Date
+market segment thursday,"November 14, 2024 10:36 AM"
+what even wednesday,"November 14, 2024 10:34 AM"
+Cabin configuration today,"November 12, 2024 10:39 AM"
+Everyone is here monday,"November 11, 2024 12:14 PM"
+"Finally friday, but doesnt feel like it","November 8, 2024 10:35 AM"
+gotta do some work Thrusday,"November 7, 2024 10:26 AM"
+starting cabin ui frontend today,"November 6, 2024 10:29 AM"
+All work done till now tuesda (ppo discussion),"November 5, 2024 10:30 AM"
+Late woke up monday,"November 4, 2024 4:45 PM"
+Diwali Thursday,"October 31, 2024 11:35 AM"
+WFH Wednesday,"October 30, 2024 4:37 PM"
+on local tuesday,"October 29, 2024 10:58 AM"
+WFH Monday,"October 28, 2024 10:14 AM"
+Sick Friday,"October 25, 2024 12:10 PM"
+Thursday,"October 24, 2024 12:12 PM"
+Wednesday,"October 23, 2024 8:31 AM"
+Tuesday,"October 22, 2024 12:59 PM"
+Monday,"October 21, 2024 3:09 PM"
+Thursday,"October 19, 2024 3:45 PM"
+Wednesday,"October 16, 2024 9:28 PM"
+Tuesday,"October 15, 2024 12:20 PM"
+Gotta get through this Monday,"October 14, 2024 9:54 AM"
+Gotta finish this story today,"October 13, 2024 1:40 PM"
+Rough Friday morning,"October 11, 2024 11:23 AM"
+Work from Home - Breaking Fast,"October 11, 2024 11:21 AM"
+Navratri Celebration,"October 9, 2024 10:02 AM"
+Today,"October 8, 2024 12:30 PM"
+Today,"October 7, 2024 8:56 PM"
+# Cabin configuration today
+
+Date: November 12, 2024 10:39 AM
+
+reached just on time today
+
+1. i gotta check that data about demand forecast screen
+2. i gotta fix that bitbucket random ass issue. 
+3. test market segment
+4. gotta do the ascending resource sending thing
+5. gotta add client code in api
+6. write integration test for it. 
+7. talk to harry about stats corr outbound thing. 
+8. make some decent progress on cabin configuration. might have to stay over for a longer time today i think, maybe leave at 8 or sth. theres a lot to do even though it doesnt seem like. 
+
+ill never forget inbound flow component test. sweet and sour memories. 
+
+well after that i helped sahil for a little bit, then started on the market segment table creation thing, and found some issues, so fixed them before lunch. now i merged it with main and now build is failing for no reason idk why. gotta fix that now. 
+
+then there is ui, which i tried to fix. chirag is getting more and more annoying randomly at times. 
+
+so i tried to fix ui there were a lot of git issues, so with some help from sunanda, i was able to fix that somehow. and ill be merging that pr. tmro ill say this. the other thing would be to help jyoti for testing demand forecast screen. i gotta make sure if that data is different or not. if so gotta fix that. idk when ill start working purely on frontend. still gotta discuss filecreated date with harry.
+﻿Name,Date
+market segment thursday,"November 14, 2024 10:36 AM"
+what even wednesday,"November 14, 2024 10:34 AM"
+Cabin configuration today,"November 12, 2024 10:39 AM"
+Everyone is here monday,"November 11, 2024 12:14 PM"
+"Finally friday, but doesnt feel like it","November 8, 2024 10:35 AM"
+gotta do some work Thrusday,"November 7, 2024 10:26 AM"
+starting cabin ui frontend today,"November 6, 2024 10:29 AM"
+All work done till now tuesda (ppo discussion),"November 5, 2024 10:30 AM"
+Late woke up monday,"November 4, 2024 4:45 PM"
+Diwali Thursday,"October 31, 2024 11:35 AM"
+WFH Wednesday,"October 30, 2024 4:37 PM"
+on local tuesday,"October 29, 2024 10:58 AM"
+WFH Monday,"October 28, 2024 10:14 AM"
+Sick Friday,"October 25, 2024 12:10 PM"
+Thursday,"October 24, 2024 12:12 PM"
+Wednesday,"October 23, 2024 8:31 AM"
+Tuesday,"October 22, 2024 12:59 PM"
+Monday,"October 21, 2024 3:09 PM"
+Thursday,"October 19, 2024 3:45 PM"
+Wednesday,"October 16, 2024 9:28 PM"
+Tuesday,"October 15, 2024 12:20 PM"
+Gotta get through this Monday,"October 14, 2024 9:54 AM"
+Gotta finish this story today,"October 13, 2024 1:40 PM"
+Rough Friday morning,"October 11, 2024 11:23 AM"
+Work from Home - Breaking Fast,"October 11, 2024 11:21 AM"
+Navratri Celebration,"October 9, 2024 10:02 AM"
+Today,"October 8, 2024 12:30 PM"
+Today,"October 7, 2024 8:56 PM"
+# Navratri Celebration
+
+Date: October 9, 2024 10:02 AM
+
+in a rather disdain and demotivating turn of events, my throat is burning now, and i couldnt sleep due to that, on the upside, i reached on time today. felt quite good waking up early. gotta have to put this into routine. feels good. not the same with my throat though. 
+
+gotta do the actual thing today, but man am i dreading the idea of starting that. 
+
+gotta do something today right. but we have navratri celebration today, so like work is only till 330. its 10 rn. 
+
+Yesterday we pushed the forecast api and that build ran successfully, gotta write a little more test cases for it though. 
+
+anyway lets start maybe working on that md5 and creation date story just to get things going. 
+
+helped chirag set up wsl and intellij
+
+explained the containers and process to him. 
+
+started working on the created date story. 
+
+finished working on that story quite quickly actually it was a small change. should have done it before. 
+
+pushed for pipelike
+
+explained the project to chirag in a meeting after this. 
+
+it was quite nice and easy actually. dude is fine too ig. 
+
+fixed some failing test cases on the pipeline for the gcs story, pushed it waiting for it to merge rn. 
+
+now working on the actual thing again.
+# on local tuesday
+
+Date: October 29, 2024 10:58 AM
+
+i woke up at like 9:07 today. i came at office at 10:17. so it felt good to drive which i hadnt in like 4 days. 
+
+coming to work is good, no one commanding is there, just team effort to fix something. just me chirag and sunanda. its always good when there are less people around, more work gets done. 
+
+like yesterday for example. but yeah its important to come to office too. its a whole different community of people you meet. its good. this is why i wish mom also had a work environment like this to go to. its rare for everything and everyone in your life to go to shit, but when one part of your life goes to shit, atleast another one is there to keep you up. 
+
+anyway so now today ill be testing. merging more things. debugging the shit out of that file created date story. might as well merge the analytics thing too. 
+
+as far as noting down results is concerned. internal apis arent working. 
+
+stage and dev service are working so well be merging that. 
+
+to harry imma have to ask him to review the actual api, and the analytics pr. 
+
+those 2. 
+
+ok heres a lesson learnt. use your work username to sign in each time. try to separate out your work and personal accounts. even on windows. use some vm or something idc. but now i have 2 accounts commiting on cruiserms, krishnaraj-thadesar_ideas and krishnaraj thadesar. bruh.
+
+idk if someone notices this. its not a huge deal but a person who isnt a member of ideas is commiting on their latest product. bruh. 
+
+anyway so thats a lesson learnt. this internship just keeps on teaching me new and new things. 
+
+things iv heard but now i fkin know from experience. 
+
+so iv merged swagger too. 3 prs are done. too much fucking responsibility but boy do i feel confident now to work on dev and directly on the branches. that has changed for sure. 
+
+thats a significant part of this. mistakes, and the confidence it gives you after not making the same mistakes. after doing something. 
+
+ofc once harry comes things are bound to get messy as the fucked up mistakes from my end tend to come out. but well have to see about that next week. one thing at a time. 
+
+the thing at the time is to test dev, make sure it works today, if it does today will be a peaceful day. otherwise a hectic day. 
+
+but the more pressing thing at the time is chirag thinking he can fix my pr. i appreciate the effort but it has become of more importance due to the stakes increasing. i told him id review all his prs for the next 2 months without question if he can find a better way. i told him ill say hats off to you for finding a better way. ill even go as far as to accept that chirag is a better programmer than me. my ultimate efforst from 7 am to 10 am, if they dont yeild code strong enough to pass his introspections, then i better take the L. 
+
+lets see. 
+
+haha
+
+we have seen it. 
+
+i lost. i have taken the L. 
+
+bro is in fact a better programmer than me. this is something. i have suddently lost all of my confidence. and face.
+# Everyone is here monday
+
+Date: November 11, 2024 12:14 PM
+
+almost everyone. arun is here. this was a long scrum today. woke up at like 920. didnt sleep well. 
+
+now gotta still do some stuff
+
+1. market segment thing, decide schema
+2. find out why data was different for dev for forecasting
+3. work on ui thing, fix that pr, start working on that.
+4. push harry to tell me about the stats corr thing. 
+5. index reservation table in this pr itself. discuss with arun about that too. 
+
+so i helped sahil after scrum to fix some file and postgres issues. 
+
+i thought i had presentation today, but apparently its tomorrow. 
+
+then i was just working on reservation indexing and the code for adding market segment. now that is done anyway, i just have to test it. so integration test is failing. then i also worked on fixing some ui changes. this is taking more time than expected. i gotta finish this market segment table thing after going home, so tomorrow, i can start working on ui. 
+
+i gotta test this after deploying it on dev as well. im still not at all worried about the cabin configuration screen.
+
+but its late now and i gotta go. 
+
+i keep making stupid mistakes.
+# Finally friday, but doesnt feel like it
+
+Date: November 8, 2024 10:35 AM
+
+a lot of work now. this weekend ill be doing a lot more of that ui thing, ill set it up on m,y pc and itll be fun over this weekend. 
+
+but today, ill be doing backend alone, the market segment thing, and figuring out the sailing issue and fixing it should be done today. came at the same time as harry today. avoided sharing the lift somehow though. he did see me though. 
+
+anyway so i started processing the file
+
+things to do, which are a lot after this scrum. 
+
+1. discuss and give dummy data to sagar gotta discuss with chirag and sunanda. 
+2. fix the sailing product name thing, check on stage
+3. think about api to add pills in demand forecast page. 
+4. do the market segment code, that seems to be simple,
+5. add ascending sort in ship data by name while sending api data. do this for everything else too. 
+6. discuss with harry about stats corr file created date. 
+7. discuss with jyoti about defects. 
+8. find out why data is screwed up in forecast, check out stage db, query it properly, prove its an analytics issue, and cook up good data on dev. 
+9. analytics thing with sahil if needed. he said he would wanna sync up with me. 
+10. show metacabins in order of rank
+
+so i did some more shit into the sailing thing, that issue is sorted. then i had a call with sagar, chirag about dto for pricing screen, which sagar wasnt getting, so i have to do that, so most of today is going to be in doing that. i feel the wish of actually doing all this work so ill be doing it over this weekend. the atmosphere really is fun, coz everyone is encouraging. sahil also called me about some postgres thing. well fix that this monday, i am so happy and so grateful to God, that i am being recognized for the things i am good at, setup and installation and stuff. Atleast the confidence it gives you at ur first job is that you are good at this, and that whatever you thought you are good at you actually are. 
+
+last time i was able to give dto and dummy data quite fast, so because of that, i was given this again today.  
+
+then today being friday, everyone was in a joking mood. most of the people were from home. it was just the interns here. chirag apparently was telling people from his previous team that there are no foriegn keys in our database. we laughed about it literally the entire day. man it sure is fun to work here. 
+
+you know what i was sceptical about is isl. Tamal, harry and everyone was asking me if ill play there. and now everyone expects me to be a good goalkeeper. ill perform yes, but if i dont, itll be humiliated asf. 
+
+anyway so then i had another meeting with sagar and sunanda about the dto thing, and we are done with that. ill give dummy data. the only thing is its almost 5 now and i wanna leave home. but i have to finish this dto. might do it from home. 
+
+well then there was this pg dump script i wrote for aarav, and i had some more discussion with sagar about the dto, i was quite absent minded about it tbh. anyway thats almost done. one more thing is left ill do that once i go home. 
+
+i waited to help aarav out, theres not much to do at home, and idk, it feels really good to be working rn.
+# Gotta finish this story today
+
+Date: October 13, 2024 1:40 PM
+
+first had to sort the github issue. it was done after some efforts. 
+
+the amount of random issues that pop up here are unreal bro like i dont even  have words for this sorta shit anymore. 
+
+first this github thing. then now i couldnt install and connect to dev with heidisql on vm. 
+
+somehow that also worked. 
+
+then i started the app on my pc, and someehow i cant do double shift now. 
+
+reservation file was old and the columns had changed so i cant even downnload the file from home, so now i luckily had it on lap, and so i copied it witht a pendrive too my pc. 
+
+then out of nowheree mmy keyboard stops working properly, like bruh. 
+
+so i had to shift to my mechanical keyboard, which iv been using for a while, and as a result of that you can see that the things i have written on top are just random letters being pressed twice. 
+
+then i get some more random null and not nul issus in the code. good tot have caughtt them before merging, and i have tto write some good test cases for thtis today. i ahvent even begggggugn with the actuall story broooooooooo. 
+
+neevermind i cant use thttis keybard eittther. 
+
+now im back to my previous keyboard, and oh is this a breath of fresh air. atleast i can type here. this is the first wireless keyboard i bought like a few years ago. 
+
+nice. 
+
+let me please continue. if this also doesnt work, then theres clearly some issue with my drivers or my pc. 
+
+now apparently atleast things are working fine. 
+
+i updated wherever ship capacity was null and it was throwing an error which it shouldnt. so now we just return 1 instead, so as to give some absurd value if capacity is null. 
+
+then i added a native query to get the latest request id for forecasts. 
+
+tested if it works by creating some dummy data in local db tables. it works. writing test cases for this is left. 
+
+gota add index in reservatiotn ttable
+
+discuss doubtts. 
+
+wrote more things and forecast and actual tests altered more. figured out whatt and how tot code, now itts just a matter of doing it. 
+
+hopefully ill wake up early ttomorrow and reach a bit earlier. maybe even at say 9 would be fine. but 830 better. so id have to leave at 8. wake up at 730. 
+
+some doubtts are there which i wrote in buffer. 
+
+clearly the story isnt complette but ittll be done by tomorrow. 
+
+if i had done this yesterday i could have done a lot more today, but like i really needed yesterday as well. so its ok, i did as much as i could.
+# gotta do some work Thrusday
+
+Date: November 7, 2024 10:26 AM
+
+today gotta do some stuff. iv picked up this story so i gotta start doing things in it. imma pretend things are happening though. 
+
+today ill be investing some serious time on this. ill make the page, check what all is there in bitbucket. 
+
+i also gotta come to work early tomorrow or something, and fix the reservation thing. gotta write that code real quick and push those 2 fixes about reservation. 
+
+ogay : now after scrum there is work to do more. 
+
+1. reservation table gotta add market segment code
+2. talk with harry about some stats corr thing. 
+3. fix the sailing defect in reservation table thing. 
+4. fix stats corr build failures due to chirag merged code
+
+the way things are looking rn, i dont even know where to start in the ui. the code just looks like greek bruh. idk if ill be able to do it. 
+
+so i created some libraries with sunanda’s help wrote some basic code. things are working as expected. ill be writing and making that page soon in the next few days
+
+i have a meeting with sahil from 3 to 5. there is also some work to do, and everyone is busy in some cloud meeting. 
+
+i was happy to have written some ui stuff, and i am understanding it as well.
+
+then i wrote and tried to fix the sailing defect, i couldnt observe same things as harry, so imma have to investigate it. 
+
+so i spent like a few good solid minutes there debugging what could be wrong, and ill have to do more. 
+
+then i had that meeting with sahil, in which i told him about all the avaya thing, and he told me to do masters, i had a pretty good discussion with him about all this too. it was good, but got me worried. bro was quite pressing about doing gate. 
+
+most of my thoughts havent really changed, but i do believe i may have to take a step on for some things. 
+
+then we had more of a kt discussion, some more db reading, its fun to explain to him, interesting dude and a good sharp student. he was in avaya before for the record, and was quite happy to have learnt that i was placed there. even asked me who took the interview, to which obviously i had no idea. 
+
+went home after that.
+# Late woke up monday
+
+Date: November 4, 2024 4:45 PM
+
+so just came to pune yesterday night. slept and then forgot about everything. 
+
+so dad woke me up at like 940. and there was no way im getting late the day after diwali, whatever remaining hopes id have had for ppo, those would have gone too. so i rushed like shit. broke all signals. and somehow reached at 1025. the fastest i ever have. i will finally get back to my normal routine from today. back to reading books and everything. 
+
+work wise, i did some kt and setup help for sahil, who is now part of this team. good to know that. other than that, all i did was write more test cases for stats thing. i just pushed it and somehow its already 5. today was toooo fast. i still gotta test this on dev, but toherwise all my work for this iteration is done,a nd i have to do this like 4 more times for 4 more iterations. 2 more months are left. 
+
+there was some us dude who came here and he was terrible guilty he couldnt vote, but was happy that he wasnt in the us during the election. interesting dude.
+
+irrespective of whether or not i get selected, i would like to complete all my tasks for all remaining iterations. 
+
+i was more than happy for the setup, i did miss telling something to sahil, which i should not have, but these kts and setups are the only things im happy about and proud to have accomplished. anything else, im sure any intern could have done. 
+
+this test case thing was another one of those things, which i dont feel like doing, i get stuck and stuff. so i would now very much like some work to do.
+# Gotta get through this Monday
+
+Date: October 14, 2024 9:54 AM
+
+came in at 930. 
+
+wrote down questions to discuss for this story. 
+
+iv to write test cases and also maybe write more code in this story. 
+
+include charter exceptions here for each query. 
+
+i have to make even smaller prs. 
+
+copy from the reservation v2 thing. 
+
+we had the whole iteration planning meeting after this
+
+and then lunch. 
+
+and then i got to know that the avaya offer has been revoked. 
+
+so after that now that i have to push the forecasting pr, now its finally one of those times that i have to put on headphones, start some music, and lock in. 
+
+so then i wrote some code, and found more issues while calculating
+
+then did some coding for that forecast api thing. most things are working, yet some things remain. test cases are pending
+
+tried to fix docker issue of chirag. 
+
+went for tea and then talked to danish and tried to fix that issue. 
+
+then talked to arun for a big and then thought about what to do about the forecast api. 
+
+assigned some stories to myself about the jira thing. 
+
+went home and tried to understand why and how docker containers talk to each other, and learnt about docker containers.
+# Rough Friday morning
+
+Date: October 11, 2024 11:23 AM
+
+So today im somehow back. i wanna take a leave so badly, but nah, ill pull it. 
+
+avaya has revoked certain offers in some companies. 
+
+chirag seems to be ok to work with, not as bad. 
+
+i finally have to turn today to the work iv been avoiding. its about time. 
+
+got late to scrum today too. i have to now start working, its like 1130. 
+
+now i start helping danish for his tailwind thing, which continues and is done until 1, which is when we got have lunch. 
+
+for the tailwind thing we try a lot, creating a new project and stuff. then eventually its done smh. im grateful for that issue fix. 
+
+lunch was also fun lots of discussions, this whole workflow of work life here seems extremely enjoyable. i can understand how some people really enjoy work. 
+
+you forget for a while what is going on at home, or in your life, you forget about your issues, things that bother you, and anything else. even if for a while. the actual work is always interesting, and just like how gym or exercises become fun, work exercise becomes fun for your brain, if the work you are getting is good, and then you start to autopilot that work. then theres usually more interaction, at lunch tea and stuff. more laughs. theres stress too, yes, but then it depends on the kind of person you are that decides how you take the peaks and valleys in your work. my graphs go down really badly when im in a valley, and my happiness from work doesnt carry over at home. im normal at home. i dont think about work at home. not even the good things. the troubled things definitely, i dream about my code not working almost every other night. so its important to maintain that balance, im fine in the happy things, coz i know that they dont last. no highs last. its for a short time, and then things go back to either normal, or go down. 
+
+but the downs dont last a lot either. and i think that i am beginning to learn. 
+
+Im not sad at all about Avaya too actually. im quite surprised why thats not the case. but i do have to start thinking seriously about aptitude tests, and interview prep. i gotta stay in touch. 
+
+after lunch me and chirag sat for the db thing. bro had some good questions that made me think, we walked through almost the entire code. i found out some more details about the code. thats something i learnt from him, that it is actually possible to have gone through the entire code and understand what it does. itll take a few days sure, but ull have a pretty good idea. 
+
+then we had an hr activity from 3 to 4. so after that we had tea, and here i am writing this. theres obviously that work left to do which if i dont im sure to get some scoldings. so ill do it over the weekend and have it ready for code review. 
+
+this whole week was a ride.
+# Sick Friday
+
+Date: October 25, 2024 12:10 PM
+
+sick today so couldnt wake up morning. i mean i could have woken up but i made the mistake of using otrivin and my nose wasnt blocked anymore leading to me getting good sleep. i realize how i just havent been getting good sleep for a long time. so i didnt wake up and i just joined scrum online. 
+
+the worse thing however, is that there is a lot to do, and in that like i said yesterday i didnt test the forecast api on dev, which honestly i didnt know like i thought dev is this huge thing we cant fuck around with. it was my bad too no doubt. i wrote a fuckall query. im writing code as if im high or something when i look back at that shit. definitely my bad but it should have been tested. this is why i wanted to test the query in the repo. 
+
+we gotta test in dev now before i publish anymore apis. 
+
+so anyway then i started intellij at home and my intellij just randomly wont recognize any class. it wont build. luckily i can atleast access git. but then i get weird ass errors like these when im at home. i honestly love working from home though. i like going to office and interacting as well. but this has taught me, i gotta work from home like 2 days a week and work from office the other 3 days. that really is how it can be perfectly balanced. as all things should be. 
+
+so since then i fixed swagger. i have like 3 branches called fix-sth for 3 stories. harry was like bugs is not the way to solve a problem. u test it before telling, and that he needs to trust us. if we say something is working, we better be sure about that. 
+
+on top of all this reprehension, i didnt even show up today. lol. the chances of a ppo here are looking slimmer and slimmer. 
+
+so i had a call with chirag. regarding this new story. almost done with that. gotta push that and test that ON DEV and also gotta test other apis on dev
+
+arun isnt there so there is no one to code review either. 
+
+iv got many outstanding prs due to that. 
+
+i havent even had a bath till now nor did i brush. im not feeling great too. iv been feeling this way from weeks almost. anyway i gotta find a way to ping me to write these entries every 2 hours at the office.  they seem to be quite important. i end up clearing my mind and writing a lot too. 
+
+its good. 
+
+maybe should find a way to lock it as well. 
+
+anyway gotta push this .
+
+i need some more axe oil, and i can just lean over and get it coz guess what? im at home babieee
+
+anything i dont know, i find myself asking gpt a lot more now a days. 
+
+it feels like the way to survive is to keep taking a hit after hit and somehow not give up. that in itself to me seems like a respectable thing to do. 
+
+idk when i wrote this but after this there was some issues with my blanket in the washing machine. that was ffixed somehow too. then i had lunch. few more calls with chirag about the story and things, i find myself asking him for advice quite often. that is good. bro isnt that annoying now as much he was before. as people know people they treat you with the kinda behaviour you mutually deserve. not everyone ofcourse, but i have seen people changing in the span of a few days of knowing me. i have observed that in myself as well. 
+
+today was dreadful in that i just couldnt figure out how other way to fix that primary key id thing was. worked too much in depth for fixing that and eventually somehow made it a composite primary key and got done with it. 
+
+the rest of the day was in fixing other things, test cases that werent running. i have like bro i have like 6 PRs in review currently. thats the most i have ever had. a lot of things are being done. lot of stories. i like doing that. a lot at once. 
+
+anyway after that i fixed the meta dto thing. fixed other test cases. the analytics call thing which i had thought would be done by today did not complete, but a lot of other things did. i even played shadow fight in between coz i had given up that much. now its like 7. when at home i work a lot more. ill be working from home on monday as well. no one is coming to office. 
+
+the entire day has been a mess due to the whole coughing and sneezing thing. i have a slight headache as well.
+# market segment thursday
+
+Date: November 14, 2024 10:36 AM
+
+i gotta do this somehow today. 
+
+1. also gotta finish checkboxes from past few days. 
+2. finish market segment story
+3. start ui make some decent progress. 
+4. include for analytics in ui, remove filters, manually set them as false for things we dont use by running a script and then putting it in the story comments. 
+
+it really was a market segment thursday
+
+all things market segment. 
+
+anyway so after scrum i worked on fixing those errors, and making the market segment pr work. test cases were remaining when i went to lunch. i heard good things then about people in 2nd floor praising me. it was good to hear. then i helped sagar throughout in some thing or another about some bug or another. there was a devbox with sahil. with sagar it was some frontend thing. tht was fixed alter. then had some discussion about api calls, tables. 
+
+then did the whole ascending thing for stuff. and then some inbound flow component tests. should have started working on the ui, but ill do that probably over this weekend.
+# Monday
+
+Date: October 21, 2024 3:09 PM
+
+got before time for scrum
+
+had a random discussion about next js react etc with chirag. 
+
+then looked at comments for the forecast implementation pr
+
+still resolving it. 
+then had a call with jyoti during tea time. 
+
+not going for tea today. 
+
+gotta do this test case thingy about my forecast implementation api pr. gotta push this today by ignoring those tests. 
+
+so i did that and then i started working on how to make db custom test cases. 
+
+also had a call with jyoti about the demand forecast thing
+
+then had another talk with chirag about some postgres thing
+# starting cabin ui frontend today
+
+Date: November 6, 2024 10:29 AM
+
+going to setup. just reached 10 mins before scrum, woke up again at like 930
+
+did the setup, that all worked nicely, thankfully. then in the scrum chirag was talking about some code thing, and some tables. 
+
+after that is when i must have done the setup, and then after lunch had a meeting with sahil. it was at 2. from 2 to 330. we talked about all the cruise things, he was quite happy about my method of explaining. gives me more motivation to teach. 
+
+iv decided about that though. 
+
+anyway then it was almost 4, i was resolving some issues, and i also had a call with arun about reservation indexing. then more smaller kt sessions with sahil, and that was it.
+# Thursday
+
+Date: October 19, 2024 3:45 PM
+
+i forgot to write anything here on thursday. i dont even remember what happened today. 
+
+idk how peopll in crime shows are able to remember exactly what they did like so much time ago, weeks prior to the murder.
+# Today
+
+Date: October 7, 2024 8:56 PM
+
+reached office just before scrum
+
+started working on alter table queries for ship and other tables. 
+
+pushed that pr, then worked on Aarav’s query pushed that pr. made changes pushed again. 
+
+started writing implementation of the forecast api’s. got that working fine. 
+
+going to work on the actual one tomorrow.
+
+wasted more time talking in lunch.
+
+discussed with mohit regarding random ideas. took some time as well.  
+
+merged main with demand forecast api dummy ones.  
+
+helped debug aarav code. 
+
+Talked to aarav regarding work and stuff. 
+
+Random weird test cases failing. idek what to do at this point.
+# Thursday
+
+Date: October 24, 2024 12:12 PM
+
+Again i came early at like 814. i had breakfast this time even after having milk. 
+
+then i started diving quite deep on the jpa repo refactoring thing. it was quite interesting as well, fun to have tried to diagnose an issue after such a long while. 
+
+so after that now its like 12 13. there was scrum too, i was glad to say everything is done. 
+
+then i pushed it after fixing some test cases. i started using the github copilot finally in my intellj, now just see how quickly i can code. no wonder chirag’s code was this good. bro is good no doubt at this but when i saw it i should have guessed. 
+
+so now then i also got goodie bag for the diwali thing. that had cookies which i ate. then vinayak was packaging them alone so i helped him. then i asked harry about the corporate trainer prices thing, and then i realized that thereis even more to earn like there are trainers who earn like 1 or 1.5 lac per day for their bootcamp training,a nd there is a lot of potential there for earning. 
+
+anyway so i gotta do a few things today. yesterday swagger wasnt working fine so i gotta fix that today, and i gotta work with chirag to figure out where and how we write files. 
+
+then i gotta write those apis for ui
+
+more concerning is that i have to fix and check if forecast apis are working on dev environment. 
+
+then also to do is write the minutes of yesterday’s team meeeing about the pathfinders thing, and i have to summarize it and write about that as well. 
+
+tried testing why forecast thing isnt working tried with request id and all, apparently it was a dumb mistake from my side. 
+
+fixed that and tried deploying on dev didnt work so now trying again
+
+ok so we got some issues. defcon 2
+
+2 of my stories arent working. forecast apis and swagger. i gotta fix this somehow. today soon. 
+
+before people find out. its a possible canon event.
+
+we are back to defcon 5. situation has been averted. luckily one deployment fixed them both. we are good
+
+now that im getting things done, stuff and behaviour of people with me is much better so i realized that that really is one of the defining things, as it should be, but the ends of the spectrum seem to be far apart. 
+
+anyway im almost done with pushing changes here for these 2 things. im quite happy with how these 2 3 stories turned out. 
+
+btw just before lunch i did finish writing minutes of eysterday’s meeting. lunch was fun too as usual.
+# Today
+
+Date: October 8, 2024 12:30 PM
+
+Fixed why test cases were failing yesterday
+
+resolved some comments by sunanda
+
+merged pr for dummy demand forecast api
+
+fixed test cases failing in the implementation
+
+talked with shivam for a while. 
+
+pathetic nose situation going on. 
+
+had lunch talked for a bit. 
+
+once again nose situation is pathetic its really difficult to work like this. 
+
+most of the time i spent today was in git stuff, just merging and committing and hoping things work, which they were not working. 
+
+somehow pushed that small pr. 
+
+gotta change the name of the localdate thing. 
+
+starting work on actual implementation after merging, but dont feel like nor do i have the confidence to. 
+
+i just wanna go home and sleep. 
+
+also im hungry. i went to lunch and everyone was eating but still dont feel like eating. 
+
+gotta spend 3 hours somehow. more than enough for me to have written that logic bro at home it would have been ez. i know how much i used to work and how fast, and this is slow. 
+
+i find myself talking a lot more just to myself. 
+
+but this note thing ig is a good thing, feels a little better. 
+
+i just hope no one reads this. 
+
+attend posh training
+
+worked on writing test cases for yesterdays code, in repo.
+# Tuesday
+
+Date: October 15, 2024 12:20 PM
+
+had scrum meeting
+
+decided what to do about occupancy percentage about market segment group
+
+talked to chirag and arun about docker networks which i learnt about yesterday
+
+set up new monitor
+
+set up things on the hot desk monitor, set up keyboards, mice etc. transferred browser things to the hot desk. 
+
+then started working on writing code for the forecast api, then there was a badminton match. 
+
+i then wrote dummy api for sunanda ui thing. for that i had to write a script and then generate api for graph. 
+
+i then came back and did this for like the rest of the files for actual and forecast data. 
+
+now im home and im thinking i should probably do something. 
+
+its possible to generate analytics request from a random stats corr id caught up date. 
+
+so yes we have to take caught up date into consideration. 
+
+my only concern is if at 1159 a request is made, the forecast date is gonna be fore another day, so how will i find the request id of that request? 
+
+either way lets just find request id from caught up date desc, req id desc, lets generate analytics row into db, get its id and then make the request with gotten id. (another story)
+
+so i wrote the code very much quickly in intellij, and things were so much faster at home, when finally everything was making sense. for some reason i cant work this efficiently at the office, and these good bursts of good work are the only hope i have of actually getting some work done. i think this means i gotta do the remote desktop thing more often, stuff just happens faster at home. maybe its coz of the copilot on my intellij, but everything is better and faster. even better than ubuntu at work idk why. 
+
+i wrote test cases pretty quickly, i just know if i had done this small thing at office it would have taken longer. there are a lot more disturbances. i might have to start using headphones more. 
+
+anyway it was done and now suddenly the build is green and stuff. i just wish i was working from home, id get 10 times the work done, or i had a good and decent laptop at work. 
+
+atleast did something today
+# Tuesday
+
+Date: October 22, 2024 12:59 PM
+
+got in time for scrum. 20 mins before. 
+
+i was told i was late for the actual api thing so gotta fasttrack that thing. 
+
+about time though
+
+then we were talking about how chirag’s pr wasnt merging even after review. 
+
+then we fixed that. 
+
+then i merged the implementation thing
+
+moved that story out of code review
+
+then i realized i had to add something else in the actual dummy api thing so i merged that after another review. 
+
+then i realized its also about time for the stats corr thing so i fixed those test cases which werent working somehow, and now i just have to run the workflow once. it is in code review. so that story is done too.  
+
+then i pulled and created a new branch and stuff. cleaned my branches on intellij
+
+then i was fixing a script for chirag in postgres, coz a thing wasnt working and installing and we made a new user and stuff. it felt good to do that and fix simple issus like these quite fast. a good fast computer really does make a difference. 
+
+now finally starting actual api thing. 
+
+have another meeting discussing further dtos for this. 
+
+iv got wireless mice from how for the past 2 3 days and that really has made a pleasant difference in my workflow. 
+
+otherwise still feel terrible, crashed into like 4 different unique vehicles while driving today this morning, no headphones. 
+
+idk when i had lunch but after lunch, i as working on setting up my local analytics container pull. they write python analytics code man that is what i want. 
+
+anyway that didnt work coz im doing this on my personal laptop. 
+
+so i tried to set it up but it didnt. then thought about the stats corr not having reservation file created date properly set coz harry asked me about it. 
+
+now after i have given up testing the stats corr thing, imma try and start work again on the actual apis. 
+
+i have tried some of it is working some is not. 
+
+so then now i had another meeting about ui and demand and pricing screen and stuff. normal discussion which resulted in concluding that we have to write more apis and per screen meta dtos. 
+
+after that i sat with chirag and fixed why his postgres wasnt working. that is done now and its working. in about few mins ill know what is going on with stats corr id if it was done or not. 
+
+i then wrote more api thing and ship query is fine its working fine. now i just gotta go home and write the code for meta cabin category and then market segment thing. ill write code for them, and also the test cases and push this shit with a green build today. its not really that hard to do. 
+
+i thought itd be like that, but then harry was like whats up and that he may have to do a scrum in the evening as wll and i told him i work the entire day idk if something doesnt work out then idk what to say, and i felt kinda bad about my inability. i know it was taking too long, and i was pushing it, but man does it feel bad. 
+
+so then i sat with chirag, and actually thanks to him, he ran the workflow for the stats corr thing, and it wasnt working eventually then we had a discussion on this. 
+
+then i went back home at like 540, im not gonna be that late from tomorrow, it was terrible. 
+
+after reaching home i slept, thinking ill wake up and do some work, but i was tired asf. so i watched more of sopranos, depressing show, and then i slept. lots of coughing throughout the day. 
+
+hoping to wake up early.
+# Wednesday
+
+Date: October 16, 2024 9:28 PM
+
+Reached just in time for scrum today. 
+
+at this point i am getting used to recollecting the entire day
+
+the scrum lasted for quite a bit of time, we discussed each story. now im getting used to standing for a long time as well. 
+
+just after scrum harry told me about the \n in raw historical pricing. so i had to fix that, and then even about some other change in the statscorr table. 
+
+i also found out that the test cases coverage wasnt enough for the forecasts i wrote yesterday, and so before lunch i finished writing test cases for it. i wrote and covered all. 
+
+then i pushed that pr, and then after that fixed that historical pricing thing and that pr. 
+
+now both builds are passing all checks. 
+
+after that there was the nvidea interview so was doing that. 
+
+then came home.
+# Wednesday
+
+Date: October 23, 2024 8:31 AM
+
+i was robbed at the petrol pump last time of 100 rs. i was paying and bro didnt fill the entire amount. my bad. i was cursing myself for 2 days. today i filled it again and have learnt my lesson. i didnt argue with him though, coz there isnt any point. but anyway. i came early today at like 812 i was in the office. i woke up early too. it was needed coz i gotta finish that api thing if i have even an ounce of self respect remaining.
+
+i didnt have breakfast either. but it did feel good to come early, no one is in the office rn. i cherish this very time. i need this time to be able to work. peace and quiet. 
+
+so i think we have learnt that over the past few months now that if i wanna get some work done on sub par computers, i need this non disturbing time. i love helping others so ill be in the office for sure, but i will either have to work from home a few days a week, or ill have to get this quiet time. 
+
+i might consider dev deploying and triggering that workflow. 
+
+ill do it if the api thing is done. 
+
+i hope to get around 2 3 hours of good time here. i should get 3. 
+
+observations from the query was that even when booking date is bk or tm, there are places where metacabincategory is null;
+
+in dev there are 7848 records if i dont filter by empty mcc
+
+if i filter i get 6775, so im gonna
+
+i am making soooooooooo dumb mistakes, what is wrong with me idk. i wasnt like this.
+
+really i wasnt.
+
+but now looking at how i am i find it difficult to see a path to even improve, i should just accept that i wont be good at my job isnt it.
+
+tf now even res_bk_date is null in some cases. 
+
+for market segments, idek where forecasting is getting their market segments from, but apparently there are some which to my knowledge arent present in the table. imma choose the column that matches most closely with forecasting. but yes some are missing. 
+
+i also gotta remember to reorder the queries and ask arun to check their sequence of calling. 
+
+now then i worked with chirag to try and see what is wrong with statscorr thing and his story is related so hes working on it. we spent around 1 hour on it. the only real together development which is supposed to be fun, iv done with him here. good exp. 
+
+just finished writing all apis and testing them. fking hell. i should have done this before. i get it, but iv learnt a lot from this. this demand forecast api is going in my learning list for things which i should have done and procrastinated. i did it it only took like 3 or 4 hours. so i never should have delayed it that much. but ofcourse the stories and the time i spent in doing other stories is the reason i could do this. 
+
+then i had lunch ig, but after that me and chirag prolly spent some more time trynna see what the code means and stuff. after that i finished and pushed that, and started working on refactoring. i even asked him for the dto opinion. 
+
+i spent like an hour refactoring that code. then i had a meeting for pathfinders. that was also fun i went there first time
+
+after that more time spent on refactoring and then a whole discussion with me chirag and sunanda about the whole how much corporate trainers earn per day. i am quite shocked.
+# WFH Monday
+
+Date: October 28, 2024 10:14 AM
+
+so i woke up around at 9. happy to have to work without any worries today. i saw that there were some comments so i resolved those.  and its around 10 now. now i gotta test some things. this means imma start deploying on dev. 
+
+i also had a metadto pr approved by sunanda, so i gotta have that approved by someone else too. after that ill merge that. i may also merge the analytics request thing after arun reviews it maybe. 
+
+and look at that. nice music. 4 screens, with 5th on the way lol, and i just wore socks. a full workday ahead with 0 distractions and my trusty bed next to me. truly a day to look forward to, and im not even being sarcastic. 
+
+iv never really felt the monday morning blues that much. 
+
+gotta update jira as well. 
+
+did that
+
+now scrum meeting. 
+
+i hope this is a peaceful scrum meeting. harry isnt there either. 
+
+yes it was most people are on leave from tomorrow. its vacation season. the best time of the year. peaceful work. 
+
+as a detour iv been trying to run the build script on windows, which only works on ubuntu as of now, there were some errors on windows obviously, so i would push from intellj on windows, and then run the build on ubuntu to find out what test cases failed. 
+
+lets see if this does any good if it doesnt ill go back to my old ways. 
+
+believe it or not, it actually worked. now i dont need to offload to laptop each time and i can work off of my windows 3 monitor (soon to be 4) setup from home pc. albeit for 2 more months, but noice isnt it. 
+
+this proves the fact that if im at home, and i have internet, i can literally solve any issue in the world of software. 
+
+now on to more pressing issues. 
+
+im on a fucking roll today. i was right, i am the lord of debugging. i mean it wasnt that big of an issue, but i spent the last 1.5 hours debugging an issue i got after merging with main and i could resolve all test cases. i solved one of 3 failing test cases. it was ofcourse a stupid change but yes it was worth the 1.5 hours of debugging. 
+
+furthermore, i fixed the gradle build thing enough that now i get a perfect replica. i installed gradle as well. the right java versions are there too. feels good. i love installing things and fixing these kinda issues on os level. 
+
+hopefully ill merge the metadto thing. but yeah i gotta test it first. 
+
+i havent worked this well since the day i joined here. in like 5 months. a good pc and multiple screens make that much of a difference. 
+
+got my pr reviewed by chirag. bro caught a debug point which i forgot to remove. this is solely the reason we need peer reviews in code. and in general too. you could be the best programmer in the world and you will still miss such things. its good. 
+
+so i fixed that and pushed it. once its green on the pipeline ill deploy it to dev and test that api along with others, coz guess what my analytics db thing which i was debugging from all this time i finally figured out what the issue with the other 2 test cases was. 
+
+now time to fix and push that too. ill finally have all 6 prs. green. that will be a moment to remember. 
+
+had lunch. deployed that to dev. talked to josh about some lbgt thing. still cant fix that analytics call shit. some complicated code that is. 
+
+for the test results from dev we got: 
+
+1. i gotta filter out market segments
+2. gotta add demand forecast thing to swagger. 
+3. fix the swagger service to internal thing
+4. add index on reservation table for the actual thing as well as the market segment thing
+5. its taking 10 seconds for the meta dto to work. ridiculous amount of time tbh. out of that 10.07 is just market segment coz reservations isnt indexed
+
+now to test actual api
+
+apparently these are working fine as far as i am concerend
+
+to test forecast apis
+
+1. gotta remove that swagger empty space
+2. ask sunanda to review so i can merge this
+
+hopefully by the end of the day ill have 2 prs left
+
+fuck it. just realized that issue. it was a mock server issue. somehow if i my brain was more active, which i know it is capable of, it wouldnt have taken me this long to figure this out. 
+
+what i have learnt from this is when debugging, please start from the top.
+
+im pushing a lot of local changes and thats screwing up the build time again
+
+i gotta stop juggling so many prs at the same time
+
+now i gotta test forecast apis again, not actual those i have done. i gotta test metadto thing again. then we shall be done
+
+so i have merged the meta dto pr - 1 dpme
+
+next is foorecast fix - that also done
+
+next is actual but thats a big pr to review, even if that does get accepted ill have to show it to harry once. 
+
+bigger issue currently is that swagger prod and stage api’s arent working. idk what thf is wrong there
+
+tmro: 
+
+1. gotta test on dev the analytics request id thing
+2. gotta fix statscorr outbound smh
+3. gta merge swager as well
+
+now nothing is working and no one is either. so its time to wrap up for today. some serious stuff did end up working. only 2 prs got merged. the rest we shall see tmro. 
+
+all the remaining ones are green tho i think thats a very big plus.
+# WFH Wednesday
+
+Date: October 30, 2024 4:37 PM
+
+i didnt write anything about today. i was mostly busy wiring my desk and stuff yesterday so i woke up exactly at the time of the scrum meeting. again just me chirag and sunanda. small team ez no tension. and more than that most of my things are done. if harry was here i would have probably been given more work, but still, here we are. 
+
+im still keeping busy tho. 
+
+i had an idea about fixing the stats outbound thing yesterday, so i implemented it today. most of the day i didnt do anything. mostly half day. almost all prs got merged yesterday. just this one thing remaining today. so that code is also done its around 4 40 as we speak. 
+
+ofcourse being at home i did play some more shadow fight 4. 
+
+im quite glad i finished this. you know, im just beginning to get the proper hang of this. i could do this code for a long time. backend stuff. im finally getting used to it. so i guess we shouldnt just give it 3 months, around 6 months is even better. i havent stabalized, im improving. im getting better at coding. thanks in part even to chirag. its fun as its meant to be without any tension. and a lot of work also gets done. 
+
+so lets fix the test cases and get on with wiring desk again. 
+
+if i hadnt done this story id be pretty sad and wouldnt bill this day so its good this got done. 
+
+when theres no pressure i really do like all of this. i can happily do this for like 20 years if this is how we are going to be doing stuff. but with harry things are sooo pressured, that i would like to quit and do frontend as soon as possible. i love at the moment testing, docomenting, writing code, literally all aspects of development. hard core development. i can do this all day. its surprising how much pressure makes a difference in work. ill make sure to implement this when im a boss.  
+
+we must take time to make important decisions, go through some people’s conversations and some weeks with ourselves.  
+
+well tomorrow is the last day then, without pressure i can do a lot of work like my stories are getting completed, and iv finished all my work assigned in this iteration. i love having planned that kinda stuff out. 
+
+tmro is the then last day for a while working without any stress. ill definitely remember and cherish this when i look back at this internship. ill be sad to leave ideas. 
+
+if i start writing i dont stop. im just waiting for sonar. 
+
+now would you look at that
+
+![image.png](image.png)
+
+had i missed one line, lmao it would have been less than that. its funny even given there are quite a lot of files that were changed here. 
+
+but anyway well get it to 100.
+# what even wednesday
+
+Date: November 14, 2024 10:34 AM
+
+today was a rush. there was townhall. then special lunch. the scrum went okay. then there were some comments in the market segment thing. i just cant seem to do one thing right. im still not worried about ui though. ill figure that out over the weekend. 
+
+then at like 2, there was devbox with sahil. then after 3 i tried to fix more of that market segment thing, then i ran into some issues there, then there was a meeting with ben. played some pool with the team coz he didnt come on time, then that discussion and went home, coz i had come at like 830 or sth. i was the first in the office, and all this because i wanted to fix that refactor story. 
+
+it sure was worth it coming early. but theres still work to do.
+# Work from Home - Breaking Fast
+
+Date: October 11, 2024 11:21 AM
+
+so yesterday was Garba celebration, so i was extremely tired. i took literally no rest. so as a result i woke up after scrum or something. its fine. its the 2nd time ig. 
+
+anyway after that i had a call with chirag explaining things to him. i explained docker first, and then the rest of the code. 
+
+then i had the Pooja, then pgt exams between that, then lunch, then i took some rest for a few mins. then another call with chirag that lasted another 2 hours ig. then we stopped. i stopped too.

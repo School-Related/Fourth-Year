@@ -1,0 +1,267 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsfonts, amsmath, amssymb}
+\usepackage{fancyhdr, float, graphicx}
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{fouriernc} % Use the New Century Schoolbook font
+\usepackage[nottoc, notlot, notlof]{tocbibind}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{blindtext}
+\usepackage{longtable}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	filecolor=magenta,
+	urlcolor=blue,
+	pdfpagemode=FullScreen,
+}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,
+	breaklines=true,
+	captionpos=b,
+	keepspaces=true,
+	numbers=left,
+	numbersep=5pt,
+	showspaces=false,
+	showstringspaces=false,
+	showtabs=false,
+	tabsize=2
+}
+
+\lstset{style=mystyle}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\textit{\Large{Blockchain Technologia - Fourth Year B. Tech}}}
+\fancyhead[R]{\textit{Krishnaraj T}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{1pt}
+
+\begin{document}
+
+\begin{titlepage}
+	\centering
+
+	%---------------------------NAMES-------------------------------
+
+	\huge\textsc{
+		MIT World Peace University
+	}\\
+
+	\vspace{0.75\baselineskip} % space after Uni Name
+
+	\LARGE{
+        Blockchain Technology\\
+		Fourth Year B. Tech, Semester 8
+	}
+
+	\vfill % space after Sub Name
+
+	%--------------------------TITLE-------------------------------
+
+	\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+	\rule{\textwidth}{0.6pt}
+	\vspace{0.75\baselineskip} % Whitespace above the title
+
+	\huge{\textsc{
+        Exploring Remix Compiler
+        }} \\
+
+	\vspace{0.5\baselineskip} % Whitespace below the title
+	\rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
+	\rule{\textwidth}{1.6pt}
+
+	\vspace{1\baselineskip} % Whitespace after the title block
+
+	%--------------------------SUBTITLE --------------------------	
+
+	\LARGE\textsc{
+		Lab Assignment 7
+	} % Subtitle or further description
+	\vfill
+
+	%--------------------------AUTHOR-------------------------------
+
+	Prepared By \vspace{0.5\baselineskip} % Whitespace before the editors
+
+	\Large{
+		Krishnaraj Thadesar \\
+		Cyber Security and Forensics\\
+        Batch A1, PA 15
+	}
+
+	\vspace{0.5\baselineskip} % Whitespace below the editor list
+	\today
+
+\end{titlepage}
+
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+
+
+\section{Objective}
+This document provides an overview of the Remix compiler, its role in smart contract development, and the process of creating, deploying, and interacting with smart contracts on the JavaScript Virtual Machine (VM) in Remix.
+
+\section{Theory}
+
+\subsection{What is Remix Compiler?}
+Remix is an online IDE and compiler designed for Ethereum smart contract development. It provides tools to write, compile, deploy, and debug Solidity-based smart contracts efficiently.
+
+\subsection{Key Features of Remix}
+\begin{itemize}
+    \item \textbf{Solidity Compiler:} Compiles Solidity smart contracts and detects errors.
+    \item \textbf{Deployment Options:} Supports JavaScript VM, Injected Web3, and Web3 Providers.
+    \item \textbf{Debugger and Testing:} Provides an interactive debugger and testing environment.
+    \item \textbf{File Management:} Allows importing external Solidity files and managing project structure.
+\end{itemize}
+
+\section{FAQs}
+
+\begin{enumerate}
+    \item \textbf{What is Remix Compiler, and how does it facilitate the development and deployment of smart contracts?}
+    
+    Remix Compiler is an integrated Solidity compiler within the Remix IDE that:
+    \begin{itemize}
+        \item Translates Solidity code into bytecode for execution on the Ethereum Virtual Machine (EVM).
+        \item Detects syntax and logical errors before deployment.
+        \item Provides debugging tools to analyze contract execution.
+        \item Enables easy interaction with deployed contracts through the built-in interface.
+    \end{itemize}
+
+    \item \textbf{Describe the process of creating a new smart contract using Remix Compiler. What programming language is typically used, and what are the key components of a smart contract?}
+    
+    The process of creating a smart contract in Remix involves:
+    \begin{enumerate}
+        \item Opening the Remix IDE at \href{https://remix.ethereum.org}{Remix Ethereum}.
+        \item Creating a new Solidity file (e.g., \texttt{MyContract.sol}).
+        \item Writing the smart contract code.
+        \item Compiling the contract using the Solidity compiler.
+    \end{enumerate}
+    
+    The primary programming language used is \textbf{Solidity}.  
+    Key components of a smart contract:
+    \begin{itemize}
+        \item \textbf{State Variables:} Store contract data.
+        \item \textbf{Functions:} Define contract logic.
+        \item \textbf{Constructor:} Initializes contract state upon deployment.
+        \item \textbf{Modifiers:} Restrict function execution based on conditions.
+        \item \textbf{Events:} Enable logging of contract interactions.
+    \end{itemize}
+
+    \item \textbf{How do you deploy a smart contract on the JavaScript VM in Remix? What are the necessary steps, and what parameters need to be configured?}
+    
+    Steps to deploy a contract on the JavaScript VM:
+    \begin{enumerate}
+        \item Open Remix and navigate to the “Deploy \& Run Transactions” tab.
+        \item Select “JavaScript VM” as the environment.
+        \item Choose the compiled contract in the “Contract” dropdown.
+        \item Configure constructor parameters (if any).
+        \item Click the “Deploy” button to deploy the contract.
+    \end{enumerate}
+    
+    Required parameters:
+    \begin{itemize}
+        \item \textbf{Gas Limit:} Defines maximum gas allowed for execution.
+        \item \textbf{Value:} Ether to send with the contract deployment.
+        \item \textbf{Contract Arguments:} Parameters passed to the constructor.
+    \end{itemize}
+
+    \item \textbf{What is the purpose of the "constructor" function in a smart contract, and how is it used during deployment?}
+    
+    The \texttt{constructor} function:
+    \begin{itemize}
+        \item Initializes state variables when the contract is deployed.
+        \item Runs only once during contract deployment.
+        \item Can accept input parameters to configure contract settings.
+    \end{itemize}
+
+    Example:
+    \begin{verbatim}
+    solidity
+    pragma solidity ^0.8.0;
+    
+    contract Example {
+        address public owner;
+
+        constructor() {
+            owner = msg.sender;
+        }
+    }
+    \end{verbatim}
+    In this example, the constructor sets the contract owner to the deployer’s address.
+
+    \item \textbf{How do you interact with a deployed smart contract on the JavaScript VM in Remix? What functions can be called, and how are the results displayed?}
+    
+    Steps to interact with a deployed contract:
+    \begin{enumerate}
+        \item Open the "Deployed Contracts" section in Remix.
+        \item Expand the deployed contract to see available functions.
+        \item Click on a function to execute it.
+        \item Input required parameters for functions that need arguments.
+        \item View the output in the Remix console.
+    \end{enumerate}
+    
+    Available functions depend on the contract, but typically include:
+    \begin{itemize}
+        \item \textbf{Getter functions:} Return stored values.
+        \item \textbf{Setter functions:} Modify state variables.
+        \item \textbf{Payable functions:} Accept Ether transfers.
+        \item \textbf{Event emitters:} Log interactions.
+    \end{itemize}
+    
+    Results are displayed in:
+    \begin{itemize}
+        \item The Remix console (transaction hash, execution details).
+        \item The UI (for functions returning values).
+    \end{itemize}
+
+\end{enumerate}
+
+\section{Glossary}
+
+\begin{itemize}
+    \item \textbf{Solidity:} The primary programming language for Ethereum smart contracts.
+    \item \textbf{Smart Contract:} A self-executing program that runs on the Ethereum blockchain.
+    \item \textbf{Remix IDE:} A web-based development environment for Solidity contracts.
+    \item \textbf{JavaScript VM:} A simulated Ethereum environment for testing contracts.
+    \item \textbf{Bytecode:} The compiled version of a smart contract, executed by the EVM.
+    \item \textbf{Constructor:} A special function that runs once during contract deployment.
+    \item \textbf{Gas:} A unit measuring computational effort in Ethereum transactions.
+    \item \textbf{EVM (Ethereum Virtual Machine):} The runtime environment for executing smart contracts.
+    \item \textbf{ABI (Application Binary Interface):} A JSON representation of a contract’s functions and events.
+\end{itemize}
+
+\clearpage
+
+\begin{thebibliography}{9}
+    \bibitem{solidity} Solidity Documentation. Available at: \url{https://soliditylang.org/docs/}
+    
+    \bibitem{remix} Remix IDE Documentation. Available at: \url{https://remix-ide.readthedocs.io/}
+    
+    \bibitem{ethereum} Ethereum Developer Documentation. Available at: \url{https://ethereum.org/en/developers/}
+    
+    \bibitem{web3} Web3.js Documentation. Available at: \url{https://web3js.readthedocs.io/}
+    
+    \bibitem{trufflesuite} Truffle Suite - Ethereum Development Framework. Available at: \url{https://trufflesuite.com/}
+\end{thebibliography}
+
+\end{document}

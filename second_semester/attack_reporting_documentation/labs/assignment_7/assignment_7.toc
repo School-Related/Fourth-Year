@@ -1,0 +1,20 @@
+\contentsline {section}{\numberline {1}Purpose and Scope}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Purpose}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Scope}{1}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Roles and Responsibilities}{1}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Chief Information Security Officer (CISO)}{1}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}System Administrators}{1}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Employees and Users}{2}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Risk Assessment and Management}{2}{section.3}%
+\contentsline {section}{\numberline {4}Access Control and Identity Management}{2}{section.4}%
+\contentsline {section}{\numberline {5}Data Protection and Privacy}{2}{section.5}%
+\contentsline {section}{\numberline {6}Incident Response and Management}{3}{section.6}%
+\contentsline {section}{\numberline {7}Security Audits and Compliance}{3}{section.7}%
+\contentsline {section}{\numberline {8}Training and Awareness}{3}{section.8}%
+\contentsline {section}{\numberline {9}Third-Party Security Management}{3}{section.9}%
+\contentsline {section}{\numberline {10}Policy Implementation Plan}{4}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Establish Governance Structure}{4}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Develop Security Baseline Controls}{4}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Monitoring and Incident Handling}{4}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Compliance and Reporting}{4}{subsection.10.4}%
+\contentsline {section}{References}{5}{section*.2}%

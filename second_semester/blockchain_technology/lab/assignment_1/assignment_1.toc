@@ -1,0 +1,15 @@
+\contentsline {section}{\numberline {1}Aim}{1}{section.1}%
+\contentsline {section}{\numberline {2}Simulation}{1}{section.2}%
+\contentsline {section}{\numberline {3}Frequently Asked Questions}{2}{section.3}%
+\contentsline {subsection}{\numberline {3.1}What is blockchain technology and how does it differ from traditional databases?}{2}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Who invented Blockchain? What was its original purpose?}{2}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}How does a decentralized network work in blockchain and why is it important?}{2}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}What is a 'Block' in a blockchain? How does it store data?}{2}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}How does a transaction get verified and added to a blockchain?}{3}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}What is the role of cryptography in ensuring the security and integrity of a blockchain?}{3}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}What are the key benefits of blockchain for industries like finance, supply chain, and healthcare?}{3}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}What challenges does blockchain face in terms of scalability, energy consumption, and regulatory concerns?}{3}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}How does blockchain promote transparency and trust in digital transactions?}{3}{subsection.3.9}%
+\contentsline {subsection}{\numberline {3.10}What are some real-world examples of how blockchain technology is being used today?}{3}{subsection.3.10}%
+\contentsline {section}{\numberline {4}Conclusion}{4}{section.4}%
+\contentsline {section}{References}{5}{section*.2}%

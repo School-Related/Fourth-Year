@@ -1,0 +1,518 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsfonts, amsmath, amssymb}
+\usepackage{fancyhdr, float, graphicx}
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{fouriernc} % Use the New Century Schoolbook font
+\usepackage[nottoc, notlot, notlof]{tocbibind}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{blindtext}
+\usepackage{longtable}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	filecolor=magenta,
+	urlcolor=blue,
+	pdfpagemode=FullScreen,
+}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,
+	breaklines=true,
+	captionpos=b,
+	keepspaces=true,
+	numbers=left,
+	numbersep=5pt,
+	showspaces=false,
+	showstringspaces=false,
+	showtabs=false,
+	tabsize=2
+}
+
+\lstset{style=mystyle}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\textit{\Large{Attack Reserach and Documentation - Fourth Year B. Tech}}}
+\fancyhead[R]{\textit{Krishnaraj T}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{1pt}
+
+\begin{document}
+
+\begin{titlepage}
+	\centering
+
+	%---------------------------NAMES-------------------------------
+
+	\huge\textsc{
+		MIT World Peace University
+	}\\
+
+	\vspace{0.75\baselineskip} % space after Uni Name
+
+	\LARGE{
+		Attack Research and Documentation\\
+		Fourth Year B. Tech, Semester 8
+	}
+
+	\vfill % space after Sub Name
+
+	%--------------------------TITLE-------------------------------
+
+	\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+	\rule{\textwidth}{0.6pt}
+	\vspace{0.75\baselineskip} % Whitespace above the title
+
+	\huge{\textsc{
+        Log Analysis
+        }} \\
+
+	\vspace{0.5\baselineskip} % Whitespace below the title
+	\rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
+	\rule{\textwidth}{1.6pt}
+
+	\vspace{1\baselineskip} % Whitespace after the title block
+
+	%--------------------------SUBTITLE --------------------------	
+
+	\LARGE\textsc{
+		Lab Assignment 2 Report
+	} % Subtitle or further description
+	\vfill
+
+	%--------------------------AUTHOR-------------------------------
+
+	Prepared By \vspace{0.5\baselineskip} % Whitespace before the editors
+
+	\Large{
+		Krishnaraj Thadesar \\
+		Cyber Security and Forensics\\
+        Batch A1, PA 15
+	}
+
+	\vspace{0.5\baselineskip} % Whitespace below the editor list
+	\today
+
+\end{titlepage}
+
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+
+\section{Executive Summary}
+
+\begin{itemize}
+    \item \textbf{Objective:}  
+    The purpose of this log analysis is to investigate unauthorized access attempts and potential privilege escalation incidents within the system. The analysis focuses on identifying security threats, compliance violations, and performance anomalies.
+
+    \item \textbf{Key Findings:}  
+    \begin{itemize}
+        \item Multiple unauthorized access attempts to the \texttt{/admin/config} endpoint were detected, all resulting in \texttt{403 Forbidden} responses.
+        \item Several users repeatedly attempted to access restricted areas, potentially indicating privilege escalation attempts.
+        \item Unauthorized access attempts were observed across multiple timestamps and originated from different users and IP addresses.
+    \end{itemize}
+
+    \item \textbf{Recommendations:}  
+    \begin{itemize}
+        \item Implement stricter access controls for the \texttt{/admin/config} endpoint, including IP whitelisting and multi-factor authentication (MFA).
+        \item Monitor and block suspicious IPs after repeated failed authorization attempts.
+        \item Set up automated alerts to detect unauthorized access attempts in real-time.
+        \item Conduct security awareness training for users to prevent accidental privilege escalation attempts.
+    \end{itemize}
+\end{itemize}
+
+\section{Scope of Analysis}
+
+\begin{itemize}
+    \item \textbf{Date Range:} 27/Jan/2025 - 28/Jan/2025
+
+    \item \textbf{Systems Analyzed:}  
+    Web application servers handling authentication and administrative access.
+
+    \item \textbf{Log Sources:}  
+    Apache access logs were analyzed to detect unauthorized access attempts and privilege escalation incidents.
+
+    \item \textbf{Tools Used:}  
+    The log file was manually reviewed using text processing tools such as \texttt{grep} and \texttt{awk}, along with visualization using log analysis frameworks.
+\end{itemize}
+
+
+\section{Findings}
+
+\subsection{Finding \#1: Unauthorized Access Attempt to Admin Configuration}
+
+\subsubsection{Description}
+Multiple users attempted to access the \texttt{/admin/config} endpoint and received \texttt{403 Forbidden} responses. This indicates unauthorized access attempts to a restricted area, potentially a privilege escalation attempt.
+
+\subsubsection{Affected Systems/Users}
+\begin{itemize}
+    \item \textbf{IP 192.168.1.21} (Leo) – 28/Jan/2025 08:14:14
+    \item \textbf{IP 192.168.1.13} (Dave) – 28/Jan/2025 10:44:09
+    \item \textbf{IP 192.168.1.27} (Rachel) – 28/Jan/2025 10:46:11
+    \item \textbf{IP 192.168.1.37} (Beth) – 28/Jan/2025 13:35:25
+    \item \textbf{IP 192.168.1.36} (Andy) – 28/Jan/2025 19:17:13
+    \item \textbf{IP 192.168.1.27} (Rachel) – 28/Jan/2025 19:43:53
+    \item \textbf{IP 192.168.1.29} (Tom) – 28/Jan/2025 20:16:55
+\end{itemize}
+
+\subsubsection{Timestamp}
+Various timestamps on January 28, 2025, from early morning to late evening.
+
+\subsubsection{Severity}
+\textbf{High} – Unauthorized attempts to access admin configurations could indicate an insider threat or an external attacker trying to gain higher privileges.
+
+\subsubsection{Evidence}
+Example log entry:
+\begin{verbatim}
+192.168.1.21 - leo [28/Jan/2025:08:14:14 +0000]
+ "GET /admin/config HTTP/1.1" 403 4430 "-" "Mozilla/5.0"
+\end{verbatim}
+
+Please refer to the \textbf{Appendix} (\ref{sec:raw_logs}) for more raw log entries.
+
+\subsubsection{Root Cause Analysis}
+\begin{itemize}
+    \item These requests likely came from users who lacked administrative privileges.
+    \item It could be due to manual attempts to access restricted areas, automated scanning, or a misconfigured permission issue.
+\end{itemize}
+
+\subsubsection{Impact}
+\begin{itemize}
+    \item Potential security risk if an attacker finds a vulnerability to bypass access controls.
+    \item Compliance concerns for sensitive configuration files being targeted.
+    \item Increased server load from unauthorized access attempts.
+\end{itemize}
+
+\subsubsection{Recommendation}
+\begin{enumerate}
+    \item \textbf{Review User Permissions:} Ensure only authorized users can access \texttt{/admin/config}.
+    \item \textbf{Implement Access Controls:} Restrict the \texttt{/admin/config} endpoint further with IP whitelisting or multi-factor authentication (MFA).
+    \item \textbf{Monitor and Block Suspicious IPs:} If a user repeatedly fails authorization, temporarily block the IP.
+    \item \textbf{Log and Alert Security Teams:} Set up automated alerts for unauthorized access attempts to admin areas.
+    \item \textbf{User Education:} If these attempts were from legitimate users, educate them on access policies to prevent accidental unauthorized attempts.
+\end{enumerate}
+
+
+\subsection{Finding \#2: Unusual Remote Desktop (RDP) Access Attempts}
+
+\subsubsection{Description}
+Multiple attempts were made to access port \texttt{3389} (RDP) from various internal IPs (\texttt{192.168.1.100}, \texttt{192.168.1.102}, \texttt{192.168.1.101}). Some attempts were \textbf{blocked}, while others were \textbf{allowed}, raising concerns about unauthorized or unexpected RDP sessions.
+
+\subsubsection{Affected Systems/Users}
+\begin{itemize}
+    \item \textbf{192.168.1.100} – Multiple attempts, both \textbf{blocked} and \textbf{allowed}.
+    \item \textbf{192.168.1.101} – Several attempts, mostly \textbf{blocked}.
+    \item \textbf{192.168.1.102} – Attempted connections, \textbf{allowed and blocked} inconsistently.
+\end{itemize}
+
+\subsubsection{Timestamp}
+\textbf{January 27, 2025, 20:50:17 UTC} (all events occurred at the same second, suggesting scripted or automated behavior).
+
+\subsubsection{Severity}
+\textbf{High} – Unauthorized or unexpected RDP access attempts can indicate an internal security threat or an external attack (e.g., brute force attempts or lateral movement by malware).
+
+\subsubsection{Evidence}
+Example log entries:
+\begin{verbatim}
+2025-01-27 20:50:17 | Event ID: 5152 | Source IP: 192.168.1.100 
+| Destination Port: 3389 | Action: BLOCKED  
+
+\end{verbatim}
+Please refer to the \textbf{Appendix} (\ref{sec:raw_logs}) for more raw log entries.
+
+\subsubsection{Root Cause Analysis}
+\begin{itemize}
+    \item The rapid succession of \textbf{allowed and blocked} RDP attempts indicates potential \textbf{automated access attempts} (e.g., a script, malware, or unauthorized user testing access).
+    \item If these systems are not authorized RDP clients, an \textbf{internal security breach} or \textbf{misconfigured firewall rules} could be responsible.
+\end{itemize}
+
+\subsubsection{Impact}
+\begin{itemize}
+    \item \textbf{Security Risk:} Potential \textbf{unauthorized remote access}, allowing attackers to gain control over critical systems.
+    \item \textbf{Compliance Violation:} Unauthorized access to sensitive systems may violate internal security policies and regulatory requirements.
+    \item \textbf{Network Anomaly:} Repeated blocked and allowed attempts could indicate \textbf{misconfigured firewall rules} or \textbf{incomplete security policies}.
+\end{itemize}
+
+\subsubsection{Recommendation}
+\begin{enumerate}
+    \item \textbf{Review RDP Access Logs:} Identify authorized vs. unauthorized access attempts.
+    \item \textbf{Restrict RDP Usage:} Disable \textbf{RDP access} unless explicitly required. If needed, use a \textbf{VPN} or \textbf{Zero Trust Access}.
+    \item \textbf{Enforce Multi-Factor Authentication (MFA):} Require MFA for all remote access sessions.
+    \item \textbf{Investigate Firewall Rules:} Ensure consistent security policies to prevent unauthorized access.
+    \item \textbf{Monitor and Alert on RDP Attempts:} Set up \textbf{SIEM alerts} to detect and block repeated or unusual RDP attempts.
+    \item \textbf{Check for Malware or Unauthorized Scripts:} Scan affected machines for signs of unauthorized processes or automation tools.
+\end{enumerate}
+
+\subsection{Finding \#3: Suspicious External RDP and SSH Traffic}
+
+\subsubsection{Description}
+The firewall logs indicate \textbf{multiple Remote Desktop Protocol (RDP) and Secure Shell (SSH) connection attempts} from an \textbf{external IP (203.0.113.45)} to an internal network (\texttt{10.0.0.1}). Some of these attempts were \textbf{allowed}, while others were \textbf{dropped}, suggesting inconsistent firewall rules or unauthorized access attempts.
+
+\subsubsection{Affected Systems/Users}
+\begin{itemize}
+    \item \textbf{Source IP:} \texttt{203.0.113.45} (External)
+    \item \textbf{Destination IP:} \texttt{10.0.0.1} (Internal Network Gateway)
+    \item \textbf{Ports Targeted:}
+    \begin{itemize}
+        \item \textbf{3389 (RDP)} – Remote Desktop
+        \item \textbf{22 (SSH)} – Secure Shell
+        \item \textbf{445 (SMB)} – File Sharing
+        \item \textbf{135 (RPC)} – Remote Procedure Call
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Timestamp}
+\textbf{January 27, 2025, 20:50:17 UTC} (All attempts occurred at the same second, indicating automated scanning or a brute-force attack).
+
+\subsubsection{Severity}
+\textbf{Critical} – Unauthorized external access attempts targeting RDP and SSH suggest an \textbf{active intrusion attempt} or \textbf{vulnerability scanning}.
+
+\subsubsection{Evidence}
+Example log entries:
+\begin{verbatim}
+2025-01-27 20:50:17 ALLOW ICMP 203.0.113.45 10.0.0.1 19219 3389   
+\end{verbatim}
+Please refer to the \textbf{Appendix} (\ref{sec:raw_logs}) for more raw log entries.
+
+\subsubsection{Root Cause Analysis}
+\begin{itemize}
+    \item The \textbf{external IP (203.0.113.45)} repeatedly targeted \textbf{RDP, SSH, SMB, and RPC services}, suggesting an \textbf{automated attack or reconnaissance}.
+    \item Some connections were \textbf{allowed}, indicating \textbf{misconfigured firewall rules} that are permitting unauthorized access.
+    \item \textbf{Inbound ICMP requests} from the same IP suggest an \textbf{attempt to map network responses}.
+\end{itemize}
+
+\subsubsection{Impact}
+\begin{itemize}
+    \item \textbf{Unauthorized access risk:} If successful, an attacker could gain remote control over internal systems.
+    \item \textbf{Compliance violation:} Allowing external RDP/SSH access may breach security policies.
+    \item \textbf{Potential data breach:} If SMB or RPC is exploited, internal files and services could be compromised.
+\end{itemize}
+
+\subsubsection{Recommendation}
+\begin{enumerate}
+    \item \textbf{Block External RDP/SSH Access:} Disable inbound \textbf{RDP (3389)} and \textbf{SSH (22)} from external sources unless explicitly required.
+    \item \textbf{Investigate Firewall Rules:} Review and enforce \textbf{strict firewall policies} to block unauthorized traffic.
+    \item \textbf{Monitor and Blacklist Malicious IPs:} Add \texttt{203.0.113.45} to the \textbf{firewall deny list} and monitor for similar patterns.
+    \item \textbf{Enable Intrusion Detection System (IDS):} Deploy \textbf{IDS/IPS} to detect and prevent unauthorized access attempts.
+    \item \textbf{Enforce Multi-Factor Authentication (MFA):} If RDP/SSH access is necessary, require \textbf{MFA} for all remote logins.
+    \item \textbf{Conduct Log Analysis Regularly:} Automate \textbf{log reviews} to detect and mitigate future attacks proactively.
+\end{enumerate}
+
+\subsection{Finding \#4: Repeated Unauthorized Access Attempts to Sensitive Endpoints}
+
+\subsubsection{Description}
+The Apache access logs show multiple attempts to access \textbf{sensitive endpoints} such as \texttt{/admin/}, \texttt{/phpmyadmin/}, and \texttt{/wp-login.php}. Some requests resulted in \textbf{500 Internal Server Errors}, while others returned \textbf{403 Forbidden} and \textbf{404 Not Found} responses.  
+Several requests originated from an external IP \textbf{(203.0.113.45)}, which identifies itself using the \textbf{Nmap Scripting Engine}, indicating potential reconnaissance activity.
+
+\subsubsection{Affected Systems/Users}
+\begin{itemize}
+    \item \textbf{Internal IPs:} 
+    \begin{itemize}
+        \item \texttt{192.168.1.100} – Attempted access to \texttt{/admin/} and \texttt{/phpmyadmin/}
+        \item \texttt{192.168.1.101} – Multiple login attempts on \texttt{/wp-login.php}
+        \item \texttt{192.168.1.102} – Unauthorized requests to \texttt{/contact.html} and \texttt{/admin/}
+    \end{itemize}
+    \item \textbf{External IP:} \texttt{203.0.113.45} – Suspicious scanning activity targeting \texttt{/admin/} and \texttt{/index.html}
+\end{itemize}
+
+\subsubsection{Timestamp}
+\textbf{January 27, 2025, 20:50:17 UTC} – All suspicious requests occurred within a single second, suggesting automated scanning or a bot attack.
+
+\subsubsection{Severity}
+\textbf{Critical} – The combination of repeated unauthorized access attempts and automated scanning activity poses a high security risk.
+
+\subsubsection{Evidence}
+Example log entries:
+\begin{verbatim}
+192.168.1.102 - - [2025-01-27 20:50:17] "GET /contact.html HTTP/1.1" 500 - "-" "Mozilla/5.0"
+\end{verbatim}
+
+% refer to appendix section a1 for more
+Please refer to the \textbf{Appendix} (\ref{sec:raw_logs}) for more raw log entries.
+
+
+\subsubsection{Root Cause Analysis}
+\begin{itemize}
+    \item \textbf{Automated vulnerability scanning} from external IP \texttt{203.0.113.45} using the \textbf{Nmap Scripting Engine}.
+    \item \textbf{Repeated access attempts} to critical endpoints by internal IPs suggest possible brute-force attempts or unauthorized user activity.
+    \item \textbf{500 errors} indicate misconfigured or vulnerable web services that could be exploited.
+\end{itemize}
+
+\subsubsection{Impact}
+\begin{itemize}
+    \item \textbf{Potential Exploitation:} Attackers might find a way to bypass authentication and gain unauthorized access.
+    \item \textbf{Data Breach Risk:} If successful, access to \texttt{/phpmyadmin/} or \texttt{/admin/} could lead to database compromises.
+    \item \textbf{Downtime Risk:} Repeated \textbf{500 Internal Server Errors} indicate possible server instability or misconfiguration.
+\end{itemize}
+
+\subsubsection{Recommendation}
+\begin{enumerate}
+    \item \textbf{Block External Scanning:} Blacklist \texttt{203.0.113.45} and enable Web Application Firewall (WAF) protections.
+    \item \textbf{Restrict Sensitive Endpoints:} Disable external access to \texttt{/admin/}, \texttt{/wp-login.php}, and \texttt{/phpmyadmin/}.
+    \item \textbf{Monitor and Log Access:} Set up alerts for repeated failed access attempts.
+    \item \textbf{Patch and Secure Web Applications:} Investigate and fix possible vulnerabilities causing \textbf{500 errors}.
+    \item \textbf{Enforce Strong Authentication:} Implement Multi-Factor Authentication (MFA) for all admin logins.
+\end{enumerate}
+
+\clearpage
+\section{Summary of Findings and Recommendations}
+Here is a summary of the key findings from the log analysis:
+
+\begin{longtable}{|c|p{4cm}|c|p{4cm}|p{4cm}|}
+    \hline
+    \textbf{Finding \#} & \textbf{Description} & \textbf{Severity} & \textbf{Impact} & \textbf{Recommendation} \\
+    \hline
+    1 & Unusual dropped packets in firewall logs indicating possible unauthorized access attempts. & Medium & Potential security risk if misconfigured firewall rules allow unauthorized traffic. & Review firewall policies, enforce logging, and restrict unnecessary inbound rules. \\
+    \hline
+    2 & Dropped and allowed RDP access attempts from multiple internal sources, suggesting privilege escalation attempts. & High & Risk of unauthorized remote access leading to potential system compromise. & Restrict RDP access, enable MFA, monitor suspicious login attempts, and investigate internal access patterns. \\
+    \hline
+    3 & Suspicious external RDP and SSH connection attempts from \texttt{203.0.113.45}, some of which were allowed. & Critical & Possible brute-force attack or vulnerability scanning by an external actor. & Block the external IP, enforce strict firewall rules, enable IDS/IPS, and monitor external access logs. \\
+    \hline
+    4 & Repeated unauthorized access attempts to \texttt{/admin/}, \texttt{/phpmyadmin/}, and \texttt{/wp-login.php}, including 500 errors and Nmap scans. & Critical & High risk of web application compromise, potential data breaches, and service downtime. & Restrict admin page access, patch vulnerabilities, enforce WAF policies, and enable MFA for all admin logins. \\
+    \hline
+\end{longtable}
+
+\section{Next Steps}
+
+\begin{itemize}
+    \item \textbf{Further Investigation:} 
+    \begin{itemize}
+        \item Analyze authentication logs for suspicious login attempts related to Findings \#2 and \#4.
+        \item Verify firewall rules to ensure that external access is properly restricted (Findings \#1 and \#3).
+        \item Review web server configurations to address \textbf{500 Internal Server Errors} and unauthorized admin page access (Finding \#4).
+    \end{itemize}
+    
+    \item \textbf{Security Patching and Configuration Updates:}
+    \begin{itemize}
+        \item Apply the latest security patches to servers and applications to mitigate vulnerabilities.
+        \item Enforce firewall rule updates to block unauthorized RDP and SSH access.
+        \item Implement Web Application Firewall (WAF) policies to prevent scanning and brute-force attempts.
+    \end{itemize}
+    
+    \item \textbf{Policy Updates:}
+    \begin{itemize}
+        \item Require multi-factor authentication (MFA) for all remote and admin logins.
+        \item Establish strict access control policies to prevent unauthorized privilege escalation.
+        \item Automate log analysis and alerting for suspicious activity.
+    \end{itemize}
+
+    \item \textbf{Timeline for Remediation:}
+    \begin{itemize}
+        \item Immediate (0-24 hours): Block external IPs, review critical firewall rules, enable MFA for privileged accounts.
+        \item Short Term (1-3 days): Apply security patches, update firewall policies, and configure logging alerts.
+        \item Medium Term (1-2 weeks): Conduct a security audit, implement an Intrusion Detection System (IDS), and enforce policy updates.
+    \end{itemize}
+
+    \item \textbf{Responsible Parties:}
+    \begin{itemize}
+        \item \textbf{IT Security Team:} Investigate unauthorized access attempts, apply security patches, and enforce access controls.
+        \item \textbf{Network Administrators:} Review firewall rules, block malicious IPs, and restrict RDP/SSH access.
+        \item \textbf{System Administrators:} Monitor server logs, apply updates, and enforce best security practices.
+    \end{itemize}
+\end{itemize}
+
+% appendix
+
+\appendix
+\section{Appendix}
+\label{sec:appendix}
+
+\subsection{Raw Logs}
+\label{sec:raw_logs}
+Here are some example raw log entries that were analyzed in this report:
+
+\begin{verbatim}
+192.168.1.x - Person 1 [28/Jan/2025:08:14:14 +0000]
+ "GET /admin/config HTTP/1.1" 403 4430 "-" "Mozilla/5.0"
+
+ 192.168.1.x - Person 2 [28/Jan/2025:10:44:09 +0000]
+ "GET /admin/config HTTP/1.1" 403 4430 "-" "Mozilla/5.0"
+
+ 192.168.1.x - Person 3 [28/Jan/2025:10:46:11 +0000]
+ "GET /admin/config HTTP/1.1" 403 4430 "-" "Mozilla/5.0"
+
+ 192.168.1.x - Person 4 [28/Jan/2025:13:35:25 +0000]
+ "GET /admin/config HTTP/1.1" 403 4430 "-" "Mozilla/5.0"
+
+ 192.168.1.x - Person 5 [28/Jan/2025:19:17:13 +0000]
+ "GET /admin/config HTTP/1.1" 403 4430 "-" "Mozilla/5.0"
+
+ 192.168.1.x - Person 6 [28/Jan/2025:19:43:53 +0000]
+ "GET /admin/config HTTP/1.1" 403 4430 "-" "Mozilla/5.0"
+
+ 192.168.1.x - Person 7 [28/Jan/2025:20:16:55 +0000]
+ "GET /admin/config HTTP/1.1" 403 4430 "-" "Mozilla/5.0"
+
+\end{verbatim}
+
+\begin{verbatim}
+2025-01-27 20:50:17 | Event ID: 5152 | Source IP: 192.168.1.x| Destination Port: 3389 | Action: BLOCKED
+2025-01-27 20:50:17 | Event ID: 5152 | Source IP: 192.168.1.x | Destination Port: 3389 | Action: ALLOWED
+2025-01-27 20:50:17 | Event ID: 5152 | Source IP: 192.168.1.x | Destination Port: 3389 | Action: BLOCKED
+2025-01-27 20:50:17 | Event ID: 5152 | Source IP: 192.168.1.x | Destination Port: 3389 | Action: ALLOWED
+2025-01-27 20:50:17 | Event ID: 5152 | Source IP: 192.168.1.x | Destination Port: 3389 | Action: BLOCKED
+2025-01-27 20:50:17 | Event ID: 5152 | Source IP: 192.168.1.x | Destination Port: 3389 | Action: ALLOWED
+\end{verbatim}
+
+\begin{verbatim}
+2025-01-27 20:50:17 ALLOW ICMP 203.0.113.x 10.0.0.1 19219 3389
+2025-01-27 20:50:17 ALLOW TCP 203.0.113.x 10.0.0.1 37134 22
+2025-01-27 20:50:17 DROP TCP 203.0.113.x 10.0.0.1 30673 445
+2025-01-27 20:50:17 ALLOW UDP 203.0.113.x 10.0.0.1 16546 445
+2025-01-27 20:50:17 DROP ICMP 203.0.113.x 10.0.0.1 41055 445
+2025-01-27 20:50:17 ALLOW TCP 203.0.113.x 10.0.0.1 29160 443
+2025-01-27 20:50:17 ALLOW UDP 203.0.113.x 10.0.0.1 31392 3389
+2025-01-27 20:50:17 DROP ICMP 203.0.113.x 10.0.0.1 11844 80
+\end{verbatim}
+
+\begin{verbatim}
+192.168.1.x - - [2025-01-27 20:50:17] "GET /contact.html HTTP/1.1" 500 - "-" "Mozilla/5.0"
+192.168.1.x - - [2025-01-27 20:50:17] "GET /phpmyadmin/ HTTP/1.1" 500 - "-" "Googlebot/2.1"
+192.168.1.x - - [2025-01-27 20:50:17] "GET /wp-login.php HTTP/1.1" 500 - "-" "Googlebot/2.1"
+192.168.1.x - - [2025-01-27 20:50:17] "GET /admin/ HTTP/1.1" 403 - "-" "Mozilla/5.0"
+203.0.113.x - - [2025-01-27 20:50:17] "GET /admin/ HTTP/1.1" 403 - "-" "Nmap Scripting Engine"
+192.168.1.x - - [2025-01-27 20:50:17] "GET /phpmyadmin/ HTTP/1.1" 200 - "-" "Mozilla/5.0"
+\end{verbatim}
+
+\subsection{Glossary}
+\begin{itemize}
+    \item \textbf{403 Forbidden:} HTTP status code indicating that the server understands the request but refuses to authorize it.
+    \item \textbf{500 Internal Server Error:} HTTP status code indicating that the server encountered an unexpected condition that prevented it from fulfilling the request.
+    \item \textbf{RDP (Remote Desktop Protocol):} A protocol developed by Microsoft that provides a user with a graphical interface to connect to another computer over a network connection.
+    \item \textbf{SSH (Secure Shell):} A cryptographic network protocol for operating network services securely over an unsecured network.
+    \item \textbf{MFA (Multi-Factor Authentication):} A security system that requires more than one method of authentication from independent categories of credentials to verify the user's identity.
+    \item \textbf{WAF (Web Application Firewall):} A firewall that monitors, filters, and blocks HTTP traffic to and from a web application.
+    \item \textbf{IDS (Intrusion Detection System):} A device or software application that monitors a network or systems for malicious activity or policy violations.
+    \item \textbf{IPS (Intrusion Prevention System):} A network security/threat prevention technology that examines network traffic flows to detect and prevent vulnerability exploits.
+\end{itemize}
+
+\clearpage
+\begin{thebibliography}{}
+    \bibitem{apache} Apache HTTP Server Documentation. \url{https://httpd.apache.org/docs/}
+    \bibitem{rdp} Microsoft Remote Desktop Protocol (RDP). \url{https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/}
+    \bibitem{ssh} Secure Shell (SSH) Protocol. \url{https://www.ssh.com/ssh/protocol/}
+    \bibitem{mfa} Multi-Factor Authentication (MFA). \url{https://csrc.nist.gov/glossary/term/multi_factor_authentication}
+    \bibitem{waf} Web Application Firewall (WAF). \url{https://owasp.org/www-project-web-application-firewall/}
+    \bibitem{ids} Intrusion Detection System (IDS). \url{https://www.us-cert.gov/ncas/tips/ST04-015}
+    \bibitem{ips} Intrusion Prevention System (IPS). \url{https://www.cisco.com/c/en/us/products/security/intrusion-prevention-system-ips/index.html}
+\end{thebibliography}
+
+\end{document}

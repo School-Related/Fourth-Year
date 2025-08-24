@@ -1,0 +1,361 @@
+\documentclass[11pt]{book}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsfonts, amsmath, amssymb}
+\usepackage{fancyhdr, float, graphicx}
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{fouriernc} % Use the New Century Schoolbook font
+\usepackage[nottoc, notlot, notlof]{tocbibind}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	filecolor=magenta,
+	urlcolor=blue,
+	pdfpagemode=FullScreen,
+}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,
+	breaklines=true,
+	captionpos=b,
+	keepspaces=true,
+	numbers=left,
+	numbersep=5pt,
+	showspaces=false,
+	showstringspaces=false,
+	showtabs=false,
+	tabsize=2
+}
+
+\lstset{style=mystyle}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\textit{\Large{Attack Reserach and Documentation - Fourth Year B. Tech}}}
+\fancyhead[R]{\textit{Krishnaraj T}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{1pt}
+
+\begin{document}
+
+\begin{titlepage}
+	\centering
+
+	%---------------------------NAMES-------------------------------
+
+	\huge\textsc{
+		MIT World Peace University
+	}\\
+
+	\vspace{0.75\baselineskip} % space after Uni Name
+
+	\LARGE{
+		Attack Research and Documentation\\
+		Fourth Year B. Tech, Semester 8
+	}
+
+	\vfill % space after Sub Name
+
+	%--------------------------TITLE-------------------------------
+
+	\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+	\rule{\textwidth}{0.6pt}
+	\vspace{0.75\baselineskip} % Whitespace above the title
+
+	\huge{\textsc{
+        SANS And NIST Incident Response Frameworks \\
+		and Incident Report for Twitter and Marriott Data Breaches
+        }} \\
+
+	\vspace{0.5\baselineskip} % Whitespace below the title
+	\rule{\textwidth}{0.6pt}\vspace*{-\baselineskip}\vspace*{2.8pt}
+	\rule{\textwidth}{1.6pt}
+
+	\vspace{1\baselineskip} % Whitespace after the title block
+
+	%--------------------------SUBTITLE --------------------------	
+
+	\LARGE\textsc{
+		Lab Assignment 4 \\
+        Incidence Reports in NIST and SANS formats
+	} % Subtitle or further description
+	\vfill
+
+	%--------------------------AUTHOR-------------------------------
+
+	Prepared By \vspace{0.5\baselineskip} % Whitespace before the editors
+
+	\Large{
+		Krishnaraj Thadesar \\
+		Cyber Security and Forensics\\
+        Batch A1, PA 15
+	}
+
+	\vspace{0.5\baselineskip} % Whitespace below the editor list
+	\today
+
+\end{titlepage}
+
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+
+\chapter{SANS Incident Response Framework}
+
+\section{History and Origins}
+Developed by the \textbf{SANS Institute} in the late 1990s, this framework emerged from one of the world's largest cybersecurity training and certification organizations. It was designed to provide a standardized approach for handling security incidents, with a focus on \textbf{practical, operational guidance} for security teams[1][2].
+
+\section{Primary Use Cases}
+\begin{itemize}
+    \item Widely adopted by organizations with mature security operations centers (SOCs)
+    \item Preferred in industries requiring strict compliance with security-focused standards
+    \item Used by incident responders needing granular, phase-specific guidance[8][10]
+\end{itemize}
+
+\section{Phases and Recommendations}
+The framework consists of six distinct phases:
+\begin{enumerate}
+    \item \textbf{Preparation}: Develop IR plans, conduct risk assessments, and establish CSIRT teams
+    \item \textbf{Identification}: Monitor systems for deviations from baseline activity
+    \item \textbf{Containment}: Implement short-term (network isolation) and long-term (system hardening) measures
+    \item \textbf{Eradication}: Remove malware and attack artifacts
+    \item \textbf{Recovery}: Restore systems with validation testing
+    \item \textbf{Lessons Learned}: Conduct post-incident reviews and update playbooks[2][5]
+\end{enumerate}
+
+\section{Key Features}
+\begin{itemize}
+    \item Provides detailed checklists for Windows/UNIX systems
+    \item Emphasizes \textbf{triage and prioritization} during detection
+    \item Separates containment, eradication, and recovery into discrete phases[7][9]
+\end{itemize}
+
+\chapter{NIST Incident Response Framework}
+
+\section{History and Origins}
+Created by the \textbf{National Institute of Standards and Technology (NIST)} through Special Publication 800-61. First published in 2004 and regularly updated, it serves as a \textbf{government-endorsed standard} for cybersecurity incident handling[3][6].
+
+\section{Primary Use Cases}
+\begin{itemize}
+    \item Mandatory for U.S. federal agencies
+    \item Adopted voluntarily by private sector organizations
+    \item Used in critical infrastructure protection (energy, finance, healthcare)[3][10]
+\end{itemize}
+
+\section{Phases and Recommendations}
+Four-phase structure outlined in NIST SP 800-61:
+\begin{enumerate}
+    \item \textbf{Preparation}: Establish IR policies and threat intelligence capabilities
+    \item \textbf{Detection \& Analysis}: Implement SIEM tools and escalation procedures
+    \item \textbf{Containment, Eradication \& Recovery}: Combined workflow for simultaneous threat mitigation
+    \item \textbf{Post-Incident Activity}: Documentation and process improvement[3][6]
+\end{enumerate}
+
+\section{Key Features}
+\begin{itemize}
+    \item Focuses on \textbf{system monitoring and escalation procedures}
+    \item Provides three organizational models (central/distributed/coordinated teams)
+    \item Emphasizes continuous process improvement cycles[6][8]
+\end{itemize}
+
+
+\chapter{Comparison of SANS and NIST Incident Response Frameworks}
+
+\section{Structural Differences}
+\begin{itemize}
+    \item The \textbf{SANS framework} consists of six distinct phases, clearly separating containment, eradication, and recovery, whereas \textbf{NIST condenses these into a single phase}.
+    \item NIST’s four-phase structure focuses more on broad incident response and process improvement, whereas SANS provides \textbf{granular, operational guidance}.
+\end{itemize}
+
+\section{Applicability and Use Cases}
+\begin{itemize}
+    \item \textbf{SANS} is widely used in SOC environments and industries with high security requirements (e.g., finance, healthcare, government contractors).
+    \item \textbf{NIST} is a \textbf{regulatory standard} for U.S. federal agencies and a preferred model for organizations requiring a structured, compliance-focused approach.
+\end{itemize}
+
+\section{Incident Handling Approach}
+\begin{itemize}
+    \item \textbf{SANS} prioritizes immediate operational response and containment strategies, making it ideal for SOCs and organizations needing rapid triage.
+    \item \textbf{NIST} emphasizes a cyclical approach with continuous monitoring and learning, making it useful for enterprises focusing on long-term security improvements.
+\end{itemize}
+
+\section{Flexibility and Adaptability}
+\begin{itemize}
+    \item \textbf{SANS} offers prescriptive guidance, which is beneficial for structured incident response but may require adaptation for specific organizations.
+    \item \textbf{NIST} is highly adaptable due to its broad guidelines, allowing organizations to integrate the framework with existing processes.
+\end{itemize}
+
+\section{Conclusion}
+Both frameworks provide robust methodologies for incident response but cater to different organizational needs. Organizations should choose the appropriate framework based on their regulatory environment, security maturity, and operational priorities. A hybrid approach leveraging both frameworks can enhance overall cybersecurity resilience.
+
+
+\chapter{SANS Incidence Report for The Marriott data breach}
+
+\section{Introduction}
+The Marriott data breach stands as one of the largest and most significant cybersecurity incidents in the hospitality industry. This report analyzes the incident using the SANS Incident Response Framework to provide insights into what happened and lessons that can be learned.
+
+\section{What Happened?}
+Attackers compromised Starwood's reservation system in 2014 through a web shell installation on an internal application server, remaining undetected even after Marriott acquired Starwood in 2016. The breach exposed personal information of approximately 339 million guests worldwide, including names, contact details, passport numbers, and payment card information. The intrusion was finally discovered in September 2018, nearly four years after initial compromise.
+
+\section{SANS Response}
+
+\subsection{Preparation}
+The preparation phase reveals significant security gaps that contributed to the breach's severity:
+\begin{itemize}
+    \item \textbf{Insufficient due diligence:} When Marriott acquired Starwood in 2016, it inherited already compromised systems as adequate security assessment was not performed during merger and acquisition activities.
+    \item \textbf{Inadequate security controls:} Starwood properties were using outdated versions of Windows Server and had remote desk protocol (RDP) ports open to the internet.
+    \item \textbf{Poor monitoring infrastructure:} Security alerts were configured only for specific sensitive database tables containing payment card data, rather than comprehensive monitoring across all personal data repositories.
+    \item \textbf{Inconsistent encryption practices:} Marriott applied encryption only to passport numbers and payment card data, leaving other personal information unprotected. Additionally, a script for decrypting AES-128 bit encrypted entries was compromised, indicating poor cryptographic key management.
+\end{itemize}
+
+\subsection{Identification}
+The breach was finally identified after operating undetected for four years:
+\begin{itemize}
+    \item On September 7, 2018, an attacker ran a database query to count records in the \texttt{Guest\_Master\_Profile} table. This unusual activity triggered an alert from Guardium, the database monitoring tool installed on the server.
+    \item The security team observed this alert and notified Marriott's IT team on September 8, 2018.
+    \item This discovery occurred a full four years after the initial breach, highlighting the sophisticated and persistent nature of the attack.
+\end{itemize}
+
+\subsection{Containment}
+Once the breach was identified, Marriott took several immediate steps to contain the damage:
+\begin{itemize}
+    \item Marriott initiated its incident response plan on September 9-10, 2018, deploying real-time endpoint monitoring and forensic tools across approximately 70,000 systems.
+    \item The security team identified and contained the Remote Access Trojan (RAT) malware that had provided persistent access to the attackers.
+    \item Command and Control (C\&C) IP addresses used by the attackers were blocked at the network level to prevent further communication.
+    \item Marriott consulted forensic specialists and reported the incident to law enforcement officials to support the investigation.
+\end{itemize}
+
+\subsection{Eradication}
+The eradication phase involved identifying and removing all malicious components:
+\begin{itemize}
+    \item Endpoint monitoring tools helped discover previously undetected attacker activity, including unauthorized use of credentials, presence of RAT malware, C\&C communications, and use of credential-harvesting tools like Mimikatz.
+    \item Investigators discovered encrypted and deleted database dump (.dmp) files that had been created between April 2015 and May 2016 with the intention of exfiltrating personal data.
+    \item After identifying the attack vectors, security teams removed malicious software and restored affected systems to secure configurations, although specific details of this process were not fully disclosed in public reports.
+\end{itemize}
+
+\subsection{Recovery}
+The recovery phase focused on notification, assessment, and remediation:
+\begin{itemize}
+    \item On October 29, 2018, Marriott contacted the FBI, and on November 22, 2018, notified the UK Information Commissioner's Office (ICO) of the data breach.
+    \item On November 30, 2018, Marriott publicly disclosed the breach, revealing initially that up to 500 million guest records were potentially compromised (later revised to 339 million).
+    \item Upon decrypting the exfiltrated data, Marriott determined that it contained sensitive personal information including names, emails, dates of birth, mailing addresses, passport numbers, and payment card details.
+    \item In response to the breach, the ICO initially announced plans to fine Marriott £99.2 million, which was later reduced to £18.4 million (approximately \$23.8 million).
+\end{itemize}
+
+\section{Lessons Learned}
+The Marriott breach offers several critical lessons for organizations:
+\begin{itemize}
+    \item \textbf{Enhanced M\&A due diligence:} Organizations should conduct thorough cybersecurity assessments during acquisitions, including compromise assessments to detect existing breaches before integration.
+    \item \textbf{Comprehensive monitoring:} Monitoring should cover all systems containing personal data, not just those with payment information. Adequate logging of user actions and database activities is essential.
+    \item \textbf{System hardening:} Critical systems require proper hardening, including secure configurations and whitelisting to prevent installation and execution of unauthorized software.
+    \item \textbf{Consistent data protection:} All personal data should be protected with appropriate encryption, not just selected fields deemed most sensitive.
+    \item \textbf{Privileged account monitoring:} Enhanced monitoring of privileged accounts is necessary to detect and respond to potential abuse, even when multi-factor authentication is implemented.
+\end{itemize}
+
+\section{Conclusion}
+The Marriott data breach exemplifies the challenges organizations face with cybersecurity during mergers and acquisitions. The four-year gap between initial compromise and detection demonstrates the persistence of sophisticated attackers and the critical importance of comprehensive security monitoring. By implementing the lessons learned from this incident, organizations can better protect themselves against similar breaches and minimize the impact when incidents do occur.
+
+This case highlights that cybersecurity must be a fundamental consideration during corporate acquisitions, not an afterthought. Technical security controls must be paired with effective processes for detection, response, and recovery to provide comprehensive protection for sensitive customer data.
+
+\chapter{NIST Incident Response Report for Twitter Data Breach (2020)}
+
+\section{Introduction}
+The Twitter data breach of July 15, 2020, involved a coordinated social engineering attack targeting employees with access to internal administrative tools. This led to the compromise of 130 accounts, including those of high-profile individuals and organizations, and was used to promote a cryptocurrency scam. This report analyzes the incident using the NIST Incident Response Framework, as outlined in Special Publication 800-61 Rev. 2.
+
+\section{Preparation}
+The preparation phase revealed significant gaps in Twitter's cybersecurity readiness:
+\begin{itemize}
+    \item \textbf{Policy \& Planning:} Twitter lacked adequate policies to mitigate insider threats and did not enforce strict access controls for its administrative tools. Additionally, there was no Chief Information Security Officer (CISO) at the time of the breach, leading to a lack of centralized security oversight.
+    \item \textbf{Incident Response Team (IRT):} While Twitter had an incident response team, the delayed response to the attack suggests inefficiencies in their processes for rapid containment and mitigation.
+    \item \textbf{Tools \& Resources:} The administrative tools used by employees were insufficiently protected, allowing attackers to bypass two-factor authentication (2FA) through social engineering. Monitoring systems also failed to detect unusual activity promptly.
+    \item \textbf{Training \& Awareness:} Employees were targeted through phone spear-phishing attacks, exploiting their lack of awareness about social engineering techniques. This highlights inadequate training on recognizing and responding to phishing attempts.
+    \item \textbf{Threat Intelligence:} There was no evidence that Twitter actively monitored for emerging threats or conducted regular security audits to identify vulnerabilities in its internal processes.
+\end{itemize}
+
+\section{Detection \& Analysis}
+The detection and analysis phase exposed delays in identifying and assessing the breach:
+\begin{itemize}
+    \item \textbf{Indicators of Compromise (IoCs):} The attackers gained access to internal tools by tricking employees into providing credentials via a fake VPN login page. This activity went undetected until the attackers began tweeting from compromised accounts.
+    \item \textbf{Incident Categorization:} The breach involved unauthorized access to high-profile accounts and misuse of these accounts for a cryptocurrency scam. It also included unauthorized downloads of sensitive account data.
+    \item \textbf{Impact Analysis:}
+    \begin{itemize}
+        \item 130 accounts were compromised.
+        \item 45 accounts were used to tweet scam messages.
+        \item 36 accounts had their Direct Messages (DMs) accessed.
+        \item Data from 8 accounts were downloaded using Twitter's "Your Twitter Data" tool.
+        \item Over \$118,000 in Bitcoin was stolen from victims.
+    \end{itemize}
+    \item \textbf{Forensic Analysis:} Investigators determined that attackers used social engineering techniques to gain access to internal systems. They exploited weaknesses in multi-factor authentication (MFA) processes and leveraged employee credentials to escalate privileges.
+    \item \textbf{Incident Reporting:} Twitter publicly acknowledged the breach within hours but did not provide detailed information until later investigations were completed. Law enforcement agencies were notified promptly.
+\end{itemize}
+
+\section{Containment, Eradication, and Recovery}
+Twitter took several steps to contain and recover from the breach:
+\begin{itemize}
+    \item \textbf{Short-Term Containment:}
+    \begin{itemize}
+        \item Access to compromised accounts was locked down.
+        \item Functionality for verified accounts was temporarily restricted, preventing them from tweeting or resetting passwords.
+        \item Internal administrative tools were disabled while the investigation was underway.
+    \end{itemize}
+    \item \textbf{Long-Term Containment:}
+    \begin{itemize}
+        \item Employee access to administrative tools was significantly restricted.
+        \item Additional security measures were implemented for high-profile accounts, including enhanced MFA protections.
+    \end{itemize}
+    \item \textbf{Eradication:}
+    \begin{itemize}
+        \item Credentials obtained through phishing attacks were revoked.
+        \item Administrative tools were audited and secured against further exploitation.
+        \item Processes for employee authentication were updated to prevent similar attacks in the future.
+    \end{itemize}
+    \item \textbf{Recovery:}
+    \begin{itemize}
+        \item Affected accounts were restored after verification of ownership.
+        \item Users whose data had been downloaded or accessed were notified directly.
+        \item Cryptocurrency exchanges like Coinbase helped block further transactions, preventing an additional \$1.5 million in potential losses.
+    \end{itemize}
+    \item \textbf{Post-Incident Monitoring:} Enhanced monitoring systems were deployed to detect unusual activity on administrative tools and high-profile accounts.
+\end{itemize}
+
+\section{Post-Incident Activity (Lessons Learned)}
+The post-incident phase focused on addressing security gaps and improving resilience:
+\begin{itemize}
+    \item \textbf{Incident Debriefing:} Twitter conducted an internal investigation and collaborated with law enforcement agencies to understand the full scope of the attack. Findings revealed systemic weaknesses in employee training and tool security.
+    \item \textbf{Root Cause Analysis:}
+    \begin{itemize}
+        \item The primary cause was a lack of robust protections against social engineering attacks targeting employees.
+        \item Inadequate access controls allowed attackers to escalate privileges once initial credentials were compromised.
+    \end{itemize}
+    \item \textbf{Policy and Control Updates:}
+    \begin{itemize}
+        \item Access controls for administrative tools were tightened.
+        \item Security policies were updated, emphasizing insider threat prevention and stronger MFA mechanisms.
+        \item A new CISO was hired shortly after the incident to oversee cybersecurity improvements.
+    \end{itemize}
+    \item \textbf{Training and Awareness:} Employees received enhanced training on recognizing phishing attempts and responding appropriately. Regular simulation exercises were introduced to test employee readiness against social engineering attacks.
+    \item \textbf{Report Documentation:} Detailed records of the incident were maintained for compliance purposes and shared with stakeholders as part of transparency efforts. Lessons learned were documented and shared with other organizations as part of broader industry awareness initiatives.
+\end{itemize}
+
+\section*{Conclusion}
+The Twitter data breach underscores the critical importance of securing internal systems, training employees against social engineering threats, and implementing robust access controls. By addressing these gaps through policy updates, improved training programs, and enhanced monitoring systems, organizations can better protect themselves against similar incidents in the future.
+
+\end{document}
